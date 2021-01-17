@@ -1677,7 +1677,8 @@
         },
         {
             "class": "icon_file_type",
-            "content_margin": [8, 8]
+            "content_margin": [8, 8],
+            "layer0.tint": "var(ui-fg)",
         },
         {
             "class": "icon_folder",
