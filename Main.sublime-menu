@@ -1,0 +1,19 @@
+[
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "Theme - One",
+						"command": "edit_settings",
+						"args": {
+							"base_file": "$packages/Theme - One/Preferences.sublime-settings"
+						},
+					}
+				],
+			}
+		],
+	}
+]
