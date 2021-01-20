@@ -9,9 +9,7 @@
         "ui-bg-light": "color(var(--background) l(- 6%))",
 
         "fg-file-light":  "#666",
-        "fg-file-medium": "hsl(220,  14%,  51%)",
-        "fg-file-dark":   "#F7F7F7",
-
+        "fg-file-medium-dark": "hsl(220,  14%,  71%)",
 
         "fg-subtle":    "color(var(ui-fg) a(- 40%))",
         "fg-subtle-light":    "color(var(ui-fg) l(+ 30%))",
@@ -1043,7 +1041,7 @@
             "class": "fold_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/code_folding.png",
-            "layer0.tint": "var(fg-file-medium)",
+            "layer0.tint": "color(var(fg-file-medium-dark) l(- 20%))",
             "layer0.opacity": 0.6
         },
         {
