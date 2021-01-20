@@ -106,7 +106,7 @@
             "tint_index": 0,
             "tint_modifier": [0, 0, 0, 0.1],
             "layer0.opacity": 1.0,
-            "row_padding": [7, 4],
+            "row_padding": [0, 0],
             "dark_content": true
         },
         {
@@ -135,6 +135,8 @@
         {
             "class": "auto_complete_hint",
             "opacity": 0.7,
+            "font.size": "0.9rem",
+            "font.italic": false,
         },
         {
             "class": "table_row",
@@ -148,6 +150,17 @@
         },
         {
             "class": "table_row",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.04,
+        },
+        {
+            "class": "table_row",
+            "attributes": ["hover"],
+            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
+            "layer0.opacity": 0.08,
+        },
+        {
+            "class": "table_row",
             "attributes": ["selected"],
             "layer0.opacity": 0.08
         },
@@ -158,98 +171,72 @@
             "layer0.opacity": 0.15
         },
         {
-            "class": "kind_container",
-            "content_margin": [6, 0, 5, 0],
-            "layer0.tint": "var(fg-subtle)",
-            "layer0.opacity": 1.0,
-            "layer1.tint": "white",
-            "layer1.opacity": 0.0,
+            "class": "table_row",
+            "attributes": ["selected", "hover"],
+            "layer0.opacity": 0.12
+        },
+        {
+            "class": "table_row",
+            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
+            "attributes": ["selected", "hover"],
+            "layer0.opacity": 0.24
         },
         {
             "class": "kind_container",
-            "parents":
-            [
-                {"class": "auto_complete", "attributes": ["file_light"]},
-            ],
-            "layer0.tint": "var(fg-subtle-light)",
-            "layer1.tint": "black",
-        },
-        {
-            "class": "kind_container",
-            "parents":
-            [
-                {"class": "auto_complete"},
-                {"class": "table_row", "attributes": ["selected"]},
-            ],
-            "layer1.tint": "white",
-        },
-        {
-            "class": "kind_container",
-            "parents":
-            [
-                {"class": "auto_complete", "attributes": ["file_light"]},
-                {"class": "table_row", "attributes": ["selected"]},
-            ],
-            "layer1.tint": "black",
+            "content_margin": [6, 0],
+            "layer0.tint": "var(--foreground)",
+            "layer0.opacity": 0.2,
         },
         {
             "class": "kind_label",
+            "color": "var(--foreground)",
+            "font.size": "1.1rem",
             "font.bold": true,
+            "font.italic": false,
         },
         {
-            "class": "kind_label",
-            "parents": [{"class": "quick_panel"}],
-            "font.size": "var(font-size-lg)"
+            "class": "kind_container kind_ambiguous",
+            "layer0.opacity": 0.1,
         },
         {
             "class": "kind_container kind_function",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--redish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--bluish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_function"}],
-            "color": "var(--redish)"
+            "color": "var(--bluish)"
         },
         {
             "class": "kind_container kind_keyword",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--pinkish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--purplish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_keyword"}],
-            "color": "var(--pinkish)"
+            "color": "var(--purplish)"
         },
         {
             "class": "kind_container kind_markup",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--orangish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--redish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_markup"}],
-            "color": "var(--orangish)"
+            "color": "var(--redish)"
         },
         {
             "class": "kind_container kind_namespace",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--bluish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--purplish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_namespace"}],
-            "color": "var(--bluish)"
+            "color": "var(--purplish)"
         },
         {
             "class": "kind_container kind_navigation",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--yellowish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--yellowish)",
         },
         {
             "class": "kind_label",
@@ -258,9 +245,7 @@
         },
         {
             "class": "kind_container kind_snippet",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--greenish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--greenish)",
         },
         {
             "class": "kind_label",
@@ -269,45 +254,37 @@
         },
         {
             "class": "kind_container kind_type",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--purplish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--yellowish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_type"}],
-            "color": "var(--purplish)"
+            "color": "var(--yellowish)"
         },
         {
             "class": "kind_container kind_variable",
-            "layer0.opacity": 0.5,
-            "layer1.tint": "var(--cyanish)",
-            "layer1.opacity": 0.1,
+            "layer0.tint": "var(--redish)",
         },
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_variable"}],
-            "color": "var(--cyanish)"
-        },
-        {
-            "class": "symbol_container",
-            "content_margin": [4, 3, 4, 3]
+            "color": "var(--redish)"
         },
         {
             "class": "trigger_container",
-            "content_margin": [4, 3, 4, 3]
+            "content_margin": [12, 4]
         },
         {
             "class": "auto_complete_detail_pane",
             "tint_index": 0,
             "layer0.opacity": 1.0,
-            "tint_modifier": [0, 0, 0, 0.1],
-            "content_margin": [8, 5, 8, 5]
+            "tint_modifier": [0, 0, 0, 0.3],
+            "content_margin": [9, 5]
         },
         {
             "class": "auto_complete_detail_pane",
             "attributes": ["file_light"],
-            "tint_modifier": [255, 255, 255, 0.1],
+            "tint_modifier": [0, 0, 0, 0.1],
         },
         {
             "class": "auto_complete_info",
@@ -316,7 +293,8 @@
         {
             "class": "auto_complete_kind_name_label",
             "font.size": "0.9rem",
-            "border_color": "color(var(--accent) a(0.8))"
+            "border_color": "color(var(--accent) a(0.8))",
+            "font.italic": false,
         },
         {
             "class": "auto_complete_details",
@@ -380,6 +358,11 @@
             "layer0.tint": "var(overlay-bg)",
             "layer0.opacity": 1.0,
             "dark_content": true,
+        },
+        {
+            "class": "quick_panel",
+            "parents": [{"class": "overlay_control kind_info"}],
+            "row_padding": [0, 0]
         },
         {
             "class": "quick_panel",
@@ -464,6 +447,20 @@
         {
             "class": "quick_panel_detail_label",
             "link_color": "var(--bluish)",
+        },
+        {
+            "class": "symbol_container",
+            "content_margin": [12, 9]
+        },
+        {
+            "class": "kind_container",
+            "parents": [{"class": "overlay_control kind_info"}],
+            "content_margin": [12, 0],
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "quick_panel"}],
+            "font.size": "var(font-size-lg)"
         },
 
         ///////////////////////////// Tooltips /////////////////////////////////
