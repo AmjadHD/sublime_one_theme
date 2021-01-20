@@ -65,9 +65,10 @@
 
         {
             "class": "title_bar",
+            "settings": ["themed_title_bar"],
             "fg": "var(ui-fg)",
-            "bg": "var(ui-bg)",
-            "style": "dark"
+            "bg": "color(var(ui-bg) l(+ 2%))",
+            "style": "system"
         },
         {
             "class": "title_bar",
@@ -76,14 +77,19 @@
         },
         {
             "class": "title_bar",
+            "attributes": ["file_medium_dark"],
+            "style": "dark"
+        },
+        {
+            "class": "title_bar",
             "attributes": ["file_medium"],
-            "bg": "var(ui-bg-light)",
+            "bg": "color(var(ui-bg-light)",
             "style": "light"
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
-            "bg": "var(ui-bg-light)",
+            "bg": "color(var(ui-bg-light) l(- 6%))",
             "style": "light"
         },
 
