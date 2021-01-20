@@ -300,20 +300,20 @@
 		},
 		{
 		    "scope": "diff.deleted",
-		    "background": "hsl(1, 69%, 53%, 15%)",
+		    "background": "hsla(1, 69%, 53%, 0.15)",
 		},
 		{
 		    "scope": "diff.deleted.char",
-		    "background": "hsl(1, 69%, 53%, 30%)",
+		    "background": "hsla(1, 69%, 53%, 0.30)",
 		    "foreground_adjust": "l(+ 10%)"
 		},
 		{
 		    "scope": "diff.inserted",
-		    "background": "hsla(132, 59%,  33%, 15%)",
+		    "background": "hsla(132, 59%,  33%, 0.15)",
 		},
 		{
 		    "scope": "diff.inserted.char",
-		    "background": "hsla(132, 59%, 33%, 30%)",
+		    "background": "hsla(132, 59%, 33%, 0.30)",
 		    "foreground_adjust": "l(+ 10%)"
 		},
 		// Languages
