@@ -1396,7 +1396,6 @@
             "tab_overlap": 0,
             "tab_min_width": 83,
             "tab_height": 30,
-            "mouse_wheel_switch": true
         },
         {
             "class": "tabset_control",
@@ -1407,7 +1406,7 @@
         {
             "class": "tabset_control",
             "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
-            "mouse_wheel_switch": false
+            "mouse_wheel_switch": true
         },
         {
             "class": "tab_control",
