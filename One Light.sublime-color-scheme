@@ -20,16 +20,15 @@
 		"color-modified": "hsla( 40,  90%,  50%, 0.6)",
 		"color-removed":  "hsla(  0, 100%,  54%, 0.6)",
 
-
 		"--foreground": "hsl(230,  8%,  24%)",
 		"--background": "hsl(230,  1%,  98%)",
 		"--accent":     "hsl(230, 100%,  66%)",
-		"--redish":     "color(var(color-removed) a(1.0))",
+		"--redish":     "var(red1)",
 		"--orangish":   "var(orange1)",
-		"--yellowish":  "color(var(color-modified) a(1.0))",
+		"--yellowish":  "var(orange2)",
 		"--greenish":   "var(green)",
 		"--cyanish":    "var(cyan)",
-		"--bluish":     "var(--accent)",
+		"--bluish":     "var(blue)",
 		"--purplish":   "var(purple)",
 		"--pinkish":    "var(pink)",
 

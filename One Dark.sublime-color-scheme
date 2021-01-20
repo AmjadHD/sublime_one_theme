@@ -24,12 +24,12 @@
 		"--foreground": "hsl(220,  14%,  71%)",
 		"--background": "hsl(220,  13%,  18%)",
 		"--accent":     "hsl(220, 100%,  66%)",
-		"--redish":     "color(var(color-removed) a(1.0))",
+		"--redish":     "var(red1)",
 		"--orangish":   "var(orange1)",
-		"--yellowish":  "color(var(color-modified) a(1.0))",
+		"--yellowish":  "var(orange2)",
 		"--greenish":   "var(green)",
 		"--cyanish":    "var(cyan)",
-		"--bluish":     "var(--accent)",
+		"--bluish":     "var(blue)",
 		"--purplish":   "var(purple)",
 		"--pinkish":    "var(pink)",
 
@@ -63,7 +63,6 @@
 		"rulers": "var(guide)",
 
 		"gutter_foreground": "color(var(--foreground) a(0.6) l(- 26%))",
-		"gutter_foreground_highlight": "color(var(--foreground) a(0.6))",
 
 		"find_highlight_foreground": "var(--foreground)",
 		"find_highlight": "color(var(--accent) a(0.24))",
