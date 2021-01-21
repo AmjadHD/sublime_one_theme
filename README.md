@@ -15,3 +15,7 @@ Make sure to disable or remove any other color scheme with the same name, namely
 
 Open `Preferences > Package Settings > Theme - One` from the menu.
 Also supports [LSP-json](https://packagecontrol.io/packages/LSP-json) autocompletion and validation.
+
+## Credits
+
+https://github.com/andresmichel/one-dark-theme was helpful for me to create this theme.
