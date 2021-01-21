@@ -26,8 +26,8 @@
         "input-bg": "color(var(ui-bg) l(- 3%))",
         "input-bg-light": "color(var(ui-bg) l(+ 4%))",
 
-        "button-bg": "color(var(ui-bg) l(+ 6%))",
-        "button-bg-light": "color(var(ui-bg) l(+ 4%))",
+        "button-bg": "color(var(ui-bg) l(+ 8%))",
+        "button-bg-light": "color(var(ui-bg) l(+ 6%))",
         "button-bg-hover":    "color(var(button-bg) l(+ 2%))",
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
@@ -643,12 +643,14 @@
         {
             "class": "icon_button_control",
             "content_margin": [10, 7],
+            "layer0.texture": "Theme - One/assets/button_middle.png",
             "layer0.tint": "var(button-bg)",
             "layer0.opacity": 1.0,
+            "layer0.inner_margin": 4,
             "layer1.texture": "Theme - One/assets/border_middle.png",
             "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
-            "layer1.inner_margin": 4,
+            "layer1.inner_margin": 3,
             "layer1.draw_center": false,
         },
         {
