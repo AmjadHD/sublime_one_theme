@@ -1427,6 +1427,10 @@
             "layer0.tint": null,
             "tint_index": 0,
             "layer1.inner_margin": [0, 0, 1, 0],
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["highlighted"],
             "layer2.opacity": 1.0,
         },
         {
