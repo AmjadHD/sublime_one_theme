@@ -1349,24 +1349,6 @@
             "layer0.tint": "color(var(ui-bg-light) l(- 3%))",
         },
         {
-            "class": "panel_button_control",
-            "content_margin": [7, 6],
-            "layer0.texture": "Theme - One/assets/status_bar_panels.png",
-            "layer0.tint": "var(ui-fg)",
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "panel_button_control",
-            "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)",
-        },
-        {
-            "class": "panel_button_control",
-            "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(fg-highlight-light)",
-        },
-        {
             "class": "sidebar_button_control",
             "content_margin": [7, 6],
             "layer0.texture": "Theme - One/assets/sidebar_button.png",
