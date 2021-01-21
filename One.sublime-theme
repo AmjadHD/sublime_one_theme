@@ -636,8 +636,8 @@
         },
         {
             "class": "label_control",
-            "parents": [{"class": "button_control", "attributes": ["hover"]},
-                        {"class": "window", "attributes": ["file_light"],}],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "button_control", "attributes": ["hover"]},],
             "color": "var(fg-highlight-light)"
         },
         {
@@ -749,8 +749,8 @@
         },
         {
             "class": "icon_regex",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"],}],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -778,8 +778,8 @@
         },
         {
             "class": "icon_case",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"],}],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -808,8 +808,8 @@
         },
         {
             "class": "icon_highlight",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -832,8 +832,13 @@
         },
         {
             "class": "icon_in_selection",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected)"
+        },
+        {
+            "class": "icon_in_selection",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -861,8 +866,8 @@
         },
         {
             "class": "icon_whole_word",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -890,8 +895,8 @@
         },
         {
             "class": "icon_wrap",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -920,8 +925,8 @@
         },
         {
             "class": "icon_preserve_case",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
         {
@@ -949,8 +954,8 @@
         },
         {
             "class": "icon_context",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
@@ -978,8 +983,8 @@
         },
         {
             "class": "icon_use_buffer",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
         {
@@ -1007,8 +1012,8 @@
         },
         {
             "class": "icon_use_gitignore",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]},
-                        {"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
 
