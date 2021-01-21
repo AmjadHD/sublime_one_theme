@@ -63,32 +63,23 @@
 
         {
             "class": "title_bar",
-            "settings": ["themed_title_bar"],
             "fg": "var(ui-fg)",
             "bg": "color(var(ui-bg) l(+ 2%))",
-            "style": "system"
         },
         {
             "class": "title_bar",
             "attributes": ["file_dark"],
-            "style": "dark"
-        },
-        {
-            "class": "title_bar",
-            "attributes": ["file_medium_dark"],
-            "style": "dark"
+            "bg": "color(var(ui-bg) l(+ 4%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_medium"],
-            "bg": "color(var(ui-bg-light)",
-            "style": "light"
+            "bg": "color(var(ui-bg-light) l(- 3%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
             "bg": "color(var(ui-bg-light) l(- 6%))",
-            "style": "light"
         },
 
         /////////////////////// Autocomplete /////////////////////
@@ -106,7 +97,7 @@
             "tint_index": 0,
             "tint_modifier": [0, 0, 0, 0.1],
             "layer0.opacity": 1.0,
-            "row_padding": [0, 0],
+            "row_padding": [8, 5],
             "dark_content": true
         },
         {
@@ -133,12 +124,6 @@
             "fg_blend": true
         },
         {
-            "class": "auto_complete_hint",
-            "opacity": 0.7,
-            "font.size": "0.9rem",
-            "font.italic": false,
-        },
-        {
             "class": "table_row",
             "layer0.tint": "white",
             "layer0.opacity": 0.0
@@ -147,17 +132,6 @@
             "class": "table_row",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
             "layer0.tint": "black",
-        },
-        {
-            "class": "table_row",
-            "attributes": ["hover"],
-            "layer0.opacity": 0.04,
-        },
-        {
-            "class": "table_row",
-            "attributes": ["hover"],
-            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "layer0.opacity": 0.08,
         },
         {
             "class": "table_row",
@@ -170,147 +144,7 @@
             "attributes": ["selected"],
             "layer0.opacity": 0.15
         },
-        {
-            "class": "table_row",
-            "attributes": ["selected", "hover"],
-            "layer0.opacity": 0.12
-        },
-        {
-            "class": "table_row",
-            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "attributes": ["selected", "hover"],
-            "layer0.opacity": 0.24
-        },
-        {
-            "class": "kind_container",
-            "content_margin": [6, 0],
-            "layer0.tint": "var(--foreground)",
-            "layer0.opacity": 0.2,
-        },
-        {
-            "class": "kind_label",
-            "color": "var(--foreground)",
-            "font.size": "1.1rem",
-            "font.bold": true,
-            "font.italic": false,
-        },
-        {
-            "class": "kind_container kind_ambiguous",
-            "layer0.opacity": 0.1,
-        },
-        {
-            "class": "kind_container kind_function",
-            "layer0.tint": "var(--bluish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_function"}],
-            "color": "var(--bluish)"
-        },
-        {
-            "class": "kind_container kind_keyword",
-            "layer0.tint": "var(--purplish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_keyword"}],
-            "color": "var(--purplish)"
-        },
-        {
-            "class": "kind_container kind_markup",
-            "layer0.tint": "var(--redish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_markup"}],
-            "color": "var(--redish)"
-        },
-        {
-            "class": "kind_container kind_namespace",
-            "layer0.tint": "var(--purplish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_namespace"}],
-            "color": "var(--purplish)"
-        },
-        {
-            "class": "kind_container kind_navigation",
-            "layer0.tint": "var(--yellowish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_navigation"}],
-            "color": "var(--yellowish)"
-        },
-        {
-            "class": "kind_container kind_snippet",
-            "layer0.tint": "var(--greenish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_snippet"}],
-            "color": "var(--greenish)"
-        },
-        {
-            "class": "kind_container kind_type",
-            "layer0.tint": "var(--yellowish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_type"}],
-            "color": "var(--yellowish)"
-        },
-        {
-            "class": "kind_container kind_variable",
-            "layer0.tint": "var(--redish)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "kind_container kind_variable"}],
-            "color": "var(--redish)"
-        },
-        {
-            "class": "trigger_container",
-            "content_margin": [12, 4]
-        },
-        {
-            "class": "auto_complete_detail_pane",
-            "tint_index": 0,
-            "layer0.opacity": 1.0,
-            "tint_modifier": [0, 0, 0, 0.3],
-            "content_margin": [9, 5]
-        },
-        {
-            "class": "auto_complete_detail_pane",
-            "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.1],
-        },
-        {
-            "class": "auto_complete_info",
-            "spacing": 8,
-        },
-        {
-            "class": "auto_complete_kind_name_label",
-            "font.size": "0.9rem",
-            "border_color": "color(var(--accent) a(0.8))",
-            "font.italic": false,
-        },
-        {
-            "class": "auto_complete_details",
-            "monospace_background_color": [255, 255, 255, 0.12]
-        },
-        {
-            "class": "auto_complete_details",
-            "parents":
-            [
-                {
-                    "class": "auto_complete_detail_pane",
-                    "attributes": ["file_light"]
-                }
-            ],
-            "monospace_background_color": [0, 0, 0, 0.08],
-        },
+
         //////////////////////////// Quick Panels ////////////////////////////
         
         {
@@ -410,26 +244,6 @@
             "selected_match_fg": "var(accent-fg-light)"
         },
         {
-            "class": "quick_panel_label key_binding",
-            "font.size": "var(font-size-sm)",
-        },
-        {
-            "class": "quick_panel_label hint",
-            "font.size": "var(font-size-sm)",
-            "fg": "var(fg-subtle)",
-            "match_fg": "var(accent-fg)",
-            "selected_fg": "var(fg-subtle)",
-            "selected_match_fg": "var(accent-fg)"
-        },
-        {
-            "class": "quick_panel_label hint",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
-            "fg": "var(fg-subtle-light)",
-            "match_fg": "var(accent-fg-light)",
-            "selected_fg": "var(fg-subtle-light)",
-            "selected_match_fg": "var(accent-fg-light)"
-        },
-        {
             "class": "quick_panel_path_label",
             "fg": "var(fg-subtle)",
             "match_fg": "var(accent-fg)",
@@ -443,24 +257,6 @@
             "match_fg": "var(accent-fg-light)",
             "selected_fg": "var(fg-subtle-light)",
             "selected_match_fg": "var(accent-fg-light)"
-        },
-        {
-            "class": "quick_panel_detail_label",
-            "link_color": "var(--bluish)",
-        },
-        {
-            "class": "symbol_container",
-            "content_margin": [12, 9]
-        },
-        {
-            "class": "kind_container",
-            "parents": [{"class": "overlay_control kind_info"}],
-            "content_margin": [12, 0],
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "quick_panel"}],
-            "font.size": "var(font-size-lg)"
         },
 
         ///////////////////////////// Tooltips /////////////////////////////////
@@ -1366,24 +1162,6 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
-        {
-            "class": "sidebar_button_control",
-            "content_margin": [7, 6],
-            "layer0.texture": "Theme - One/assets/sidebar_button.png",
-            "layer0.tint": "var(ui-fg)",
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "sidebar_button_control",
-            "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)",
-        },
-        {
-            "class": "sidebar_button_control",
-            "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(fg-highlight-light)",
-        },
 
         //////////////////////////// Tabs //////////////////////////////////////
 
@@ -1431,12 +1209,6 @@
             "attributes": ["file_light"],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
-        },
-        {
-            "class": "tab_control",
-            "settings": ["show_tab_close_buttons_on_left"],
-            "close_button_side": "left",
-            "content_margin": [7, 0, 33, 0],
         },
         {
             "class": "tab_control",
