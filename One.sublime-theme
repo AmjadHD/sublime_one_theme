@@ -515,6 +515,17 @@
             "layer0.opacity": 1.0,
             "layer0.tint": "var(ui-fg)"
         },
+        {
+            "class": "dropdown_button_control",
+            "attributes": ["hover"],
+            "layer0.tint": "var(fg-highlight)",
+        },
+        {
+            "class": "dropdown_button_control",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "layer0.tint": "var(fg-highlight-light)",
+        },
 
         ////////////////////////////////// Panels //////////////////////////////
 
