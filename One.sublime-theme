@@ -71,6 +71,7 @@
         {
             "class": "title_bar",
             "attributes": ["file_dark"],
+            "bg": "color(var(ui-bg) l(+ 4%))",
             "style": "dark"
         },
         {
@@ -81,7 +82,7 @@
         {
             "class": "title_bar",
             "attributes": ["file_medium"],
-            "bg": "color(var(ui-bg-light)",
+            "bg": "color(var(ui-bg-light) l(- 3%))",
             "style": "light"
         },
         {
