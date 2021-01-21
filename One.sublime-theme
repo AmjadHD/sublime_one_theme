@@ -583,7 +583,7 @@
         {
             "class": "icon_highlight",
             "content_margin": [8, 8],
-            "layer0.texture": "Theme - One/icons/eye-closed.png",
+            "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(ui-fg)"
         },
