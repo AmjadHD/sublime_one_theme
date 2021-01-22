@@ -272,7 +272,7 @@
         {
             "class": "tool_tip_label_control",
             "color": "white",
-            "font.size": 13
+            "font.size": "var(font-size-lg)",
         },
 
         //////////////////////////// Inputs ////////////////////////////////////
