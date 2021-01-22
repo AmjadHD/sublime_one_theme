@@ -1422,7 +1422,7 @@
         },
         {
             "class": "tab_control",
-            "attributes": ["file_light"],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
@@ -1452,7 +1452,7 @@
         },
         {
             "class": "tab_label",
-            "parents": [{"class": "tab_control", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
             "color": "var(fg-subtle-light)",
         },
         {
