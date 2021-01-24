@@ -1381,6 +1381,11 @@
             "content_margin": [9, 0, 0, 0]
         },
         {
+            "class": "status_container",
+            "settings": ["!show_sidebar_button"],
+            "content_margin": 0,
+        },
+        {
             "class": "label_control",
             "parents": [{"class": "status_bar"}],
             "color": "var(ui-fg)",
@@ -1643,6 +1648,11 @@
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
+            "class": "scroll_tabs_left_button",
+            "settings": ["hide_tab_scrolling_buttons"],
+            "content_margin": 0,
+        },
+        {
             "class": "scroll_tabs_right_button",
             "content_margin": [8, 5],
             "layer0.tint": "var(ui-fg)",
@@ -1659,6 +1669,11 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "scroll_tabs_right_button",
+            "settings": ["hide_tab_scrolling_buttons"],
+            "content_margin": 0,
         },
 
         //////////////////////////// Side Bar ///////////////////////////////////
