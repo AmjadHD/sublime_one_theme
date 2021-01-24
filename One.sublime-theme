@@ -940,6 +940,18 @@
             "layer1.opacity": 1.0,
         },
         {
+            "class": "progress_bar_control",
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "layer0.tint": "var(input-bg-light)",
+            "layer1.tint": "var(border-color-light)",
+        },
+        {
+            "class": "progress_bar_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(--background)",
+            "layer1.tint": "var(border-color-dark)",
+        },
+        {
             "class": "progress_gauge_control",
             "content_margin": [0, 1],
             "layer0.texture": "Theme - One/assets/bg_3px.png",
