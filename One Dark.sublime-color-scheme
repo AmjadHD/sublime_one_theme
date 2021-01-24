@@ -200,7 +200,7 @@
 			"foreground": "var(--foreground)",
 		},
 		{
-			"scope": "punctuation.section.interpolation, meta.group.interpolation punctuation.definition",
+			"scope": "punctuation.definition.variable, punctuation.section.interpolation, meta.group.interpolation punctuation.definition",
 			"foreground": "var(red2)",
 		},
 		{
