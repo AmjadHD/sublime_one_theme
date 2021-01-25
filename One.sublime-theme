@@ -150,16 +150,22 @@
         
         {
             "class": "overlay_control",
-            "content_margin": [16, 14, 16, 21],
-            "layer0.texture": "Theme - One/assets/overlay_bg.png",
-            "layer0.tint": "var(overlay-bg)",
+            "content_margin": [22, 19, 22, 28],
+            // shadow
+            "layer0.texture": "Theme - One/assets/overlay_shadow.png",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": [16, 13, 16, 21],
+            "layer0.inner_margin": [22, 19, 22, 28],
+            "layer0.draw_center": false,
+            // background
+            "layer1.texture": "Theme - One/assets/overlay_bg.png",
+            "layer1.tint": "var(overlay-bg)",
+            "layer1.opacity": 1.0,
+            "layer1.inner_margin": [22, 19, 22, 28],
         },
         {
             "class": "overlay_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(overlay-bg-light)",
+            "layer1.tint": "var(overlay-bg-light)",
         },
         {
             "class": "mini_quick_panel_row",
