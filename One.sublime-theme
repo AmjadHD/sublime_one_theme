@@ -311,22 +311,34 @@
         
         {
             "class": "overlay_control",
-            "content_margin": [22, 19, 22, 28],
+            "content_margin": [23, 20, 23, 30],
             // shadow
             "layer0.texture": "Theme - One/assets/overlay_shadow.png",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": [22, 19, 22, 28],
+            "layer0.inner_margin": [23, 19, 23, 29],
             "layer0.draw_center": false,
             // background
             "layer1.texture": "Theme - One/assets/overlay_bg.png",
             "layer1.tint": "var(overlay-bg)",
             "layer1.opacity": 1.0,
-            "layer1.inner_margin": [22, 19, 22, 28],
+            "layer1.inner_margin": [23, 19, 23, 29],
+            // border
+            "layer2.texture": "Theme - One/assets/overlay_list_bottom_border.png",
+            "layer2.tint": "var(border-color)",
+            "layer2.opacity": 1.0,
+            "layer2.draw_center": false,
+            "layer2.inner_margin": [23, 19, 23, 30],
         },
         {
             "class": "overlay_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer1.tint": "var(overlay-bg-light)",
+            "layer2.tint": "var(border-color-light)",
+        },
+        {
+            "class": "overlay_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "layer2.tint": "var(border-color-dark)",
         },
         {
             "class": "mini_quick_panel_row",
