@@ -1530,7 +1530,6 @@
         {
             "class": "tab_control",
             "content_margin": [33, 0, 7, 0],
-            "layer0.tint": "var(ui-bg)",
             "tint_index": -1,
             "layer1.tint": "var(border-color)",
             "accent_tint_index": 2,
@@ -1551,7 +1550,18 @@
         },
         {
             "class": "tab_control",
+            "parents": [{"class": "window", "attributes": ["file_medium"]},],
+            "layer0.tint": "var(ui-bg)",
+        },
+        {
+            "class": "tab_control",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"]},],
+            "layer0.tint": "var(ui-bg)",
+        },
+        {
+            "class": "tab_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "layer0.tint": "var(ui-bg)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
