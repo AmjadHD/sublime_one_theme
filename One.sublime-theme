@@ -4,34 +4,33 @@
         "font-size-sm": 11.0,
         "font-size-lg": 13.0,
 
-        "ui-fg": "var(--foreground)",
         "ui-bg": "color(var(--background) l(- 3%))",
         "ui-bg-light": "color(var(--background) l(- 6%))",
 
         "fg-file-light":  "#666",
         "fg-file-medium-dark": "hsl(220,  14%,  71%)",
 
-        "fg-subtle":    "color(var(ui-fg) a(- 40%))",
-        "fg-subtle-light":    "color(var(ui-fg) l(+ 30%))",
-        "fg-highlight": "color(var(ui-fg) l(+ 20%))",
-        "fg-highlight-light": "color(var(ui-fg) l(- 12%))",
+        "fg-subtle":    "color(var(--foreground) a(- 40%))",
+        "fg-subtle-light":    "color(var(--foreground) l(+ 30%))",
+        "fg-highlight": "color(var(--foreground) l(+ 20%))",
+        "fg-highlight-light": "color(var(--foreground) l(- 12%))",
         "fg-selected":  "white",
-        "fg-selected-light":  "color(var(ui-fg) l(- 24%))",
+        "fg-selected-light":  "color(var(--foreground) l(- 24%))",
 
-        "bg-highlight": "color(var(ui-bg) l(+ 4%))",
-        "bg-highlight-light": "color(var(ui-bg) l(- 8%))",
-        "bg-selected":  "color(var(ui-bg) l(+ 8%))",
-        "bg-selected-light":  "color(var(ui-bg) l(- 12%))",
+        "bg-highlight": "color(var(--background) l(+ 4%))",
+        "bg-highlight-light": "color(var(ui-bg-light) l(- 2%))",
+        "bg-selected":  "color(var(--background) l(+ 8%))",
+        "bg-selected-light":  "color(var(ui-bg-light) l(- 6%))",
 
-        "input-bg": "color(var(ui-bg) l(- 3%))",
-        "input-bg-light": "color(var(ui-bg) l(+ 4%))",
+        "input-bg": "color(var(--background) l(- 6%))",
+        "input-bg-light": "color(var(--background) l(+ 4%))",
 
-        "button-bg": "color(var(ui-bg) l(+ 8%))",
-        "button-bg-light": "color(var(ui-bg) l(+ 6%))",
+        "button-bg": "color(var(--background) l(+ 6%))",
+        "button-bg-light": "color(var(--background) l(+ 4%))",
         "button-bg-hover":    "color(var(button-bg) l(+ 2%))",
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
-        "button-bg-pressed-light": "color(var(button-bg) l(- 4%))",
+        "button-bg-pressed-light": "color(var(button-bg-light) l(- 4%))",
         "button-bg-selected": "var(--accent)",
 
         "button-fg-selected": "color(var(--foreground) min-contrast(var(button-bg-selected) 3.0))",
@@ -39,17 +38,17 @@
         "accent-fg": "color(var(--accent) s(- 15%) l(+ 5%))",
         "accent-fg-light": "color(var(--accent) s(- 25%) l(- 4%))",
 
-        "overlay-bg": "color(var(ui-bg) l(+ 2%))",
-        "overlay-bg-light": "color(var(ui-bg) l(- 3%))",
+        "overlay-bg": "color(var(--background) blend(var(ui-bg) 50%))",
+        "overlay-bg-light": "color(var(--background) blend(var(ui-bg-light) 50%))",
         "overlay-row-bg": "color(var(overlay-bg) l(+ 2%))",
-        "overlay-row-bg-light": "color(var(overlay-bg) l(- 2%))",
+        "overlay-row-bg-light": "color(var(overlay-bg-light) l(+ 2%))",
 
         "border-color": "color(var(ui-bg) l(- 4%))",
-        "border-color-light": "color(var(ui-bg) l(- 12%))",
+        "border-color-light": "color(var(ui-bg-light) l(- 6%))",
         "border-color-dark": "color(var(ui-bg) l(+ 10%))",
 
         "scrollbar-color": "color(var(--background) l(+ 16%))",
-        "scrollbar-color-light": "color(var(ui-bg) l(- 20%))",
+        "scrollbar-color-light": "color(var(ui-bg-light) l(- 14%))",
 
         "color-removed":        "hsl(  9, 100%,  64%)",
         "color-removed-light":  "hsl(  0, 90%,  56%)",
@@ -65,7 +64,7 @@
         {
             "class": "title_bar",
             "settings": ["themed_title_bar"],
-            "fg": "var(ui-fg)",
+            "fg": "var(--foreground)",
             "bg": "color(var(ui-bg) l(+ 2%))",
             "style": "system"
         },
@@ -422,9 +421,9 @@
         },
         {
             "class": "quick_panel_label",
-            "fg": "var(ui-fg)",
+            "fg": "var(--foreground)",
             "match_fg": "var(accent-fg)",
-            "selected_fg": "var(ui-fg)",
+            "selected_fg": "var(--foreground)",
             "selected_match_fg": "var(accent-fg)"
         },
         {
@@ -557,7 +556,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/history.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "dropdown_button_control",
@@ -613,7 +612,7 @@
             "content_margin": [8, 8],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/assets/open_files_close.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "panel_close_button",
@@ -653,7 +652,7 @@
 
         {
             "class": "label_control",
-            "color": "var(ui-fg)",
+            "color": "var(--foreground)",
         },
 
         ////////////////////////////////// Buttons /////////////////////////////
@@ -825,7 +824,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_regex.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_regex",
@@ -854,7 +853,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_case.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_case",
@@ -883,7 +882,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_highlight",
@@ -913,7 +912,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_in_selection.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_in_selection",
@@ -942,7 +941,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_whole_word.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_whole_word",
@@ -971,7 +970,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_wrap.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_wrap",
@@ -1000,7 +999,7 @@
             "content_margin": [8, 8],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/icons/icon_preserve_case.png",
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_preserve_case",
@@ -1030,7 +1029,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_context.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "icon_context",
@@ -1059,7 +1058,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_use_buffer.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "icon_use_buffer",
@@ -1088,7 +1087,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/icon_use_gitignore.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "icon_use_gitignore",
@@ -1455,13 +1454,13 @@
         {
             "class": "label_control",
             "parents": [{"class": "status_bar"}],
-            "color": "var(ui-fg)",
+            "color": "var(--foreground)",
             "font.size": "var(font-size)"
         },
         {
             "class": "vcs_branch_icon",
             "layer0.texture": "Theme - One/icons/branch.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "content_margin": [8, 8],
         },
         {
@@ -1480,18 +1479,18 @@
         {
             "class": "status_button",
             "attributes": ["hover"],
-            "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+            "layer0.tint": "color(var(ui-bg) l(+ 6%))",
         },
         {
             "class": "status_button",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
-            "layer0.tint": "color(var(ui-bg-light) l(- 12%))",
+            "layer0.tint": "color(var(ui-bg-light) l(- 6%))",
         },
         {
             "class": "status_button",
             "attributes": ["pressed"],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "color(var(ui-bg) l(+ 3%))",
         },
         {
             "class": "status_button",
@@ -1503,7 +1502,7 @@
             "class": "sidebar_button_control",
             "content_margin": [7, 6],
             "layer0.texture": "Theme - One/assets/sidebar_button.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
         {
@@ -1700,7 +1699,7 @@
         {
             "class": "new_tab_button",
             "layer0.texture": "Theme - Default/common/new_tab.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": [21, 0, 1, 0],
             "content_margin": [12, 12],
@@ -1725,7 +1724,7 @@
             "class": "show_tabs_dropdown_button",
             "content_margin": [10, 3],
             "layer0.texture": "Theme - One/assets/tab_dropdown.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0
         },
         {
@@ -1742,7 +1741,7 @@
         {
             "class": "scroll_tabs_left_button",
             "content_margin": [8, 5],
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.texture": "Theme - One/assets/tab_scroll_left.png",
             "layer0.opacity": 1.0,
         },
@@ -1765,7 +1764,7 @@
         {
             "class": "scroll_tabs_right_button",
             "content_margin": [8, 5],
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.texture": "Theme - One/assets/tab_scroll_right.png",
             "layer0.opacity": 1.0,
         },
@@ -1823,14 +1822,14 @@
         },
         {
             "class": "sidebar_heading",
-            "color": "var(ui-fg)",
+            "color": "var(--foreground)",
             "font.size": "var(font-size)"
         },
         {
             "class": "disclosure_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/arrow_right.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
         {
@@ -1857,7 +1856,7 @@
             "class": "close_button",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/open_files_close.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
         {
@@ -1890,18 +1889,18 @@
         {
             "class": "icon_file_type",
             "content_margin": [8, 8],
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
         },
         {
             "class": "icon_folder",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder.png",
-            "layer0.tint": "var(ui-fg)"
+            "layer0.tint": "var(--foreground)"
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "layer0.tint": "color(var(ui-fg) a(0.6))"
+            "layer0.tint": "color(var(--foreground) a(0.6))"
         },
         {
             "class": "icon_folder",
@@ -1984,14 +1983,14 @@
             "class": "icon_folder_loading",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/hourglass.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "icon_folder_dup",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder_dup.png",
-            "layer0.tint": "var(ui-fg)",
+            "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
         {
@@ -2089,7 +2088,7 @@
         },
         {
             "class": "sidebar_label",
-            "color": "var(ui-fg)",
+            "color": "var(--foreground)",
             "font.size": "var(font-size)",
             "font.bold": false,
             "font.italic": false
@@ -2108,7 +2107,7 @@
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "color": "color(var(ui-fg) a(0.6))"
+            "color": "color(var(--foreground) a(0.6))"
         },
         {
             "class": "sidebar_label",
