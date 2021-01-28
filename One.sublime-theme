@@ -631,6 +631,23 @@
             "settings": ["!one_theme.show_panel_close_button"],
             "content_margin": 0,
         },
+        {
+            "class": "text_area_control",
+            "parents": [{"class": "text_output_control"},],
+            "background_modifier": "l(- 6%)",
+        },
+        {
+            "class": "text_area_control",
+            "attributes": ["file_light"],
+            "parents": [{"class": "text_output_control"},],
+            "background_modifier": "l(+ 4%)",
+        },
+        {
+            "class": "text_area_control",
+            "attributes": ["file_dark"],
+            "parents": [{"class": "text_output_control"},],
+            "background_modifier": "",
+        },
 
         /////////////////////////// Default label //////////////////////////////
 
