@@ -1424,7 +1424,7 @@
 
         {
             "class": "status_bar",
-            "content_margin": [9, 1, 0, 0],
+            "content_margin": [0, 1, 0, 0],
             "layer0.tint": "var(ui-bg)",
             "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
@@ -1445,7 +1445,7 @@
         },
         {
             "class": "status_container",
-            "content_margin": [9, 0, 0, 0]
+            "content_margin": [4, 0, 0, 0]
         },
         {
             "class": "status_container",
@@ -1467,15 +1467,10 @@
         {
             "class": "status_button",
             "content_margin": [9, 4],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "transparent",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": 0,
             "min_size": [10, 22]
-        },
-        {
-            "class": "status_button",
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(ui-bg-light)",
         },
         {
             "class": "status_button",
@@ -1501,21 +1496,35 @@
         },
         {
             "class": "sidebar_button_control",
-            "content_margin": [7, 6],
-            "layer0.texture": "Theme - One/assets/sidebar_button.png",
-            "layer0.tint": "var(--foreground)",
+            "content_margin": [16, 15],
+            "layer0.texture": "",
+            "layer0.tint": "transparent",
             "layer0.opacity": 1.0,
+            "layer1.texture": "Theme - One/assets/sidebar_button.png",
+            "layer1.tint": "var(--foreground)",
+            "layer1.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)",
+            "layer0.tint": "color(var(ui-bg) l(+ 6%))",
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["hover"],
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(fg-highlight-light)",
+            "parents": [{"class": "edit_window", "attributes": ["file_light"],}],
+            "layer0.tint": "color(var(ui-bg-light) l(- 6%))",
+        },
+        {
+            "class": "sidebar_button_control",
+            "attributes": ["pressed"],
+            "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+        },
+        {
+            "class": "sidebar_button_control",
+            "attributes": ["pressed"],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"],}],
+            "layer0.tint": "color(var(ui-bg-light) l(- 3%))",
         },
 
         //////////////////////////// Tabs //////////////////////////////////////
