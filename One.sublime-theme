@@ -1596,23 +1596,12 @@
             "attributes": ["selected"],
             "layer0.tint": null,
             "tint_index": 0,
-            "tint_modifier": [0, 0, 0, 0.0],
             "layer1.inner_margin": [0, 0, 1, 0],
         },
         {
             "class": "tab_control",
             "attributes": ["highlighted"],
             "layer2.opacity": 1.0,
-        },
-        {
-            "class": "tab_control",
-            "attributes": ["selected", "!highlighted"],
-            "tint_modifier": [0, 0, 0, 0.05],
-        },
-        {
-            "class": "tab_control",
-            "attributes": ["file_light", "selected", "!highlighted"],
-            "tint_modifier": [0, 0, 0, 0.03],
         },
         {
             "class": "tab_label",
