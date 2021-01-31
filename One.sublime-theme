@@ -1526,7 +1526,7 @@
             "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
-            "layer1.inner_margin": [0, 0, 0, 2],
+            "layer1.inner_margin": [0, 0, 0, 3],
             "layer1.draw_center": false,
             "tab_overlap": 0,
             "tab_min_width": 83,
