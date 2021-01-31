@@ -504,7 +504,7 @@
         },
         {
             "class": "icon_button_control",
-            "content_margin": [10, 7],
+            "content_margin": [1, 1],
             "layer0.texture": "Theme - One/assets/button_middle.png",
             "layer0.tint": "var(button-bg)",
             "layer0.opacity": 1.0,
@@ -575,6 +575,7 @@
         {
             "class": "icon_button_control",
             "attributes": ["right"],
+            "content_margin": [1, 1, 2, 1],
             "layer0.texture": "Theme - One/assets/button_right.png",
             "layer1.texture": "Theme - One/assets/border_right.png",
         },
@@ -601,7 +602,7 @@
         },
         {
             "class": "icon_regex",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_regex.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -630,7 +631,7 @@
         },
         {
             "class": "icon_case",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_case.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -659,7 +660,7 @@
         },
         {
             "class": "icon_highlight",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -689,7 +690,7 @@
         },
         {
             "class": "icon_in_selection",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_in_selection.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -718,7 +719,7 @@
         },
         {
             "class": "icon_whole_word",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_whole_word.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -747,7 +748,7 @@
         },
         {
             "class": "icon_wrap",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_wrap.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)"
@@ -776,7 +777,7 @@
         },
         {
             "class": "icon_preserve_case",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/icons/icon_preserve_case.png",
             "layer0.tint": "var(--foreground)"
@@ -806,7 +807,7 @@
         },
         {
             "class": "icon_context",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_context.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)",
@@ -835,7 +836,7 @@
         },
         {
             "class": "icon_use_buffer",
-            "content_margin": [8, 8],
+            "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_use_buffer.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(--foreground)",
