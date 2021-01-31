@@ -863,35 +863,6 @@
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
-        {
-            "class": "icon_use_gitignore",
-            "content_margin": [8, 8],
-            "layer0.texture": "Theme - One/icons/icon_use_gitignore.png",
-            "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)",
-        },
-        {
-            "class": "icon_use_gitignore",
-            "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)",
-        },
-        {
-            "class": "icon_use_gitignore",
-            "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
-            "layer0.tint": "var(fg-highlight-light)",
-        },
-        {
-            "class": "icon_use_gitignore",
-            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)",
-        },
-        {
-            "class": "icon_use_gitignore",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)",
-        },
 
         /////////////////////////////////// Views //////////////////////////////
 
