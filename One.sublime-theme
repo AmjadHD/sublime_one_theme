@@ -611,7 +611,7 @@
             "class": "panel_close_button",
             "content_margin": [8, 8],
             "layer0.opacity": 1.0,
-            "layer0.texture": "Theme - One/assets/open_files_close.png",
+            "layer0.texture": "Theme - One/assets/panel_close_button.png",
             "layer0.tint": "var(--foreground)",
         },
         {
