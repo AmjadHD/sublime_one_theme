@@ -1526,11 +1526,12 @@
             "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
-            "layer1.inner_margin": [0, 0, 0, 1],
+            "layer1.inner_margin": [0, 0, 0, 2],
             "layer1.draw_center": false,
             "tab_overlap": 0,
             "tab_min_width": 83,
             "tab_height": 30,
+            "connector_height": 2
         },
         {
             "class": "tabset_control",
@@ -1547,6 +1548,21 @@
             "class": "tabset_control",
             "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
             "mouse_wheel_switch": true
+        },
+        {
+            "class": "tab_connector",
+            "layer0.tint": "var(--accent)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "tab_connector",
+            "attributes": ["left_overhang"],
+            "layer0.opacity": 0.5,
+        },
+        {
+            "class": "tab_connector",
+            "attributes": ["right_overhang"],
+            "layer0.opacity": 0.5,
         },
         {
             "class": "tab_control",
