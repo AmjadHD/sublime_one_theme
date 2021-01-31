@@ -169,13 +169,13 @@
         },
         {
             "class": "overlay_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer1.tint": "var(overlay-bg-light)",
             "layer2.tint": "var(border-color-light)",
         },
         {
             "class": "overlay_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer2.tint": "var(border-color-dark)",
         },
         {
@@ -189,13 +189,13 @@
         },
         {
             "class": "mini_quick_panel_row",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(overlay-row-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "mini_quick_panel_row",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -206,7 +206,7 @@
         {
             "class": "mini_quick_panel_row",
             "attributes": ["selected"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(bg-selected-light)",
         },
         {
@@ -223,7 +223,7 @@
         },
         {
             "class": "quick_panel",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(overlay-bg-light)",
             "dark_content": false
         },
@@ -238,13 +238,13 @@
         },
         {
             "class": "quick_panel_row",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(overlay-row-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "quick_panel_row",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -255,7 +255,7 @@
         {
             "class": "quick_panel_row",
             "attributes": ["selected"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(bg-selected-light)",
         },
         {
@@ -267,7 +267,7 @@
         },
         {
             "class": "quick_panel_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "match_fg": "var(accent-fg-light)",
             "selected_match_fg": "var(accent-fg-light)"
         },
@@ -280,7 +280,7 @@
         },
         {
             "class": "quick_panel_path_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "fg": "var(fg-subtle-light)",
             "match_fg": "var(accent-fg-light)",
             "selected_fg": "var(fg-subtle-light)",
@@ -321,24 +321,24 @@
         },
         {
             "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "color_scheme_tint": "var(input-bg-light)",
             "layer0.tint": "var(input-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_medium"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_medium"]},],
             "color_scheme_tint": "var(input-bg)"
         },
         {
             "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_medium_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_medium_dark"]},],
             "color_scheme_tint": "var(input-bg)",
         },
         {
             "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "color_scheme_tint": "var(--background)",
             "layer0.tint": "var(--background)",
             "layer1.tint": "var(border-color-dark)"
@@ -363,7 +363,7 @@
         {
             "class": "dropdown_button_control",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
 
@@ -381,13 +381,13 @@
         },
         {
             "class": "panel_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "panel_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -419,7 +419,7 @@
         {
             "class": "panel_close_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -452,13 +452,13 @@
         },
         {
             "class": "button_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "button_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -469,7 +469,7 @@
         {
             "class": "button_control",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-hover-light)",
         },
         {
@@ -483,7 +483,7 @@
         {
             "class": "button_control",
             "attributes": ["pressed"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-pressed-light)",
         },
         {
@@ -498,7 +498,7 @@
         },
         {
             "class": "label_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "button_control", "attributes": ["hover"]},],
             "color": "var(fg-highlight-light)"
         },
@@ -517,13 +517,13 @@
         },
         {
             "class": "icon_button_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "icon_button_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -534,7 +534,7 @@
         {
             "class": "icon_button_control",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-hover-light)",
         },
         {
@@ -547,7 +547,7 @@
         {
             "class": "icon_button_control",
             "attributes": ["pressed"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(button-bg-pressed-light)",
         },
         {
@@ -558,7 +558,7 @@
         {
             "class": "icon_button_control",
             "attributes": ["selected"],
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(button-bg-selected)",
         },
         {
@@ -615,7 +615,7 @@
         {
             "class": "icon_regex",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -625,7 +625,7 @@
         },
         {
             "class": "icon_regex",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -644,7 +644,7 @@
         {
             "class": "icon_case",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -654,7 +654,7 @@
         },
         {
             "class": "icon_case",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -673,7 +673,7 @@
         {
             "class": "icon_highlight",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -684,7 +684,7 @@
         },
         {
             "class": "icon_highlight",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -703,7 +703,7 @@
         {
             "class": "icon_in_selection",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -713,7 +713,7 @@
         },
         {
             "class": "icon_in_selection",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -732,7 +732,7 @@
         {
             "class": "icon_whole_word",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -742,7 +742,7 @@
         },
         {
             "class": "icon_whole_word",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -761,7 +761,7 @@
         {
             "class": "icon_wrap",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -771,7 +771,7 @@
         },
         {
             "class": "icon_wrap",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -790,7 +790,7 @@
         {
             "class": "icon_preserve_case",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -801,7 +801,7 @@
         },
         {
             "class": "icon_preserve_case",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
@@ -820,7 +820,7 @@
         {
             "class": "icon_context",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)"
         },
         {
@@ -830,7 +830,7 @@
         },
         {
             "class": "icon_context",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
         },
@@ -849,7 +849,7 @@
         {
             "class": "icon_use_buffer",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -859,7 +859,7 @@
         },
         {
             "class": "icon_use_buffer",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
@@ -873,12 +873,12 @@
         },
         {
             "class": "grid_layout_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "border_color": "var(border-color-light)"
         },
         {
             "class": "grid_layout_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "border_color": "var(border-color-dark)"
         },
         {
@@ -923,7 +923,7 @@
         },
         {
             "class": "dialog",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(ui-bg-light)",
         },
         {
@@ -940,13 +940,13 @@
         },
         {
             "class": "progress_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(input-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "progress_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(--background)",
             "layer1.tint": "var(border-color-dark)",
         },
@@ -960,7 +960,7 @@
         },
         {
             "class": "progress_gauge_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(accent-fg-light)",
         },
 
@@ -1008,7 +1008,7 @@
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
             "layer0.tint": "var(ui-bg-light)",
         },
@@ -1019,7 +1019,7 @@
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "dialog"},],
             "layer0.tint": "var(ui-bg-light)",
         },
@@ -1036,14 +1036,14 @@
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "overlay_control"}],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
             "layer1.tint": "var(border-color-dark)",
         },
@@ -1060,14 +1060,14 @@
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "overlay_control"}],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
             "layer1.tint": "var(border-color-dark)",
         },
@@ -1083,7 +1083,7 @@
         },
         {
             "class": "scroll_corner_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
             "layer0.tint": "var(ui-bg-light)",
         },
@@ -1094,7 +1094,7 @@
         },
         {
             "class": "scroll_corner_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "dialog"}],
             "layer0.tint": "var(ui-bg-light)",
         },
@@ -1167,13 +1167,13 @@
         },
         {
             "class": "status_bar",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "status_bar",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1202,7 +1202,7 @@
         },
         {
             "class": "status_button",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(ui-bg-light)",
         },
         {
@@ -1213,7 +1213,7 @@
         {
             "class": "status_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"],}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"],}],
             "layer0.tint": "color(var(ui-bg-light) l(- 6%))",
         },
         {
@@ -1224,7 +1224,7 @@
         {
             "class": "status_button",
             "attributes": ["pressed"],
-            "parents": [{"class": "window", "attributes": ["file_light"],}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"],}],
             "layer0.tint": "color(var(ui-bg-light) l(- 3%))",
         },
         {
@@ -1242,7 +1242,7 @@
         {
             "class": "panel_button_control",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
 
@@ -1262,13 +1262,13 @@
         },
         {
             "class": "tabset_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "tabset_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]}],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1294,13 +1294,13 @@
         },
         {
             "class": "tab_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "tab_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1319,7 +1319,7 @@
         },
         {
             "class": "tab_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "color": "var(fg-subtle-light)",
         },
         {
@@ -1409,7 +1409,7 @@
         {
             "class": "show_tabs_dropdown_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -1427,7 +1427,7 @@
         {
             "class": "scroll_tabs_left_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -1450,7 +1450,7 @@
         {
             "class": "scroll_tabs_right_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -1473,7 +1473,7 @@
         },
         {
             "class": "sidebar_tree",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(ui-bg-light)",
             "dark_content": false,
         },
@@ -1486,12 +1486,12 @@
         },
         {
             "class": "sidebar_container",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(border-color-light)",
         },
         {
             "class": "sidebar_container",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_dark"]},],
             "layer0.tint": "var(border-color-dark)",
         },
         {
@@ -1518,7 +1518,7 @@
         },
         {
             "class": "tree_row",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(bg-selected-light)",
         },
         {
@@ -1541,7 +1541,7 @@
         {
             "class": "close_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -1583,7 +1583,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["missing"]}],
             "layer0.tint": "var(color-removed-light)"
         },
@@ -1594,7 +1594,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["deleted"]}],
             "layer0.tint": "var(color-removed-light)"
         },
@@ -1605,7 +1605,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["untracked"]}],
             "layer0.tint": "var(color-added-light)"
         },
@@ -1616,7 +1616,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["added"]}],
             "layer0.tint": "var(color-added-light)"
         },
@@ -1627,7 +1627,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["modified"]}],
             "layer0.tint": "var(color-modified-light)"
         },
@@ -1638,7 +1638,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["staged"]}],
             "layer0.tint": "var(color-modified-light)",
         },
@@ -1649,7 +1649,7 @@
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["unmerged"]}],
             "layer0.tint": "var(color-removed-light)",
         },
@@ -1680,7 +1680,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["missing"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-removed-light)",
         },
         {
@@ -1692,7 +1692,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["deleted"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-removed-light)",
         },
         {
@@ -1704,7 +1704,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["untracked"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-added-light)",
         },
         {
@@ -1716,7 +1716,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["added"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-added-light)",
         },
         {
@@ -1728,7 +1728,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["modified"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-modified-light)",
         },
         {
@@ -1740,7 +1740,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["staged"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-modified-light)",
         },
         {
@@ -1752,7 +1752,7 @@
         {
             "class": "vcs_status_badge",
             "attributes": ["unmerged"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-removed-light)",
         },
         {
@@ -1790,7 +1790,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["missing"]}],
             "color": "var(color-removed-light)"
         },
@@ -1801,7 +1801,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["deleted"]}],
             "color": "var(color-removed-light)"
         },
@@ -1812,7 +1812,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["untracked"]}],
             "color": "var(color-added-light)"
         },
@@ -1823,7 +1823,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["added"]}],
             "color": "var(color-added-light)"
         },
@@ -1834,7 +1834,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["modified"]}],
             "color": "var(color-modified-light)"
         },
@@ -1845,7 +1845,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["staged"]}],
             "color": "var(color-modified-light)"
         },
@@ -1856,7 +1856,7 @@
         },
         {
             "class": "sidebar_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["unmerged"]}],
             "color": "var(color-removed-light)"
         },
