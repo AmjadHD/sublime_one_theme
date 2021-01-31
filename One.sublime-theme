@@ -1557,12 +1557,12 @@
         {
             "class": "tab_connector",
             "attributes": ["left_overhang"],
-            "layer0.opacity": 0.5,
+            "layer0.opacity": 1.0,
         },
         {
             "class": "tab_connector",
             "attributes": ["right_overhang"],
-            "layer0.opacity": 0.5,
+            "layer0.opacity": 1.0,
         },
         {
             "class": "tab_control",
