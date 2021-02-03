@@ -371,6 +371,11 @@
             "layer0.tint": "var(bg-selected-light)",
         },
         {
+            "class": "mini_quick_panel_row",
+            "parents": [{"class": "scroll_area_control", "attributes": ["!scrollable"]}],
+            "layer1.inner_margin": [1, 1, 1, 0],
+        },
+        {
             "class": "quick_panel",
             "row_padding": [12, 9],
             "layer0.tint": "var(overlay-bg)",
@@ -416,8 +421,13 @@
         {
             "class": "quick_panel_row",
             "attributes": ["selected"],
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
+            "parents": [{"class": "edit_window", "attributes": ["file_light"]}],
             "layer0.tint": "var(bg-selected-light)",
+        },
+        {
+            "class": "quick_panel_row",
+            "parents": [{"class": "scroll_area_control", "attributes": ["!scrollable"]}],
+            "layer1.inner_margin": [1, 1, 1, 0],
         },
         {
             "class": "quick_panel_label",
