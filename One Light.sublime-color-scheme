@@ -57,8 +57,8 @@
 		"fold_marker": "var(--foreground)",
 
 		"guide": "var(guide)",
-		"stack_guide": "var(guide)",
-		"active_guide": "var(guide)",
+		"stack_guide": "color(var(--foreground) a(0.33)",
+		"active_guide": "color(var(--foreground) a(0.53)",
 		"rulers": "var(guide)",
 
 		"gutter_foreground": "color(var(--background) a(0.6) l(- 36%))",
