@@ -42,7 +42,7 @@
 		"caret": "var(--accent)",
 		"line_highlight": "color(var(--foreground) a(5%))",
 		"selection": "var(selection)",
-		"inactive_selection": "var(selection)",
+		"inactive_selection": "color(var(selection) a(- 25%))",
 		"selection_border": "var(selection)",
 		"selection_corner_style": "square",
 
