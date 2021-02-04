@@ -1606,7 +1606,18 @@
         },
         {
             "class": "tab_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "parents": [{"class": "window", "attributes": ["file_medium"]},],
+            "layer0.tint": "var(ui-bg)",
+        },
+        {
+            "class": "tab_control",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"]},],
+            "layer0.tint": "var(ui-bg)",
+        },
+        {
+            "class": "tab_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "layer0.tint": "var(ui-bg)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
