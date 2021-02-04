@@ -7,5 +7,27 @@
 	"one_theme.show_vcs_status_badges": true,
 
 	// Show / Hide panels' close button.
-	"one_theme.show_panel_close_button": false
+	"one_theme.show_panel_close_button": false,
+
+	// // Preferences for the closest look to atom
+	// // Add to your user settings (if you wish).
+	// "always_show_minimap_viewport": true,
+	// "animation_enabled": false,
+	// "caret_extra_bottom": 2,
+	// "caret_extra_top": 1,
+	// "caret_style": "blink",
+	// "enable_tab_scrolling": false,
+	// "highlight_gutter": false,
+	// "highlight_line": true,
+	// "highlight_modified_tabs": true,
+	// "indent_guide_options": [
+	// 	"draw_normal",
+	// 	"solid"
+	// ],
+	// "line_padding_bottom": 2,
+	// "line_padding_top": 1,
+	// "margin": 0,
+	// "show_scroll_tabs_buttons": false,
+	// "show_tabs_dropdown_button": false,
+	// "show_new_tab_button": false,
 }
