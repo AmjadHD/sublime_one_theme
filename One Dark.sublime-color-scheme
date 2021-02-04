@@ -240,29 +240,9 @@
 			"font_style": "italic",
 		},
 		{
-		    "name": "markup underline",
-		    "scope": "markup.underline, markup.underline punctuation.definition.underline",
-		    "font_style": "underline"
-		},
-		{
 			"scope": "markup.bold markup.italic, markup.italic markup.bold, markup.bold_italic, markup.bold_italic punctuation.definition.bold",
 			"foreground": "var(purple)",
 			"font_style": "bold italic",
-		},
-		{
-		    "name": "markup bold/underline",
-		    "scope": "markup.underline markup.bold | markup.bold markup.underline",
-		    "font_style": "bold underline"
-		},
-		{
-		    "name": "markup italic/underline",
-		    "scope": "markup.underline markup.italic | markup.italic markup.underline",
-		    "font_style": "italic underline"
-		},
-		{
-		    "name": "markup bold/italic/underline",
-		    "scope": "markup.bold markup.italic markup.underline | markup.bold markup.underline markup.italic | markup.italic markup.bold markup.underline | markup.italic markup.underline markup.bold | markup.underline markup.bold markup.italic | markup.underline markup.italic markup.bold",
-		    "font_style": "bold italic underline"
 		},
 		{
 			"scope": "markup.list.numbered.bullet",
