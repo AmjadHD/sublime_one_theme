@@ -349,6 +349,20 @@
             "layer0.draw_center": false
         },
         {
+            "class": "text_output_control",
+            "color_scheme_tint": "var(input-bg)"
+        },
+        {
+            "class": "text_output_control",
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "color_scheme_tint": "var(input-bg-light)"
+        },
+        {
+            "class": "text_output_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "color_scheme_tint": "var(--background)"
+        },
+        {
             "class": "dropdown_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/history.png",
