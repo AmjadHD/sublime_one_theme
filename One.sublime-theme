@@ -1477,15 +1477,14 @@
         {
             "class": "status_button",
             "content_margin": [9, 4],
-            "layer0.tint": "transparent",
-            "layer0.opacity": 1.0,
-            "layer0.inner_margin": 0,
+            "layer0.opacity": 0.0,
             "min_size": [10, 22]
         },
         {
             "class": "status_button",
             "attributes": ["hover"],
             "layer0.tint": "color(var(ui-bg) l(+ 6%))",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
@@ -1497,6 +1496,7 @@
             "class": "status_button",
             "attributes": ["pressed"],
             "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
@@ -1508,8 +1508,7 @@
             "class": "sidebar_button_control",
             "content_margin": [16, 15],
             "layer0.texture": "",
-            "layer0.tint": "transparent",
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0.0,
             "layer1.texture": "Theme - One/assets/sidebar_button.png",
             "layer1.tint": "var(--foreground)",
             "layer1.opacity": 1.0,
@@ -1518,6 +1517,7 @@
             "class": "sidebar_button_control",
             "attributes": ["hover"],
             "layer0.tint": "color(var(ui-bg) l(+ 6%))",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
@@ -1529,6 +1529,7 @@
             "class": "sidebar_button_control",
             "attributes": ["pressed"],
             "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
@@ -1586,14 +1587,14 @@
         {
             "class": "tab_control",
             "content_margin": [33, 0, 7, 0],
-            "tint_index": -1,
+            "tint_index": 0,
             "layer1.tint": "var(border-color)",
             "accent_tint_index": 2,
             "layer1.inner_margin": [0, 0, 1, 1],
             "layer2.inner_margin": [2, 0, 0, 0],
             "layer1.draw_center": false,
             "layer2.draw_center": false,
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0.0,
             "layer1.opacity": 1.0,
             "layer2.opacity": 0.0,
             "max_margin_trim": 6,
@@ -1601,23 +1602,11 @@
         {
             "class": "tab_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "tab_control",
-            "parents": [{"class": "window", "attributes": ["file_medium"]},],
-            "layer0.tint": "var(ui-bg)",
-        },
-        {
-            "class": "tab_control",
-            "parents": [{"class": "window", "attributes": ["file_medium_dark"]},],
-            "layer0.tint": "var(ui-bg)",
-        },
-        {
-            "class": "tab_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},],
-            "layer0.tint": "var(ui-bg)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1629,8 +1618,7 @@
         {
             "class": "tab_control",
             "attributes": ["selected"],
-            "layer0.tint": null,
-            "tint_index": 0,
+            "layer0.opacity": 1.0,
             "layer1.inner_margin": [0, 0, 1, 0],
         },
         {
