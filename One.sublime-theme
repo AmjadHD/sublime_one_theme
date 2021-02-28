@@ -456,7 +456,7 @@
         },
         {
             "class": "quick_panel_label hint",
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
             "fg": "var(fg-subtle-light)",
             "match_fg": "var(accent-fg-light)",
             "selected_fg": "var(fg-subtle-light)",
@@ -1108,7 +1108,7 @@
         {
             "class": "icon_use_gitignore",
             "attributes": ["hover"],
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
@@ -1118,7 +1118,7 @@
         },
         {
             "class": "icon_use_gitignore",
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},
+            "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)",
         },
@@ -1730,7 +1730,7 @@
         {
             "class": "new_tab_button",
             "attributes": ["hover"],
-            "parents": [{"class": "edit_window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
