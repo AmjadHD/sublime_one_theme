@@ -492,8 +492,8 @@
         },
         {
             "class": "kind_label",
-            "parents": [{"class": "quick_panel"}],
-            "font.size": "var(font-size-lg)"
+            "parents": [{"class": "overlay_control kind_info"}],
+            "font.size": 15.0
         },
 
         ///////////////////////////// Tooltips /////////////////////////////////
