@@ -663,6 +663,7 @@
         {
             "class": "label_control",
             "color": "var(--foreground)",
+            "font.size": "var(font-size)",
         },
 
         ////////////////////////////////// Buttons /////////////////////////////
@@ -719,7 +720,7 @@
         {
             "class": "label_control",
             "parents": [{"class": "button_control"}],
-            "font.size": 13
+            "font.size": "var(font-size-lg)"
         },
         {
             "class": "label_control",
@@ -1448,12 +1449,6 @@
             "class": "status_container",
             "settings": ["!show_sidebar_button"],
             "content_margin": 0,
-        },
-        {
-            "class": "label_control",
-            "parents": [{"class": "status_bar"}],
-            "color": "var(--foreground)",
-            "font.size": "var(font-size)"
         },
         {
             "class": "vcs_branch_icon",
