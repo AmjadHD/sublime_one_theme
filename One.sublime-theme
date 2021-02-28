@@ -1073,19 +1073,6 @@
             "layer1.opacity": 1.0
         },
         {
-            "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "overlay_control"}],
-            "layer0.tint": "var(ui-bg-light)",
-            "layer1.tint": "var(border-color-light)",
-        },
-        {
-            "class": "scroll_bar_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "overlay_control"}],
-            "layer1.tint": "var(border-color-dark)",
-        },
-        {
             "class": "scroll_corner_control",
             "tint_index": 0,
             "layer0.opacity": 1.0
