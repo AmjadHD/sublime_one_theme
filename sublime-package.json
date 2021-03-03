@@ -13,7 +13,7 @@
 						"one_theme.show_vcs_status_badges": {
 							"type": "boolean",
 							"default": true,
-							"markdownDescription": ""
+							"markdownDescription": "Show / Hide VCS status badges in the Sidebar."
 						},
 						"one_theme.show_panel_close_button": {
 							"type": "boolean",
