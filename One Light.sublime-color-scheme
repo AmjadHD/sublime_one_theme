@@ -53,7 +53,6 @@
 		"tags_options": "underline",
 		"tags_foreground": "var(--accent)",
 
-		"invisibles": "var(guide)",
 		"fold_marker": "var(--foreground)",
 
 		"guide": "var(guide)",
