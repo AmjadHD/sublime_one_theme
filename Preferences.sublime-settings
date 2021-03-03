@@ -1,7 +1,7 @@
 {
 	// Controls whether views' scrollbars should be overlayed regardless of the
 	// `overlay_scroll_bars` global setting.
-	"one_theme.view_overlay_scroll_bars": true,
+	"one_theme.view_overlay_scroll_bars": false,
 
 	// Show / Hide VCS status badges in the Sidebar.
 	"one_theme.show_vcs_status_badges": true,
