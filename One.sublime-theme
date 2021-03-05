@@ -650,8 +650,7 @@
         },
         {
             "class": "panel_close_button",
-            "content_margin": [8, 8],
-            "layer0.opacity": 1.0,
+            "content_margin": 0,
             "layer0.texture": "Theme - One/assets/panel_close_button.png",
             "layer0.tint": "var(--foreground)",
         },
@@ -665,11 +664,6 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(fg-highlight-light)",
-        },
-        {
-            "class": "panel_close_button",
-            "settings": ["!one_theme.show_panel_close_button"],
-            "content_margin": 0,
         },
         {
             "class": "text_area_control",
@@ -1287,12 +1281,6 @@
             "class": "scroll_area_control",
             "settings": ["overlay_scroll_bars"],
             "overlay": true
-        },
-        {
-            "class": "scroll_area_control",
-            "settings": ["one_theme.view_overlay_scroll_bars"],
-            "parents": [{"class": "grid_layout_control",}],
-            "overlay": true,
         },
         {
             "class": "scroll_area_control",
@@ -2106,11 +2094,6 @@
             "attributes": ["unmerged"],
             "parents": [{"class": "window", "attributes": ["file_light"]},],
             "layer0.tint": "var(color-removed-light)",
-        },
-        {
-            "class": "vcs_status_badge",
-            "settings": ["!one_theme.show_vcs_status_badges"],
-            "layer0.opacity": 0.0,
         },
         {
             "class": "sidebar_label",
