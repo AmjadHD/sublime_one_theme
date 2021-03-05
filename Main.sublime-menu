@@ -7,10 +7,16 @@
 				"children": [
 					{
 						"caption": "Theme - One",
-						"command": "edit_settings",
-						"args": {
-							"base_file": "$packages/Theme - One/Preferences.sublime-settings"
-						},
+						"children": [
+							{
+								"caption": "Customize",
+								"command": "edit_settings",
+								"args": {
+									"base_file": "$packages/Theme - One/One.sublime-theme",
+									"default": "{\n\t\"variables\": {},\n\n\t\"rules\": [\n\t\t$0\n\t]\n}"
+								},								
+							}
+						],
 					}
 				],
 			}
