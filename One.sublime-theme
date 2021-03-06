@@ -1848,6 +1848,17 @@
         },
         {
             "class": "disclosure_button_control",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight)",
+        },
+        {
+            "class": "disclosure_button_control",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "disclosure_button_control",
             "attributes": ["expanded"],
             "layer0.texture": "Theme - One/assets/arrow_down.png",
         },
@@ -1910,6 +1921,17 @@
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder.png",
             "layer0.tint": "var(--foreground)"
+        },
+        {
+            "class": "icon_folder",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight)",
+        },
+        {
+            "class": "icon_folder",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_folder",
@@ -2112,6 +2134,17 @@
             "class": "sidebar_label",
             "attributes": ["transient"],
             "font.italic": true
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "color": "var(fg-highlight)",
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "color": "var(fg-highlight-light)",
         },
         {
             "class": "sidebar_label",
