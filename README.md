@@ -1,6 +1,6 @@
 # One Theme
 
-A port of Atom's One Dark and One Light UI and Syntax Themes.
+A port of Atom's One Dark and One Light UI and Syntax Themes for ST4 and ST3.2+.
 
 ![screencast](./screencast.gif)
 
@@ -31,14 +31,21 @@ Preferences for the closest look to atom, add to your user settings (if you wish
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 1,
-	"margin": 0
+	"margin": 0,
+
+	// ST4-specific
+	"highlight_gutter": false,
+	"show_scroll_tabs_buttons": false,
+	"show_tabs_dropdown_button": false,
+	"show_new_tab_button": false,
 }
 ```
 
 ## Customization
 
-See https://www.sublimetext.com/docs/themes.html#customization
-Navigate to `Preferences > Package Settings > Theme One > Customize`
+For ST4, Run `UI: Customize Theme` from the command palette,
+for ST3, navigate to `Preferences > Package Settings > Theme - One > Customize`.
+See https://www.sublimetext.com/docs/themes.html#customization.
 
 Here's a sample override:
 ```json
