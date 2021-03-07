@@ -53,6 +53,11 @@ Here's a sample override:
 	"variables": {},
 
 	"rules": [
+		// Highlight the top border of the focused tab instead of the left one
+		{
+			"class": "tab_control",
+			"layer2.inner_margin": [0, 2, 0, 0],
+		},
 		// Hide sidebar's vcs status icons
 		{
 			"class": "vcs_status_badge",
@@ -63,11 +68,6 @@ Here's a sample override:
 			"class": "panel_close_button",
 			"content_margin": 8,
 			"layer0.opacity": 1.0
-		},
-		// Highlight the top border of the focused tab instead of the left one
-		{
-			"class": "tab_control",
-			"layer2.inner_margin": [0, 2, 0, 0],
 		},
 	]
 }
