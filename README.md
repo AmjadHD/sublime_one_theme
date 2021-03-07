@@ -15,7 +15,7 @@ Make sure to disable or remove any other color scheme with the same name, namely
 
 Preferences for the closest look to atom, add to your user settings (if you wish).
 
-```jsonc
+```json
 {
 	"always_show_minimap_viewport": true,
 	"animation_enabled": false,
@@ -48,11 +48,16 @@ for ST3, navigate to `Preferences > Package Settings > Theme - One > Customize`.
 See https://www.sublimetext.com/docs/themes.html#customization.
 
 Here's a sample override:
-```jsonc
+```json
 {
 	"variables": {},
 
 	"rules": [
+		// Highlight the top border of the focused tab instead of the left one
+		{
+			"class": "tab_control",
+			"layer2.inner_margin": [0, 2, 0, 0],
+		},
 		// Hide sidebar's vcs status icons
 		{
 			"class": "vcs_status_badge",
@@ -63,11 +68,6 @@ Here's a sample override:
 			"class": "panel_close_button",
 			"content_margin": 8,
 			"layer0.opacity": 1.0
-		},
-		// Highlight the top border of the focused tab instead of the left one
-		{
-			"class": "tab_control",
-			"layer2.inner_margin": [0, 2, 0, 0],
 		},
 	]
 }
