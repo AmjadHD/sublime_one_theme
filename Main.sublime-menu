@@ -13,7 +13,7 @@
 								"command": "edit_settings",
 								"args": {
 									"base_file": "$packages/Theme - One/One.sublime-theme",
-									"default": "{\n\t\"variables\": {},\n\n\t\"rules\": [\n\t\t$0\n\t]\n}"
+									"default": "{\n\t\"variables\": {},\n\n\t\"rules\": [\n\t\t// Highlight the top border of the focused tab instead of the left one\n\t\t// {\n\t\t// \t\"class\": \"tab_control\",\n\t\t// \t\"layer2.inner_margin\": [0, 2, 0, 0],\n\t\t// },\n\t]\n}"
 								},								
 							}
 						],
