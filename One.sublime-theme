@@ -1687,7 +1687,8 @@
         },
         {
             "class": "vcs_status_badge",
-            "content_margin": 7
+            "content_margin": 7,
+            "layer0.opacity": 1.0,
         },
         {
             "class": "vcs_status_badge",
@@ -1772,6 +1773,11 @@
             "attributes": ["unmerged"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(color-removed-light)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "attributes": ["ignored"],
+            "layer0.opacity": 0.0,
         },
         {
             "class": "sidebar_label",
