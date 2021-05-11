@@ -1179,7 +1179,7 @@
         {
             "class": "fold_button_control",
             "content_margin": [8, 8],
-            "layer0.texture": "Theme - One/assets/code_folding.png",
+            "layer0.texture": "Theme - One/assets/fold_button.png",
             "layer0.tint": "color(var(fg-file-medium-dark) l(- 20%))",
             "layer0.opacity": 0.6
         },
@@ -1191,7 +1191,7 @@
         {
             "class": "fold_button_control",
             "attributes": ["expanded"],
-            "layer0.texture": "Theme - One/assets/code_folding_expanded.png",
+            "layer0.texture": "Theme - One/assets/fold_button_expanded.png",
         },
         {
             "class": "fold_button_control",
@@ -1842,7 +1842,7 @@
         {
             "class": "disclosure_button_control",
             "content_margin": [8, 8],
-            "layer0.texture": "Theme - One/assets/arrow_right.png",
+            "layer0.texture": "Theme - One/assets/disclosure_button.png",
             "layer0.tint": "var(--foreground)",
             "layer0.opacity": 1.0,
         },
@@ -1860,7 +1860,7 @@
         {
             "class": "disclosure_button_control",
             "attributes": ["expanded"],
-            "layer0.texture": "Theme - One/assets/arrow_down.png",
+            "layer0.texture": "Theme - One/assets/disclosure_button_expanded.png",
         },
         {
             "class": "tree_row",
