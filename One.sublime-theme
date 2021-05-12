@@ -1865,7 +1865,11 @@
         {
             "class": "tree_row",
             "layer0.tint": "var(bg-selected)",
+            "layer1.tint": "var(--accent)",
+            "layer1.inner_margin": [2, 0, 0, 0],
+            "layer1.draw_center": false,
             "layer0.opacity": 0.0,
+            "layer1.opacity": 0.0,
         },
         {
             "class": "tree_row",
@@ -1876,6 +1880,11 @@
             "class": "tree_row",
             "attributes": ["selected"],
             "layer0.opacity": 1.0
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["highlighted"],
+            "layer1.opacity": 1.0,
         },
         {
             "class": "close_button",
