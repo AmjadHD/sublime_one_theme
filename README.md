@@ -1,6 +1,7 @@
 # One Theme
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/AmjadHD/sublime_one_theme) ![Package Control](https://img.shields.io/packagecontrol/dt/Theme%20-%20One)
 
-A port of Atom's One Dark and One Light UI and Syntax Themes for ST4 and ST3.2+.
+🎨 A port of Atom's One Dark and One Light UI and Syntax Themes for ST4 and ST3.2+ ⚡.
 
 ![screenshot](./one.png)
 
