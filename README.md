@@ -2,7 +2,7 @@
 
 A port of Atom's One Dark and One Light UI and Syntax Themes for ST4 and ST3.2+.
 
-![screencast](./screencast.gif)
+![screenshot](./one.png)
 
 The package includes two color schemes `One Dark` and `One Light` in addition to an adaptive Theme.
 Make sure to disable or remove any other color scheme with the same name, namely https://packagecontrol.io/packages/One%20Dark%20Color%20Scheme.
