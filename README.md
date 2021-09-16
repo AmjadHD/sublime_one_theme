@@ -49,6 +49,7 @@ for ST3, navigate to `Preferences > Package Settings > Theme - One > Customize`.
 See https://www.sublimetext.com/docs/themes.html#customization.
 
 Here's a sample override:
+
 ```json
 {
 	"variables": {},
