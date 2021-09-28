@@ -447,7 +447,8 @@
 
         {
             "class": "button_control",
-            "min_size": [85, 29],
+            "content_margin": [9, 4],
+            "min_size": [68, 22],
             "layer0.texture": "Theme - One/assets/button.png",
             "layer0.tint": "var(button-bg)",
             "layer0.opacity": 1.0,
