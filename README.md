@@ -66,13 +66,22 @@ See https://www.sublimetext.com/docs/themes.html#customization.
 Here's a sample override:
 ```json
 {
-	"variables": {},
+	"variables": {
+		// darker borders with medium-dark color schemes
+		"border-color": "color(var(ui-bg) l(- 8%))",
+	},
 
 	"rules": [
 		// Highlight the top border of the focused tab instead of the left one
 		{
 			"class": "tab_control",
 			"layer2.inner_margin": [0, 2, 0, 0],
+		},
+		// ST4: Match the color of the tab connector to that of the tab
+		{
+			"class": "tab_connector",
+			"tint_index": 0,
+			"layer0.opacity": 0.0,
 		},
 		// Hide sidebar's vcs status icons
 		{
