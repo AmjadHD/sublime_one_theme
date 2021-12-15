@@ -42,6 +42,22 @@ Preferences for the closest look to atom, add to your user settings (if you wish
 }
 ```
 
+ST4 introduced auto dark/light mode switching,
+run `UI: Select Theme` and `UI: Select Color Scheme`, choose `auto` and proceed.
+Or add these to your user settings:
+
+```json
+{
+	"theme": "auto",
+	"dark_theme": "One.sublime-theme",
+	"light_theme": "One.sublime-theme",
+
+	"color_scheme": "auto",
+	"dark_color_scheme": "One Dark.sublime-color-scheme",
+	"light_color_scheme": "One Light.sublime-color-scheme",
+}
+```
+
 ## Customization
 
 For ST4, Run `UI: Customize Theme` from the command palette,
