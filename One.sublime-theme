@@ -744,6 +744,12 @@
             "layer0.tint": "var(button-bg-pressed-light)",
         },
         {
+            "class": "button_control",
+            "attributes": ["disabled"],
+            "layer0.opacity": 0.65,
+            "layer1.opacity": 0.65,
+        },
+        {
             "class": "label_control",
             "parents": [{"class": "button_control"}],
             "font.size": "var(font-size-lg)"
@@ -758,6 +764,11 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "button_control", "attributes": ["hover"]}],
             "color": "var(fg-highlight-light)"
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "button_control", "attributes": ["disabled"]}],
+            "opacity": 0.65,
         },
         {
             "class": "icon_button_control",
