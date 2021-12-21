@@ -81,7 +81,6 @@ Here's a sample override:
 		{
 			"class": "tab_connector",
 			"tint_index": 0,
-			"layer0.opacity": 0.0,
 		},
 		// Hide sidebar's vcs status icons
 		{
