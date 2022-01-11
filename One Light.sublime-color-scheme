@@ -62,7 +62,7 @@
 		"rulers": "var(guide)",
 
 		"gutter_foreground": "color(var(--background) a(0.6) l(- 36%))",
-		"gutter_foreground_highlight": "color(var(--foreground) a(0.6))",
+		"gutter_foreground_highlight": "rgb(133, 134, 139)",
 
 		"find_highlight_foreground": "var(--foreground)",
 		"find_highlight": "color(var(--accent) a(20%))",
