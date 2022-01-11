@@ -42,8 +42,9 @@
 		"caret": "var(--accent)",
 		"line_highlight": "color(var(--foreground) a(5%))",
 		"selection": "var(selection)",
-		"inactive_selection": "color(var(selection) a(- 25%))",
+		"inactive_selection": "color(var(selection) l(- 4%))",
 		"selection_border": "var(selection)",
+		"inactive_selection_border": "color(var(selection) l(- 4%))",
 		"selection_corner_style": "square",
 
 		"misspelling": "rgba(255, 51, 51, 0.75)",
