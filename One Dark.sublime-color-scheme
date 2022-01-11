@@ -43,8 +43,9 @@
 		"caret": "var(--accent)",
 		"line_highlight": "hsla(220, 100%,  80%, .04)",
 		"selection": "var(selection)",
-		"inactive_selection": "color(var(selection) a(- 15%))",
+		"inactive_selection": "color(var(selection) l(- 2%))",
 		"selection_border": "var(selection)",
+		"inactive_selection_border": "color(var(selection) l(- 2%))",
 		"selection_corner_style": "square",
 
 		"misspelling": "rgba(255, 51, 51, 0.75)",
