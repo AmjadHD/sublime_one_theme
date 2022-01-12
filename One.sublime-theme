@@ -47,8 +47,6 @@
         "border-color-light": "color(var(ui-bg-light) l(- 6%))",
         "border-color-dark": "color(var(ui-bg) l(+ 10%))",
 
-        "overlay-border-color-light": "color(var(border-color-light) l(- 14%))",
-        "overlay-border-color-dark": "color(var(border-color-dark) l(+ 10%))",
 
         "scrollbar-color": "color(var(--background) l(+ 16%))",
         "scrollbar-color-light": "color(var(ui-bg-light) l(- 14%))",
@@ -335,12 +333,12 @@
             "class": "overlay_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer1.tint": "var(overlay-bg-light)",
-            "layer2.tint": "var(overlay-border-color-light)",
+            "layer2.tint": "var(border-color-light)",
         },
         {
             "class": "overlay_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer2.tint": "var(overlay-border-color-dark)",
+            "layer2.tint": "var(border-color-dark)",
         },
         {
             "class": "mini_quick_panel_row",
@@ -355,12 +353,12 @@
             "class": "mini_quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(overlay-row-bg-light)",
-            "layer1.tint": "var(overlay-border-color-light)",
+            "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "mini_quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer1.tint": "var(overlay-border-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "mini_quick_panel_row",
@@ -409,12 +407,12 @@
             "class": "quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(overlay-row-bg-light)",
-            "layer1.tint": "var(overlay-border-color-light)",
+            "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer1.tint": "var(overlay-border-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "quick_panel_row",
@@ -501,13 +499,13 @@
             "class": "kind_container",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control kind_info"}],
-            "layer1.tint": "var(overlay-border-color-light)",
+            "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "kind_container",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "overlay_control kind_info"}],
-            "layer1.tint": "var(overlay-border-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "kind_label",
@@ -562,18 +560,6 @@
             "class": "text_line_control",
             "parents": [{"class": "overlay_control"}],
             "layer0.draw_center": false
-        },
-        {
-            "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "overlay_control"}],
-            "layer1.tint": "var(overlay-border-color-light)",
-        },
-        {
-            "class": "text_line_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "overlay_control"}],
-            "layer1.tint": "var(overlay-border-color-dark)"
         },
         {
             "class": "text_area_control",
@@ -1348,13 +1334,13 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control"}],
             "layer0.tint": "var(ui-bg-light)",
-            "layer1.tint": "var(overlay-border-color-light)",
+            "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
-            "layer1.tint": "var(overlay-border-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "scroll_bar_control",
