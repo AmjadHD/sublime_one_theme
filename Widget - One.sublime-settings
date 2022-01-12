@@ -3,5 +3,6 @@
 	"line_padding_top": 4,
 	"line_padding_bottom": 5,
 	"caret_extra_top": 4,
-	"caret_extra_bottom": 6
+	"caret_extra_bottom": 6,
+	"draw_shadows": false,
 }
