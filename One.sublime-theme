@@ -96,12 +96,21 @@
         /////////////////////// Autocomplete /////////////////////
 
         {
+            "class": "popup_shadow",
+            "settings": ["popup_shadows"],
+            "content_margin": [9, 7, 9, 11],
+            "layer0.texture": "Theme - One/assets/popup_shadow.png",
+            "layer0.inner_margin": [11, 7, 11, 14],
+            "layer0.draw_center": false,
+        },
+        {
             "class": "popup_control",
+            "settings": ["!popup_shadows"],
             "content_margin": [1, 1],
             "layer0.tint": "black",
             "layer0.inner_margin": [1, 1],
             "layer0.draw_center": false,
-            "layer0.opacity": 0.4,
+            "layer0.opacity": 0.3,
         },
         {
             "class": "auto_complete",
