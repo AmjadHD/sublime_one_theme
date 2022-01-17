@@ -43,12 +43,18 @@
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
         "button-bg-pressed-light": "color(var(button-bg-light) l(- 4%))",
-        "button-bg-selected": "var(--accent)",
+        "button-bg-selected": "var(accent-bg)",
+        "button-bg-selected-light": "var(accent-bg-light)",
 
         "button-fg-selected": "color(var(fg) min-contrast(var(button-bg-selected) 4.5))",
         "button-fg-selected-light": "color(var(fg-light) min-contrast(var(button-bg-selected-light) 4.5))",
         "accent-fg": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
         "accent-fg-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
+        "accent-bg": "color(var(--accent) s(* 55%) l(* 83%))", // hsl(220, 55%, 55%)
+        "accent-bg-light": "color(var(--accent) s(* 83%) l(* 97%))", // hsl(230, 83%, 64%)
+
+        "text-match-fg": "color(var(--accent) s(* 83%) l(* 106%))", // hsl(220, 83%, 70%)
+        "text-match-fg-light": "color(var(--accent) s(* 75%) l(* 82%))", // hsl(230, 75%, 54%)
 
         "overlay-bg": "color(var(base-background-color) blend(var(app-background-color) 50%))",
         "overlay-bg-light": "color(var(base-background-color) blend(var(app-background-color-light) 50%))",
@@ -316,7 +322,7 @@
         {
             "class": "auto_complete_kind_name_label",
             "font.size": "0.9rem",
-            "border_color": "color(var(--accent) a(0.8))",
+            "border_color": "color(var(accent-fg) a(0.8))",
             "font.italic": false,
         },
         {
@@ -454,15 +460,15 @@
         {
             "class": "quick_panel_label",
             "fg": "var(fg)",
-            "match_fg": "var(accent-fg)",
+            "match_fg": "var(text-match-fg)",
             "selected_fg": "var(fg)",
-            "selected_match_fg": "var(accent-fg)"
+            "selected_match_fg": "var(text-match-fg)"
         },
         {
             "class": "quick_panel_label",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "match_fg": "var(accent-fg-light)",
-            "selected_match_fg": "var(accent-fg-light)",
+            "match_fg": "var(text-match-fg-light)",
+            "selected_match_fg": "var(text-match-fg-light)",
             "fg": "var(fg-light)",
             "selected_fg": "var(fg-light)",
         },
@@ -474,32 +480,32 @@
             "class": "quick_panel_label hint",
             "font.size": "var(font-size-sm)",
             "fg": "var(fg-subtle)",
-            "match_fg": "var(accent-fg)",
+            "match_fg": "var(text-match-fg)",
             "selected_fg": "var(fg-subtle)",
-            "selected_match_fg": "var(accent-fg)"
+            "selected_match_fg": "var(text-match-fg)",
         },
         {
             "class": "quick_panel_label hint",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "fg": "var(fg-subtle-light)",
-            "match_fg": "var(accent-fg-light)",
+            "match_fg": "var(text-match-fg-light)",
             "selected_fg": "var(fg-subtle-light)",
-            "selected_match_fg": "var(accent-fg-light)"
+            "selected_match_fg": "var(text-match-fg-light)",
         },
         {
             "class": "quick_panel_path_label",
             "fg": "var(fg-subtle)",
-            "match_fg": "var(accent-fg)",
+            "match_fg": "var(text-match-fg)",
             "selected_fg": "var(fg-subtle)",
-            "selected_match_fg": "var(accent-fg)"
+            "selected_match_fg": "var(text-match-fg)"
         },
         {
             "class": "quick_panel_path_label",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "fg": "var(fg-subtle-light)",
-            "match_fg": "var(accent-fg-light)",
+            "match_fg": "var(text-match-fg-light)",
             "selected_fg": "var(fg-subtle-light)",
-            "selected_match_fg": "var(accent-fg-light)"
+            "selected_match_fg": "var(text-match-fg-light)"
         },
         {
             "class": "quick_panel_detail_label",
@@ -542,13 +548,13 @@
             "class": "tool_tip_control",
             "content_margin": [10, 8],
             "layer0.texture": "Theme - One/assets/tooltip.png",
-            "layer0.tint": "var(--accent)",
+            "layer0.tint": "var(accent-bg)",
             "layer0.inner_margin": [3, 3],
             "layer0.opacity": 1.0
         },
         {
             "class": "tool_tip_label_control",
-            "color": "white",
+            "color": "var(button-fg-selected)",
             "font.size": "var(font-size-lg)",
         },
 
@@ -744,13 +750,14 @@
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_pressed.png",
             "layer1.inner_margin": 4,
-            "layer1.tint": "var(--accent)",
+            "layer1.tint": "var(accent-fg)",
         },
         {
             "class": "button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
+            "layer1.tint": "var(accent-fg-light)",
         },
         {
             "class": "button_control",
@@ -819,13 +826,14 @@
             "attributes": ["pressed"],
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_middle_pressed.png",
-            "layer1.tint": "var(--accent)",
+            "layer1.tint": "var(accent-fg)",
         },
         {
             "class": "icon_button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
+            "layer1.tint": "var(accent-fg-light)",
         },
         {
             "class": "icon_button_control",
@@ -1593,7 +1601,7 @@
         },
         {
             "class": "tab_connector",
-            "layer0.tint": "var(--accent)",
+            "layer0.tint": "var(accent-fg)",
             "layer0.opacity": 0.0,
         },
         {
@@ -1886,7 +1894,7 @@
         {
             "class": "tree_row",
             "layer0.tint": "var(bg-selected)",
-            "layer1.tint": "var(--accent)",
+            "layer1.tint": "var(accent-fg)",
             "layer1.inner_margin": [2, 0, 0, 0],
             "layer1.draw_center": false,
             "layer0.opacity": 0.0,
@@ -1896,6 +1904,7 @@
             "class": "tree_row",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(bg-selected-light)",
+            "layer1.tint": "var(accent-fg-light)",
         },
         {
             "class": "tree_row",
@@ -1929,7 +1938,7 @@
             "class": "close_button",
             "attributes": ["dirty"],
             "layer0.texture": "Theme - One/assets/open_files_dirty.png",
-            "layer0.tint": "var(--accent)",
+            "layer0.tint": "var(accent-fg)",
         },
         {
             "class": "close_button",
