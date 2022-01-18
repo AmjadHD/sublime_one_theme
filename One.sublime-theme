@@ -7,47 +7,61 @@
         "base-background-color": "var(--background)",
         "base-background-color-dark": "color(var(--background) l(+ 8%))",
         "fg": "color(var(base-background-color) l(66%))",
+        "fg-dark": "color(var(base-background-color-dark) l(66%))",
         "fg-light": "color(var(base-background-color) l(- 72%))",
 
         // @level-3-color
         "app-background-color": "color(var(base-background-color) l(- 3%))",
+        "app-background-color-dark": "color(var(base-background-color-dark) l(- 3%))",
         "app-background-color-light": "color(var(base-background-color) l(- 6%))",
         // @level-3-color-hover
         "app-background-color-hover": "color(var(app-background-color) l(+ 6%))",
+        "app-background-color-hover-dark": "color(var(app-background-color-dark) l(+ 6%))",
         "app-background-color-hover-light": "color(var(app-background-color-light) l(- 6%))",
         // @level-3-color-active
         "app-background-color-active": "color(var(app-background-color) l(+ 3%))",
+        "app-background-color-active-dark": "color(var(app-background-color-dark) l(+ 3%))",
         "app-background-color-active-light": "color(var(app-background-color-light) l(- 3%))",
 
         "fg-file-light":  "#666",
         "fg-file-medium-dark": "hsl(220,  14%,  71%)",
 
         "fg-subtle":    "color(var(fg) a(- 40%))",
+        "fg-subtle-dark":    "color(var(fg-dark) a(- 40%))",
         "fg-subtle-light":    "color(var(fg-light) l(+ 30%))",
         "fg-highlight": "color(var(fg) l(+ 20%))",
+        "fg-highlight-dark": "color(var(fg-dark) l(+ 20%))",
         "fg-highlight-light": "color(var(fg-light) l(- 12%))",
         "fg-selected":  "white",
         "fg-selected-light":  "color(var(fg-highlight-light) l(- 12%))",
 
         "bg-highlight": "color(var(base-background-color) l(+ 4%))",
+        "bg-highlight-dark": "color(var(base-background-color-dark) l(+ 4%))",
         "bg-highlight-light": "color(var(app-background-color-light) l(- 2%))",
         "bg-selected":  "color(var(base-background-color) l(+ 8%))",
+        "bg-selected-dark":  "color(var(base-background-color-dark) l(+ 8%))",
         "bg-selected-light":  "color(var(app-background-color-light) l(- 6%))",
 
         "input-bg": "color(var(base-background-color) l(- 6%))",
+        "input-bg-dark": "color(var(base-background-color-dark) l(- 6%))",
         "input-bg-light": "var(button-bg-light)",
 
         "button-bg": "color(var(base-background-color) l(+ 6%))",
+        "button-bg-dark": "color(var(base-background-color-dark) l(+ 6%))",
         "button-bg-light": "color(var(base-background-color) l(+ 4%))",
         "button-bg-hover":    "color(var(button-bg) l(+ 2%))",
+        "button-bg-hover-dark":    "color(var(button-bg-dark) l(+ 2%))",
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
+        "button-bg-pressed-dark": "color(var(button-bg-dark) l(- 4%))",
         "button-bg-pressed-light": "color(var(button-bg-light) l(- 4%))",
         "button-bg-selected": "var(accent-bg)",
         "button-bg-selected-light": "var(accent-bg-light)",
 
         "button-fg-selected": "color(var(fg) min-contrast(var(button-bg-selected) 4.5))",
         "button-fg-selected-light": "color(var(fg-light) min-contrast(var(button-bg-selected-light) 4.5))",
+        "button-fg-selected-dark": "color(var(fg-dark) min-contrast(var(button-bg-selected) 4.5))",
+
         "accent-fg": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
         "accent-fg-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
         "accent-bg": "color(var(--accent) s(* 55%) l(* 83%))", // hsl(220, 55%, 55%)
@@ -57,8 +71,10 @@
         "text-match-fg-light": "color(var(--accent) s(* 75%) l(* 82%))", // hsl(230, 75%, 54%)
 
         "overlay-bg": "color(var(base-background-color) blend(var(app-background-color) 50%))",
+        "overlay-bg-dark": "color(var(base-background-color-dark) blend(var(app-background-color-dark) 50%))",
         "overlay-bg-light": "color(var(base-background-color) blend(var(app-background-color-light) 50%))",
         "overlay-row-bg": "color(var(overlay-bg) l(+ 2%))",
+        "overlay-row-bg-dark": "color(var(overlay-bg-dark) l(+ 2%))",
         "overlay-row-bg-light": "color(var(overlay-bg-light) l(+ 2%))",
 
         "border-color": "color(var(base-background-color) l(* 60%))",
@@ -88,7 +104,7 @@
         {
             "class": "title_bar",
             "attributes": ["file_dark"],
-            "bg": "color(var(app-background-color) l(+ 4%))",
+            "bg": "color(var(app-background-color-dark) l(+ 4%))",
         },
         {
             "class": "title_bar",
@@ -195,6 +211,7 @@
         {
             "class": "overlay_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer1.tint": "var(overlay-bg-dark)",
             "layer2.tint": "var(border-color-dark)",
         },
         {
@@ -215,6 +232,7 @@
         {
             "class": "mini_quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(overlay-row-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -227,6 +245,12 @@
             "attributes": ["selected"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(bg-selected-light)",
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["selected"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(bg-selected-dark)",
         },
         {
             "class": "mini_quick_panel_row",
@@ -252,6 +276,11 @@
             "dark_content": false
         },
         {
+            "class": "quick_panel",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(overlay-bg-dark)",
+        },
+        {
             "class": "quick_panel_row",
             "layer0.tint": "var(overlay-row-bg)",
             "layer1.tint": "var(border-color)",
@@ -269,6 +298,7 @@
         {
             "class": "quick_panel_row",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(overlay-row-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -281,6 +311,12 @@
             "attributes": ["selected"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(bg-selected-light)",
+        },
+        {
+            "class": "quick_panel_row",
+            "attributes": ["selected"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(bg-selected-dark)",
         },
         {
             "class": "quick_panel_row",
@@ -333,6 +369,11 @@
             "color": "var(button-fg-selected)",
             "font.size": "var(font-size-lg)",
         },
+        {
+            "class": "tool_tip_label_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "color": "var(button-fg-selected-dark)",
+        },
 
         //////////////////////////// Inputs ////////////////////////////////////
         
@@ -360,8 +401,8 @@
         {
             "class": "text_line_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "color_scheme_tint": "var(--background)",
-            "layer0.tint": "var(--background)",
+            "color_scheme_tint": "var(input-bg-dark)",
+            "layer0.tint": "var(input-bg-dark)",
             "layer1.tint": "var(border-color-dark)"
         },
         {
@@ -381,7 +422,7 @@
         {
             "class": "text_output_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "color_scheme_tint": "var(--background)"
+            "color_scheme_tint": "var(input-bg-dark)"
         },
         {
             "class": "dropdown_button_control",
@@ -389,6 +430,11 @@
             "layer0.texture": "Theme - One/icons/history.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "dropdown_button_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "dropdown_button_control",
@@ -400,6 +446,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "dropdown_button_control",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
 
         ////////////////////////////////// Panels //////////////////////////////
@@ -423,6 +475,7 @@
         {
             "class": "panel_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -447,6 +500,11 @@
         },
         {
             "class": "panel_close_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "panel_close_button",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)",
         },
@@ -456,12 +514,23 @@
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
         },
+        {
+            "class": "panel_close_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "layer0.tint": "var(fg-highlight-dark)",
+        },
 
         /////////////////////////// Default label //////////////////////////////
 
         {
             "class": "label_control",
             "color": "var(fg)",
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "color": "var(fg-dark)",
         },
 
         ////////////////////////////////// Buttons /////////////////////////////
@@ -489,6 +558,7 @@
         {
             "class": "button_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -504,7 +574,12 @@
         },
         {
             "class": "button_control",
-            "attributes": ["pressed"],
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-hover-dark)",
+        },
+        {
+            "class": "button_control",
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_pressed.png",
             "layer1.inner_margin": 4,
@@ -516,6 +591,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
             "layer1.tint": "var(accent-fg-light)",
+        },
+        {
+            "class": "button_control",
+            "attributes": ["pressed"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-pressed-dark)",
         },
         {
             "class": "label_control",
@@ -532,6 +613,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "button_control", "attributes": ["hover"]}],
             "color": "var(fg-highlight-light)"
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "button_control", "attributes": ["hover"]}],
+            "color": "var(fg-highlight-dark)"
         },
         {
             "class": "icon_button_control",
@@ -555,6 +642,7 @@
         {
             "class": "icon_button_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -570,6 +658,12 @@
         },
         {
             "class": "icon_button_control",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-hover-dark)",
+        },
+        {
+            "class": "icon_button_control",
             "attributes": ["pressed"],
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_middle_pressed.png",
@@ -581,6 +675,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
             "layer1.tint": "var(accent-fg-light)",
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["pressed"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(button-bg-pressed-dark)",
         },
         {
             "class": "icon_button_control",
@@ -641,6 +741,11 @@
         },
         {
             "class": "icon_regex",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "icon_regex",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)"
         },
@@ -652,6 +757,12 @@
         },
         {
             "class": "icon_regex",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
+        },
+        {
+            "class": "icon_regex",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected)"
         },
@@ -660,6 +771,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
+        },
+        {
+            "class": "icon_regex",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
         },
         {
             "class": "icon_case",
@@ -670,6 +787,11 @@
         },
         {
             "class": "icon_case",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "icon_case",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)"
         },
@@ -678,6 +800,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)"
+        },
+        {
+            "class": "icon_case",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
         },
         {
             "class": "icon_case",
@@ -691,11 +819,22 @@
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
+            "class": "icon_case",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
+        },
+        {
             "class": "icon_highlight",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "icon_highlight",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_highlight",
@@ -707,6 +846,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)"
+        },
+        {
+            "class": "icon_highlight",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
         },
         {
             "class": "icon_highlight",
@@ -721,11 +866,22 @@
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
+            "class": "icon_highlight",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
+        },
+        {
             "class": "icon_in_selection",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_in_selection.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "icon_in_selection",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_in_selection",
@@ -740,6 +896,12 @@
         },
         {
             "class": "icon_in_selection",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
+        },
+        {
+            "class": "icon_in_selection",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected)"
         },
@@ -750,11 +912,22 @@
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
+            "class": "icon_in_selection",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
+        },
+        {
             "class": "icon_whole_word",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_whole_word.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "icon_whole_word",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_whole_word",
@@ -769,6 +942,12 @@
         },
         {
             "class": "icon_whole_word",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
+        },
+        {
+            "class": "icon_whole_word",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected)"
         },
@@ -777,6 +956,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected-light)"
+        },
+        {
+            "class": "icon_whole_word",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
         },
         {
             "class": "icon_wrap",
@@ -787,6 +972,11 @@
         },
         {
             "class": "icon_wrap",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "icon_wrap",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)"
         },
@@ -795,6 +985,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)"
+        },
+        {
+            "class": "icon_wrap",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
         },
         {
             "class": "icon_wrap",
@@ -808,11 +1004,22 @@
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
+            "class": "icon_wrap",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
+        },
+        {
             "class": "icon_preserve_case",
             "content_margin": [17, 14],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/icons/icon_preserve_case.png",
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "icon_preserve_case",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_preserve_case",
@@ -824,6 +1031,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)"
+        },
+        {
+            "class": "icon_preserve_case",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
         },
         {
             "class": "icon_preserve_case",
@@ -838,11 +1051,22 @@
             "layer0.tint": "var(button-fg-selected-light)",
         },
         {
+            "class": "icon_preserve_case",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)",
+        },
+        {
             "class": "icon_context",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_context.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)",
+        },
+        {
+            "class": "icon_context",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_context",
@@ -857,6 +1081,12 @@
         },
         {
             "class": "icon_context",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)"
+        },
+        {
+            "class": "icon_context",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.tint": "var(button-fg-selected)"
         },
@@ -867,11 +1097,22 @@
             "layer0.tint": "var(button-fg-selected-light)"
         },
         {
+            "class": "icon_context",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(button-fg-selected-dark)"
+        },
+        {
             "class": "icon_use_buffer",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_use_buffer.png",
             "layer0.opacity": 1.0,
             "layer0.tint": "var(fg)",
+        },
+        {
+            "class": "icon_use_buffer",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_use_buffer",
@@ -883,6 +1124,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "icon_use_buffer",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_use_buffer",
@@ -979,7 +1226,7 @@
         {
             "class": "progress_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(--background)",
+            "layer0.tint": "var(input-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1040,6 +1287,12 @@
         },
         {
             "class": "scroll_bar_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "sidebar_container"}],
+            "layer0.tint": "var(app-background-color-dark)",
+        },
+        {
+            "class": "scroll_bar_control",
             "parents": [{"class": "dialog"}],
             "layer0.tint": "var(app-background-color)",
         },
@@ -1048,6 +1301,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"},],
             "layer0.tint": "var(app-background-color-light)",
+        },
+        {
+            "class": "scroll_bar_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "dialog"},],
+            "layer0.tint": "var(app-background-color-dark)",
         },
         {
             "class": "scroll_bar_control",
@@ -1072,6 +1331,7 @@
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
             "layer1.tint": "var(border-color-dark)",
+            "layer0.tint": "var(app-background-color-dark)",
         },
         {
             "class": "scroll_bar_control",
@@ -1083,6 +1343,12 @@
             "layer1.draw_center": false,
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0
+        },
+        {
+            "class": "scroll_bar_control",
+            "parents": [{"class": "switch_project_window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "scroll_corner_control",
@@ -1102,6 +1368,12 @@
         },
         {
             "class": "scroll_corner_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "sidebar_container"}],
+            "layer0.tint": "var(app-background-color-dark)",
+        },
+        {
+            "class": "scroll_corner_control",
             "parents": [{"class": "dialog"},],
             "layer0.tint": "var(app-background-color)",
         },
@@ -1110,6 +1382,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"}],
             "layer0.tint": "var(app-background-color-light)",
+        },
+        {
+            "class": "scroll_corner_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "dialog"}],
+            "layer0.tint": "var(app-background-color-dark)",
         },
         {
             "class": "puck_control",
@@ -1131,6 +1409,11 @@
             "class": "puck_control",
             "attributes": ["!dark"],
             "tint_modifier": [0, 0, 0, 0.3],
+        },
+        {
+            "class": "puck_control",
+            "attributes": ["file_dark"],
+            "tint_modifier": "rgba(71, 95, 127, 0.5)",
         },
         {
             "class": "puck_control",
@@ -1187,6 +1470,7 @@
         {
             "class": "status_bar",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1206,6 +1490,11 @@
             "content_margin": [8, 8],
         },
         {
+            "class": "vcs_branch_icon",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
             "class": "status_button",
             "content_margin": [9, 4],
             "layer0.opacity": 0.0,
@@ -1222,6 +1511,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
             "layer0.tint": "var(app-background-color-hover-light)",
+        },
+        {
+            "class": "status_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-hover-dark)",
         },
         {
             "class": "status_button",
@@ -1268,6 +1563,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(app-background-color-active-light)",
         },
+        {
+            "class": "sidebar_button_control",
+            "attributes": ["pressed"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-active-dark)",
+        },
 
         //////////////////////////// Tabs //////////////////////////////////////
 
@@ -1292,6 +1593,7 @@
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1341,6 +1643,11 @@
             "class": "tab_label",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "color": "var(fg-subtle-light)",
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "color": "var(fg-subtle-dark)",
         },
         {
             "class": "tab_label",
@@ -1423,6 +1730,11 @@
         },
         {
             "class": "show_tabs_dropdown_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "show_tabs_dropdown_button",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)",
         },
@@ -1433,11 +1745,22 @@
             "layer0.tint": "var(fg-highlight-light)",
         },
         {
+            "class": "show_tabs_dropdown_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
+        },
+        {
             "class": "scroll_tabs_left_button",
             "content_margin": [8, 5],
             "layer0.tint": "var(fg)",
             "layer0.texture": "Theme - One/assets/tab_scroll_left.png",
             "layer0.opacity": 1.0,
+        },
+        {
+            "class": "scroll_tabs_left_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "scroll_tabs_left_button",
@@ -1449,6 +1772,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "scroll_tabs_left_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "scroll_tabs_left_button",
@@ -1464,6 +1793,11 @@
         },
         {
             "class": "scroll_tabs_right_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "scroll_tabs_right_button",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)",
         },
@@ -1472,6 +1806,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "scroll_tabs_right_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "scroll_tabs_right_button",
@@ -1498,6 +1838,11 @@
             "dark_content": false,
         },
         {
+            "class": "sidebar_tree",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(app-background-color-dark)",
+        },
+        {
             "class": "sidebar_container",
             "content_margin": [0, 0, 1, 0],
             "layer0.tint": "var(border-color)",
@@ -1520,11 +1865,21 @@
             "font.size": "var(font-size)"
         },
         {
+            "class": "sidebar_heading",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "color": "var(fg-dark)",
+        },
+        {
             "class": "disclosure_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/disclosure_button.png",
             "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
+        },
+        {
+            "class": "disclosure_button_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "disclosure_button_control",
@@ -1536,6 +1891,12 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "tree_row", "attributes": ["selected"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "disclosure_button_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "disclosure_button_control",
@@ -1555,6 +1916,11 @@
         },
         {
             "class": "tree_row",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(bg-selected-dark)",
+        },
+        {
+            "class": "tree_row",
             "attributes": ["selected"],
             "layer0.opacity": 1.0
         },
@@ -1567,6 +1933,11 @@
         },
         {
             "class": "close_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
+            "class": "close_button",
             "attributes": ["hover"],
             "layer0.tint": "var(fg-highlight)",
         },
@@ -1575,6 +1946,12 @@
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "close_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "close_button",
@@ -1598,10 +1975,20 @@
             "layer0.tint": "var(fg)",
         },
         {
+            "class": "icon_file_type",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
             "class": "icon_folder",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder.png",
             "layer0.tint": "var(fg)"
+        },
+        {
+            "class": "icon_folder",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "icon_folder",
@@ -1616,8 +2003,20 @@
         },
         {
             "class": "icon_folder",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
+        },
+        {
+            "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
             "layer0.tint": "var(fg-subtle)"
+        },
+        {
+            "class": "icon_folder",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "file_system_entry", "attributes": ["ignored"]}],
+            "layer0.tint": "var(fg-subtle-dark)",
         },
         {
             "class": "icon_folder",
@@ -1704,11 +2103,21 @@
             "layer0.opacity": 1.0,
         },
         {
+            "class": "icon_folder_loading",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
+        },
+        {
             "class": "icon_folder_dup",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder_dup.png",
             "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
+        },
+        {
+            "class": "icon_folder_dup",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(fg-dark)",
         },
         {
             "class": "vcs_status_badge",
@@ -1813,6 +2222,11 @@
         },
         {
             "class": "sidebar_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "color": "var(fg-dark)",
+        },
+        {
+            "class": "sidebar_label",
             "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
             "settings": ["bold_folder_labels"],
             "font.bold": true
@@ -1835,8 +2249,20 @@
         },
         {
             "class": "sidebar_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "color": "var(fg-highlight-dark)",
+        },
+        {
+            "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
             "color": "var(fg-subtle)"
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "file_system_entry", "attributes": ["ignored"]}],
+            "color": "var(fg-subtle-dark)",
         },
         {
             "class": "sidebar_label",
