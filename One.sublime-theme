@@ -97,23 +97,25 @@
 
         {
             "class": "title_bar",
-            "settings": ["themed_title_bar"],
             "fg": "var(fg)",
             "bg": "color(var(app-background-color) l(+ 2%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_dark"],
+            "fg": "var(fg-dark)",
             "bg": "color(var(app-background-color-dark) l(+ 4%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_medium"],
+            "fg": "var(fg)",
             "bg": "color(var(app-background-color-light) l(- 3%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
+            "fg": "var(fg-light)",
             "bg": "color(var(app-background-color-light) l(- 6%))",
         },
 
