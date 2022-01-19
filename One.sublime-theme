@@ -98,33 +98,40 @@
 
         {
             "class": "title_bar",
-            "settings": ["themed_title_bar"],
-            "fg": "var(fg)",
-            "bg": "color(var(app-background-color) l(+ 2%))",
-            "style": "system"
-        },
-        {
-            "class": "title_bar",
-            "attributes": ["file_dark"],
-            "bg": "color(var(app-background-color-dark) l(+ 4%))",
-            "style": "dark"
-        },
-        {
-            "class": "title_bar",
-            "attributes": ["file_medium_dark"],
-            "style": "dark"
-        },
-        {
-            "class": "title_bar",
-            "attributes": ["file_medium"],
-            "bg": "color(var(app-background-color-light) l(- 3%))",
-            "style": "light"
+            "style": "dark",
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
+            "style": "light",
+        },
+        {
+            "class": "title_bar",
+            "attributes": ["file_dark"],
+            "settings": ["themed_title_bar"],
+            "fg": "var(fg-dark)",
+            "bg": "color(var(app-background-color-dark) l(+ 4%))",
+        },
+        {
+            "class": "title_bar",
+            "attributes": ["file_medium_dark"],
+            "settings": ["themed_title_bar"],
+            "fg": "var(fg)",
+            "bg": "color(var(app-background-color) l(+ 2%))",
+        },
+        {
+            "class": "title_bar",
+            "attributes": ["file_medium"],
+            "settings": ["themed_title_bar"],
+            "fg": "var(fg)",
+            "bg": "color(var(app-background-color-light) l(- 3%))",
+        },
+        {
+            "class": "title_bar",
+            "attributes": ["file_light"],
+            "settings": ["themed_title_bar"],
+            "fg": "var(fg-light)",
             "bg": "color(var(app-background-color-light) l(- 6%))",
-            "style": "light"
         },
 
         /////////////////////// Autocomplete /////////////////////
