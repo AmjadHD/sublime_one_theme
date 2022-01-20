@@ -504,7 +504,7 @@
             "class": "quick_panel_label",
             "fg": "var(fg)",
             "match_fg": "var(text-match-fg)",
-            "selected_fg": "var(fg)",
+            "selected_fg": "var(fg-highlight)",
             "selected_match_fg": "var(text-match-fg)"
         },
         {
@@ -513,7 +513,7 @@
             "match_fg": "var(text-match-fg-light)",
             "selected_match_fg": "var(text-match-fg-light)",
             "fg": "var(fg-light)",
-            "selected_fg": "var(fg-light)",
+            "selected_fg": "var(fg-highlight-light)",
         },
         {
             "class": "quick_panel_label",
@@ -551,7 +551,7 @@
             "class": "quick_panel_path_label",
             "fg": "var(fg-subtle)",
             "match_fg": "var(text-match-fg)",
-            "selected_fg": "var(fg-subtle)",
+            "selected_fg": "color(var(fg-highlight) a(50%))",
             "selected_match_fg": "var(text-match-fg)"
         },
         {
@@ -559,7 +559,7 @@
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "fg": "var(fg-subtle-light)",
             "match_fg": "var(text-match-fg-light)",
-            "selected_fg": "var(fg-subtle-light)",
+            "selected_fg": "color(var(fg-highlight-light) a(50%))",
             "selected_match_fg": "var(text-match-fg-light)"
         },
         {
