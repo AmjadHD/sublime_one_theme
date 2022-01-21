@@ -329,6 +329,8 @@
         {
             "class": "auto_complete_detail_pane",
             "tint_index": 0,
+            "layer0.texture": "Theme - One/assets/auto_complete_detail_pane.png",
+            "layer0.inner_margin": [3, 0, 3, 3],
             "layer0.opacity": 1.0,
             "tint_modifier": [0, 0, 0, 0.3],
             "content_margin": [9, 5]
