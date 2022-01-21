@@ -854,23 +854,24 @@
         },
         {
             "class": "button_control",
-            "attributes": ["hover"],
+            "attributes": ["hover", "!disabled"],
             "layer0.tint": "var(button-bg-hover)",
         },
         {
             "class": "button_control",
-            "attributes": ["hover"],
+            "attributes": ["hover", "!disabled"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-hover-light)",
         },
         {
             "class": "button_control",
-            "attributes": ["hover"],
+            "attributes": ["hover", "!disabled"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(button-bg-hover-dark)",
         },
         {
             "class": "button_control",
+            "attributes": ["pressed", "!disabled"],
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_pressed.png",
             "layer1.inner_margin": 4,
@@ -878,14 +879,14 @@
         },
         {
             "class": "button_control",
-            "attributes": ["pressed"],
+            "attributes": ["pressed", "!disabled"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
             "layer1.tint": "var(accent-fg-light)",
         },
         {
             "class": "button_control",
-            "attributes": ["pressed"],
+            "attributes": ["pressed", "!disabled"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(button-bg-pressed-dark)",
         },
@@ -902,19 +903,19 @@
         },
         {
             "class": "label_control",
-            "parents": [{"class": "button_control", "attributes": ["hover"]}],
+            "parents": [{"class": "button_control", "attributes": ["hover", "!disabled"]}],
             "color": "var(fg-highlight)"
         },
         {
             "class": "label_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "button_control", "attributes": ["hover"]}],
+                        {"class": "button_control", "attributes": ["hover", "!disabled"]}],
             "color": "var(fg-highlight-light)"
         },
         {
             "class": "label_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "button_control", "attributes": ["hover"]}],
+                        {"class": "button_control", "attributes": ["hover", "!disabled"]}],
             "color": "var(fg-highlight-dark)"
         },
         {
