@@ -4,56 +4,68 @@
         "font-size-sm": 11.0,
         "font-size-lg": 13.0,
 
-        "ui-bg": "color(var(--background) l(- 3%))",
-        "ui-bg-light": "color(var(--background) l(- 6%))",
+        "base-background-color": "var(--background)",
+        "base-background-color-dark": "color(var(--background) l(+ 8%))",
+        "fg": "color(var(base-background-color) l(66%))",
+        "fg-light": "color(var(base-background-color) l(- 72%))",
+
+        // @level-3-color
+        "app-background-color": "color(var(base-background-color) l(- 3%))",
+        "app-background-color-light": "color(var(base-background-color) l(- 6%))",
+        // @level-3-color-hover
+        "app-background-color-hover": "color(var(app-background-color) l(+ 6%))",
+        "app-background-color-hover-light": "color(var(app-background-color-light) l(- 6%))",
+        // @level-3-color-active
+        "app-background-color-active": "color(var(app-background-color) l(+ 3%))",
+        "app-background-color-active-light": "color(var(app-background-color-light) l(- 3%))",
 
         "fg-file-light":  "#666",
         "fg-file-medium-dark": "hsl(220,  14%,  71%)",
 
-        "fg-subtle":    "color(var(--foreground) a(- 40%))",
-        "fg-subtle-light":    "color(var(--foreground) l(+ 30%))",
-        "fg-highlight": "color(var(--foreground) l(+ 20%))",
-        "fg-highlight-light": "color(var(--foreground) l(- 12%))",
+        "fg-subtle":    "color(var(fg) a(- 40%))",
+        "fg-subtle-light":    "color(var(fg-light) l(+ 30%))",
+        "fg-highlight": "color(var(fg) l(+ 20%))",
+        "fg-highlight-light": "color(var(fg-light) l(- 12%))",
         "fg-selected":  "white",
-        "fg-selected-light":  "color(var(--foreground) l(- 24%))",
+        "fg-selected-light":  "color(var(fg-highlight-light) l(- 12%))",
 
-        "bg-highlight": "color(var(--background) l(+ 4%))",
-        "bg-highlight-light": "color(var(ui-bg-light) l(- 2%))",
-        "bg-selected":  "color(var(--background) l(+ 8%))",
-        "bg-selected-light":  "color(var(ui-bg-light) l(- 6%))",
+        "bg-highlight": "color(var(base-background-color) l(+ 4%))",
+        "bg-highlight-light": "color(var(app-background-color-light) l(- 2%))",
+        "bg-selected":  "color(var(base-background-color) l(+ 8%))",
+        "bg-selected-light":  "color(var(app-background-color-light) l(- 6%))",
 
-        "input-bg": "color(var(--background) l(- 6%))",
-        "input-bg-light": "color(var(--background) l(+ 4%))",
+        "input-bg": "color(var(base-background-color) l(- 6%))",
+        "input-bg-light": "var(button-bg-light)",
 
-        "button-bg": "color(var(--background) l(+ 6%))",
-        "button-bg-light": "color(var(--background) l(+ 4%))",
+        "button-bg": "color(var(base-background-color) l(+ 6%))",
+        "button-bg-light": "color(var(base-background-color) l(+ 4%))",
         "button-bg-hover":    "color(var(button-bg) l(+ 2%))",
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
         "button-bg-pressed-light": "color(var(button-bg-light) l(- 4%))",
         "button-bg-selected": "var(--accent)",
 
-        "button-fg-selected": "color(var(--foreground) min-contrast(var(button-bg-selected) 3.0))",
-        "button-fg-selected-light": "color(var(--foreground) min-contrast(var(button-bg-selected) 3.0))",
-        "accent-fg": "color(var(--accent) s(- 15%) l(+ 5%))",
-        "accent-fg-light": "color(var(--accent) s(- 25%) l(- 4%))",
+        "button-fg-selected": "color(var(fg) min-contrast(var(button-bg-selected) 4.5))",
+        "button-fg-selected-light": "color(var(fg-light) min-contrast(var(button-bg-selected-light) 4.5))",
+        "accent-fg": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
+        "accent-fg-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
 
-        "overlay-bg": "color(var(--background) blend(var(ui-bg) 50%))",
-        "overlay-bg-light": "color(var(--background) blend(var(ui-bg-light) 50%))",
+        "overlay-bg": "color(var(base-background-color) blend(var(app-background-color) 50%))",
+        "overlay-bg-light": "color(var(base-background-color) blend(var(app-background-color-light) 50%))",
         "overlay-row-bg": "color(var(overlay-bg) l(+ 2%))",
         "overlay-row-bg-light": "color(var(overlay-bg-light) l(+ 2%))",
 
-        "border-color": "color(var(ui-bg) l(- 4%))",
-        "border-color-light": "color(var(ui-bg-light) l(- 6%))",
-        "border-color-dark": "color(var(ui-bg) l(+ 10%))",
+        "border-color": "color(var(base-background-color) l(* 60%))",
+        "border-color-light": "color(var(app-background-color-light) l(- 6%))",
+        "border-color-dark": "color(var(base-background-color-dark) l(* 30%))",
 
 
         "scrollbar-color": "color(var(--background) l(+ 16%))",
-        "scrollbar-color-light": "color(var(ui-bg-light) l(- 14%))",
+        "scrollbar-color-light": "color(var(app-background-color-light) l(- 14%))",
 
         "color-removed":        "hsl(  9, 100%,  64%)",
-        "color-removed-light":  "hsl(  0, 90%,  56%)",
-        "color-modified":       "hsl( 36,  59%,  72%)",
+        "color-removed-light":  "hsl(  0,  90%,  56%)",
+        "color-modified":       "hsl( 36,  60%,  72%)",
         "color-modified-light": "hsl( 37,  90%,  44%)",
         "color-added":          "hsl(140,  44%,  62%)",
         "color-added-light":    "hsl(132,  60%,  44%)"
@@ -65,14 +77,14 @@
         {
             "class": "title_bar",
             "settings": ["themed_title_bar"],
-            "fg": "var(--foreground)",
-            "bg": "color(var(ui-bg) l(+ 2%))",
+            "fg": "var(fg)",
+            "bg": "color(var(app-background-color) l(+ 2%))",
             "style": "system"
         },
         {
             "class": "title_bar",
             "attributes": ["file_dark"],
-            "bg": "color(var(ui-bg) l(+ 4%))",
+            "bg": "color(var(app-background-color) l(+ 4%))",
             "style": "dark"
         },
         {
@@ -83,13 +95,13 @@
         {
             "class": "title_bar",
             "attributes": ["file_medium"],
-            "bg": "color(var(ui-bg-light) l(- 3%))",
+            "bg": "color(var(app-background-color-light) l(- 3%))",
             "style": "light"
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
-            "bg": "color(var(ui-bg-light) l(- 6%))",
+            "bg": "color(var(app-background-color-light) l(- 6%))",
             "style": "light"
         },
 
@@ -195,12 +207,12 @@
         {
             "class": "kind_container",
             "content_margin": [6, 0],
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 0.2,
         },
         {
             "class": "kind_label",
-            "color": "var(--foreground)",
+            "color": "var(fg)",
             "font.size": "1.1rem",
             "font.bold": true,
             "font.italic": false,
@@ -441,16 +453,18 @@
         },
         {
             "class": "quick_panel_label",
-            "fg": "var(--foreground)",
+            "fg": "var(fg)",
             "match_fg": "var(accent-fg)",
-            "selected_fg": "var(--foreground)",
+            "selected_fg": "var(fg)",
             "selected_match_fg": "var(accent-fg)"
         },
         {
             "class": "quick_panel_label",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "match_fg": "var(accent-fg-light)",
-            "selected_match_fg": "var(accent-fg-light)"
+            "selected_match_fg": "var(accent-fg-light)",
+            "fg": "var(fg-light)",
+            "selected_fg": "var(fg-light)",
         },
         {
             "class": "quick_panel_label key_binding",
@@ -592,7 +606,7 @@
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/icons/history.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "dropdown_button_control",
@@ -611,7 +625,7 @@
         {
             "class": "panel_control",
             "content_margin": [0, 1, 0, 0],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 0, 0],
             "layer1.draw_center": false,
@@ -621,7 +635,7 @@
         {
             "class": "panel_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
@@ -647,7 +661,7 @@
             "class": "panel_close_button",
             "content_margin": 0,
             "layer0.texture": "Theme - One/assets/panel_close_button.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "panel_close_button",
@@ -682,7 +696,7 @@
 
         {
             "class": "label_control",
-            "color": "var(--foreground)",
+            "color": "var(fg)",
             "font.size": "var(font-size)",
         },
 
@@ -868,7 +882,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_regex.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_regex",
@@ -897,7 +911,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_case.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_case",
@@ -926,7 +940,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_highlight",
@@ -956,7 +970,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_in_selection.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_in_selection",
@@ -985,7 +999,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_whole_word.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_whole_word",
@@ -1014,7 +1028,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_wrap.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_wrap",
@@ -1043,7 +1057,7 @@
             "content_margin": [17, 14],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/icons/icon_preserve_case.png",
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_preserve_case",
@@ -1073,7 +1087,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_context.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_context",
@@ -1102,7 +1116,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_use_buffer.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_use_buffer",
@@ -1131,7 +1145,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_use_gitignore.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_use_gitignore",
@@ -1228,13 +1242,13 @@
         
         {
             "class": "dialog",
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer0.opacity": 1.0
         },
         {
             "class": "dialog",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "progress_bar_control",
@@ -1308,30 +1322,30 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "sidebar_container"}],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "dialog"}],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"},],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "overlay_control"}],
             "content_margin": [3, 4, 4, 3],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
@@ -1342,7 +1356,7 @@
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control"}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
@@ -1355,7 +1369,7 @@
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window"}],
             "content_margin": [3, 4, 4, 3],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
@@ -1370,24 +1384,24 @@
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "sidebar_container"},],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "dialog"},],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "puck_control",
@@ -1449,7 +1463,7 @@
         {
             "class": "status_bar",
             "content_margin": [0, 1, 0, 0],
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
@@ -1459,7 +1473,7 @@
         {
             "class": "status_bar",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
@@ -1479,7 +1493,7 @@
         {
             "class": "vcs_branch_icon",
             "layer0.texture": "Theme - One/icons/branch.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "content_margin": [8, 8],
         },
         {
@@ -1491,26 +1505,26 @@
         {
             "class": "status_button",
             "attributes": ["hover"],
-            "layer0.tint": "color(var(ui-bg) l(+ 6%))",
+            "layer0.tint": "var(app-background-color-hover)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
-            "layer0.tint": "color(var(ui-bg-light) l(- 6%))",
+            "layer0.tint": "var(app-background-color-hover-light)",
         },
         {
             "class": "status_button",
             "attributes": ["pressed"],
-            "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+            "layer0.tint": "var(app-background-color-active)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
-            "layer0.tint": "color(var(ui-bg-light) l(- 3%))",
+            "layer0.tint": "var(app-background-color-active-light)",
         },
         {
             "class": "sidebar_button_control",
@@ -1518,39 +1532,39 @@
             "layer0.texture": "",
             "layer0.opacity": 0.0,
             "layer1.texture": "Theme - One/assets/sidebar_button.png",
-            "layer1.tint": "var(--foreground)",
+            "layer1.tint": "var(fg)",
             "layer1.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["hover"],
-            "layer0.tint": "color(var(ui-bg) l(+ 6%))",
+            "layer0.tint": "var(app-background-color-hover)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "color(var(ui-bg-light) l(- 6%))",
+            "layer0.tint": "var(app-background-color-hover-light)",
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["pressed"],
-            "layer0.tint": "color(var(ui-bg) l(+ 3%))",
+            "layer0.tint": "var(app-background-color-active)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "color(var(ui-bg-light) l(- 3%))",
+            "layer0.tint": "var(app-background-color-active-light)",
         },
 
         //////////////////////////// Tabs //////////////////////////////////////
 
         {
             "class": "tabset_control",
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
@@ -1564,7 +1578,7 @@
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
@@ -1720,7 +1734,7 @@
         {
             "class": "new_tab_button",
             "layer0.texture": "Theme - Default/common/new_tab.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": [21, 0, 1, 0],
             "content_margin": [12, 12],
@@ -1745,7 +1759,7 @@
             "class": "show_tabs_dropdown_button",
             "content_margin": [10, 3],
             "layer0.texture": "Theme - One/assets/tab_dropdown.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0
         },
         {
@@ -1762,7 +1776,7 @@
         {
             "class": "scroll_tabs_left_button",
             "content_margin": [8, 5],
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.texture": "Theme - One/assets/tab_scroll_left.png",
             "layer0.opacity": 1.0,
         },
@@ -1785,7 +1799,7 @@
         {
             "class": "scroll_tabs_right_button",
             "content_margin": [8, 5],
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.texture": "Theme - One/assets/tab_scroll_right.png",
             "layer0.opacity": 1.0,
         },
@@ -1814,14 +1828,14 @@
             "indent": 15,
             "indent_offset": 14,
             "indent_top_level": false,
-            "layer0.tint": "var(ui-bg)",
+            "layer0.tint": "var(app-background-color)",
             "layer0.opacity": 1.0,
             "dark_content": true
         },
         {
             "class": "sidebar_tree",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(ui-bg-light)",
+            "layer0.tint": "var(app-background-color-light)",
             "dark_content": false,
         },
         {
@@ -1843,14 +1857,14 @@
         },
         {
             "class": "sidebar_heading",
-            "color": "var(--foreground)",
+            "color": "var(fg)",
             "font.size": "var(font-size)"
         },
         {
             "class": "disclosure_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/disclosure_button.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
         },
         {
@@ -1897,7 +1911,7 @@
             "class": "close_button",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/open_files_close.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
         },
         {
@@ -1930,13 +1944,13 @@
         {
             "class": "icon_file_type",
             "content_margin": [8, 8],
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_folder",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder.png",
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(fg)"
         },
         {
             "class": "icon_folder",
@@ -1952,7 +1966,7 @@
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "layer0.tint": "color(var(--foreground) a(0.6))"
+            "layer0.tint": "var(fg-subtle)"
         },
         {
             "class": "icon_folder",
@@ -2035,14 +2049,14 @@
             "class": "icon_folder_loading",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/hourglass.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "icon_folder_dup",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder_dup.png",
-            "layer0.tint": "var(--foreground)",
+            "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
         },
         {
@@ -2141,7 +2155,7 @@
         },
         {
             "class": "sidebar_label",
-            "color": "var(--foreground)",
+            "color": "var(fg)",
             "font.size": "var(font-size)",
             "font.bold": false,
             "font.italic": false
@@ -2171,7 +2185,7 @@
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "color": "color(var(--foreground) a(0.6))"
+            "color": "var(fg-subtle)"
         },
         {
             "class": "sidebar_label",
