@@ -620,17 +620,28 @@
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.tint": "var(accent-bg)",
             "layer0.inner_margin": [3, 3],
-            "layer0.opacity": 1.0
+            "layer0.opacity": 0.0
+        },
+        {
+            "class": "tool_tip_control",
+            "attributes": ["expanded"],
+            "layer0.opacity": {"target": 1.0, "speed": 9.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tool_tip_label_control",
             "color": "var(button-fg-selected)",
             "font.size": "var(font-size-lg)",
+            "opacity": 0.0,
         },
         {
             "class": "tool_tip_label_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},],
             "color": "var(button-fg-selected-dark)",
+        },
+        {
+            "class": "tool_tip_label_control",
+            "parents": [{"class": "tool_tip_control", "attributes": ["expanded"]}],
+            "opacity": {"target": 1.0, "speed": 9.0, "interpolation": "smoothstep"},
         },
 
         //////////////////////////// Inputs ////////////////////////////////////
