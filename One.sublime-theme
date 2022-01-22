@@ -1256,7 +1256,7 @@
         },
         {
             "class": "progress_gauge_control",
-            "content_margin": [0, 1],
+            "content_margin": [0, 4],
             "layer0.texture": "Theme - One/assets/bg_3px.png",
             "layer0.inner_margin": 3,
             "layer0.tint": "var(accent-fg)",
