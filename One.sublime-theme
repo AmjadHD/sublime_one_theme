@@ -1198,12 +1198,12 @@
         /////////////////////////////// Dialogs ////////////////////////////////
         
         {
-            "class": "dialog",
+            "class": "dialog window",
             "layer0.tint": "var(app-background-color)",
             "layer0.opacity": 1.0
         },
         {
-            "class": "dialog",
+            "class": "dialog window",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(app-background-color-light)",
         },
