@@ -1588,7 +1588,7 @@
         },
         {
             "class": "dialog window",
-            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "attributes": ["file_light"],
             "layer0.tint": "var(app-background-color-light)",
         },
         {
