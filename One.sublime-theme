@@ -1692,7 +1692,8 @@
         {
             "class": "tab_close_button",
             "content_margin": [9, 9],
-            "layer0.texture": "Theme - One/assets/tab_close_button_bg.png",
+            "layer0.texture": "Theme - One/assets/tooltip.png",
+            "layer0.inner_margin": 3,
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
             "layer1.tint": "var(fg-file-medium-dark)",
             "layer0.opacity": 0.0,
