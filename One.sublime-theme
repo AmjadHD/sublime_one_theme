@@ -185,7 +185,7 @@
             "fg_blend": true
         },
         {
-            "class": "auto_complete_hint",
+            "class": "auto_complete_label auto_complete_hint",
             "opacity": 0.7,
             "font.size": "0.9rem",
             "font.italic": false,
@@ -1533,22 +1533,22 @@
         /////////////////////////////// Views //////////////////////////////////
 
         {
-            "class": "sheet_contents",
+            "class": "text_area_control sheet_contents",
             "attributes": ["!highlighted"],
             "background_modifier": "blend(black 95%)"
         },
         {
-            "class": "sheet_contents",
+            "class": "text_area_control sheet_contents",
             "attributes": ["file_light", "!highlighted"],
             "background_modifier": "blend(black 97%)"
         },
         {
-            "class": "sheet_contents",
+            "class": "text_area_control sheet_contents",
             "attributes": ["file_dark", "!highlighted"],
             "background_modifier": "l(+ 2%)"
         },
         {
-            "class": "sheet_contents",
+            "class": "text_area_control sheet_contents",
             "settings": ["!inactive_sheet_dimming"],
             "background_modifier": ""
         },
@@ -1556,12 +1556,12 @@
         /////////////////////////////// Dialogs ////////////////////////////////
         
         {
-            "class": "dialog",
+            "class": "dialog window",
             "layer0.tint": "var(app-background-color)",
             "layer0.opacity": 1.0
         },
         {
-            "class": "dialog",
+            "class": "dialog window",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(app-background-color-light)",
         },
