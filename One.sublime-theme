@@ -1698,7 +1698,7 @@
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
             "layer1.tint": "var(fg-file-medium-dark)",
             "layer0.opacity": 0.0,
-            "layer1.opacity": {"target": 0.0, "speed": 10,},
+            "layer1.opacity": {"target": 0.0, "speed": 5.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
@@ -1708,7 +1708,7 @@
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-            "layer1.opacity": {"target": 1.0, "speed": 10,},
+            "layer1.opacity": {"target": 1.0, "speed": 5.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
@@ -1716,7 +1716,7 @@
             "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
             "layer1.tint": null,
             "accent_tint_index": 1,
-            "layer1.opacity": {"target": 1.0, "speed": 10,},
+            "layer1.opacity": {"target": 1.0, "speed": 5.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
