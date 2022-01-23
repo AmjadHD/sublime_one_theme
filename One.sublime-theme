@@ -173,7 +173,8 @@
             "match_fg": [255, 255, 255, 0.9],
             "selected_fg": [0, 0, 0, 0.0],
             "selected_match_fg": [255, 255, 255, 0.9],
-            "fg_blend": true
+            "fg_blend": true,
+            "font.size": "1rem",
         },
         {
             "class": "auto_complete_label",
@@ -242,7 +243,7 @@
         {
             "class": "kind_label",
             "color": "var(fg)",
-            "font.size": "1.1rem",
+            "font.size": "1rem",
             "font.bold": true,
             "font.italic": false,
         },
