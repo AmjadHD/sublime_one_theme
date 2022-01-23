@@ -1572,12 +1572,12 @@
         {
             "class": "text_area_control sheet_contents",
             "attributes": ["!highlighted"],
-            "background_modifier": "blend(black 95%)"
+            "background_modifier": "l(- 2%)"
         },
         {
             "class": "text_area_control sheet_contents",
             "attributes": ["file_light", "!highlighted"],
-            "background_modifier": "blend(black 97%)"
+            "background_modifier": "l(- 4%)"
         },
         {
             "class": "text_area_control sheet_contents",
