@@ -1005,8 +1005,8 @@
         {
             "class": "icon_button_control",
             "attributes": ["selected"],
-            "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer1.tint": "var(button-bg-selected)",
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "layer0.tint": "var(button-bg-selected-light)",
         },
         {
             "class": "icon_button_control",
