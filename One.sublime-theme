@@ -2440,6 +2440,23 @@
         },
         {
             "class": "close_button",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight)",
+        },
+        {
+            "class": "close_button",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-light)",
+        },
+        {
+            "class": "close_button",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "tree_row", "attributes": ["selected"]}],
+            "layer0.tint": "var(fg-highlight-dark)",
+        },
+        {
+            "class": "close_button",
             "attributes": ["dirty"],
             "layer0.texture": "Theme - One/assets/open_files_dirty.png",
             "layer0.tint": "var(accent-fg)",
