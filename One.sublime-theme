@@ -1549,13 +1549,13 @@
             "class": "fold_button_control",
             "content_margin": [8, 8],
             "layer0.texture": "Theme - One/assets/fold_button.png",
-            "layer0.tint": "color(var(fg-file-medium-dark) l(- 20%))",
-            "layer0.opacity": 0.6
+            "layer0.tint": "white",
+            "layer0.opacity": 0.2
         },
         {
             "class": "fold_button_control",
             "attributes": ["hover"],
-            "layer0.opacity": 1.0
+            "layer0.opacity": 0.4
         },
         {
             "class": "fold_button_control",
@@ -1565,7 +1565,7 @@
         {
             "class": "fold_button_control",
             "parents": [{"class": "text_area_control", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-file-light)",
+            "layer0.tint": "black",
         },
 
         /////////////////////////////// Views //////////////////////////////////
