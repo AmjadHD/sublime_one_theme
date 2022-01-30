@@ -156,7 +156,7 @@
         {
             "class": "auto_complete",
             "tint_index": 0,
-            "tint_modifier": [0, 0, 0, 0.1],
+            "tint_modifier": [0, 0, 0, 0.08],
             "layer0.opacity": 1.0,
             "row_padding": [0, 0],
             "dark_content": true
@@ -164,7 +164,7 @@
         {
             "class": "auto_complete",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.04],
+            "tint_modifier": [0, 0, 0, 0.03],
             "dark_content": false,
         },
         {
@@ -215,13 +215,13 @@
         {
             "class": "table_row",
             "attributes": ["selected"],
-            "layer0.opacity": 0.08
+            "layer0.opacity": 0.1
         },
         {
             "class": "table_row",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
             "attributes": ["selected"],
-            "layer0.opacity": 0.15
+            "layer0.opacity": 0.09
         },
         {
             "class": "table_row",
@@ -237,7 +237,7 @@
         {
             "class": "kind_container",
             "content_margin": [6, 0],
-            "layer0.tint": "var(fg)",
+            "layer0.tint": "color(white a(0.51))",
             "layer0.opacity": 0.2,
         },
         {
@@ -339,7 +339,7 @@
         {
             "class": "auto_complete_detail_pane",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.1],
+            "tint_modifier": [0, 0, 0, 0.07],
         },
         {
             "class": "auto_complete_info",
@@ -583,6 +583,7 @@
             "class": "kind_container",
             "parents": [{"class": "overlay_control kind_info"}],
             "content_margin": [12, 0],
+            "layer0.tint": "var(fg)",
             "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
             "layer1.inner_margin": [1, 1, 1, 0],
@@ -592,6 +593,7 @@
             "class": "kind_container",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control kind_info"}],
+            "layer0.tint": "var(fg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
