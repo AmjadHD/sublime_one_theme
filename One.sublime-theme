@@ -23,8 +23,8 @@
         "app-background-color-active-dark": "color(var(app-background-color-dark) l(+ 3%))",
         "app-background-color-active-light": "color(var(app-background-color-light) l(- 3%))",
 
-        "fg-file-light":  "#666",
-        "fg-file-medium-dark": "hsl(220,  14%,  71%)",
+        "tab-fg-selected":  "color(white a(0.8))",
+        "tab-fg-selected-light": "color(black a(0.95))",
 
         "fg-subtle":    "color(var(fg) a(- 40%))",
         "fg-subtle-dark":    "color(var(fg-dark) a(- 40%))",
@@ -1681,12 +1681,12 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "color": "color(var(fg-file-medium-dark) l(+ 20%))",
+            "color": "var(tab-fg-selected)",
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
-            "color": "var(fg-file-light)"
+            "color": "var(tab-fg-selected-light)"
         },
         {
             "class": "tab_label",
@@ -1699,14 +1699,14 @@
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.inner_margin": 3,
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
-            "layer1.tint": "var(fg-file-medium-dark)",
+            "layer1.tint": "var(tab-fg-selected)",
             "layer0.opacity": 0.0,
             "layer1.opacity": {"target": 0.0, "speed": 5.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["file_light"]}],
-            "layer1.tint": "var(fg-file-light)",
+            "layer1.tint": "var(tab-fg-selected-light)",
         },
         {
             "class": "tab_close_button",
