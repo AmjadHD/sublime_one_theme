@@ -132,7 +132,7 @@
         {
             "class": "auto_complete",
             "tint_index": 0,
-            "tint_modifier": [0, 0, 0, 0.1],
+            "tint_modifier": [0, 0, 0, 0.08],
             "layer0.opacity": 1.0,
             "row_padding": [8, 5],
             "dark_content": true
@@ -140,7 +140,7 @@
         {
             "class": "auto_complete",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.04],
+            "tint_modifier": [0, 0, 0, 0.03],
             "dark_content": false,
         },
         {
@@ -173,13 +173,13 @@
         {
             "class": "table_row",
             "attributes": ["selected"],
-            "layer0.opacity": 0.08
+            "layer0.opacity": 0.1
         },
         {
             "class": "table_row",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
             "attributes": ["selected"],
-            "layer0.opacity": 0.15
+            "layer0.opacity": 0.09
         },
 
         //////////////////////////// Quick Panels ////////////////////////////
