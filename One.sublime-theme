@@ -2152,7 +2152,6 @@
         {
             "class": "close_button",
             "attributes": ["dirty"],
-            "layer0.texture": "Theme - One/assets/open_files_dirty.png",
             "layer0.tint": "var(accent-fg)",
         },
         {
@@ -2163,8 +2162,9 @@
         },
         {
             "class": "close_button",
-            "attributes": ["dirty", "hover"],
-            "layer0.texture": "Theme - One/assets/open_files_close.png",
+            "attributes": ["dirty"],
+            "parents": [{"class": "tree_row", "attributes": ["!hover"]},],
+            "layer0.texture": "Theme - One/assets/open_files_dirty.png",
         },
         {
             "class": "close_button",
