@@ -1786,13 +1786,28 @@
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.inner_margin": 3,
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
-            "layer1.tint": "var(tab-fg-selected)",
+            "layer1.tint": "var(fg-subtle)",
             "layer0.opacity": 0.0,
             "layer1.opacity": {"target": 0.0, "speed": 5.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["file_light"]}],
+            "layer1.tint": "var(fg-subtle-light)",
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["file_dark"]}],
+            "layer1.tint": "var(fg-subtle-dark)",
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "layer1.tint": "var(tab-fg-selected)",
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
             "layer1.tint": "var(tab-fg-selected-light)",
         },
         {
