@@ -208,17 +208,6 @@
         },
         {
             "class": "table_row",
-            "attributes": ["hover"],
-            "layer0.opacity": 0.04,
-        },
-        {
-            "class": "table_row",
-            "attributes": ["hover"],
-            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "layer0.opacity": 0.08,
-        },
-        {
-            "class": "table_row",
             "attributes": ["selected"],
             "layer0.opacity": 0.1
         },
@@ -227,17 +216,6 @@
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
             "attributes": ["selected"],
             "layer0.opacity": 0.09
-        },
-        {
-            "class": "table_row",
-            "attributes": ["selected", "hover"],
-            "layer0.opacity": 0.12
-        },
-        {
-            "class": "table_row",
-            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "attributes": ["selected", "hover"],
-            "layer0.opacity": 0.24
         },
         {
             "class": "kind_container",
