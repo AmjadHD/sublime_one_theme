@@ -221,9 +221,11 @@
         },
         {
             "class": "mini_quick_panel_row",
+            // background
             "layer0.tint": "var(overlay-row-bg)",
-            "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
+            // border
+            "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
             "layer1.draw_center": false,
             "layer1.inner_margin": [1, 1, 0, 0],
@@ -287,9 +289,11 @@
         },
         {
             "class": "quick_panel_row",
+            // background
             "layer0.tint": "var(overlay-row-bg)",
-            "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
+            // border
+            "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
             "layer1.draw_center": false,
             "layer1.inner_margin": [1, 1, 0, 0],
@@ -395,14 +399,17 @@
         {
             "class": "text_line_control",
             "content_margin": [8, 1, 7, 1],
+            // background
             "layer0.texture": "Theme - One/assets/bg_3px.png",
             "layer1.texture": "Theme - One/assets/border.png",
             "color_scheme_tint": "var(input-bg)",
             "layer0.opacity": 1.0,
-            "layer1.opacity": 1.0,
             "layer0.inner_margin": [8, 1, 7, 1],
-            "layer1.inner_margin": 3,
             "layer0.tint": "var(input-bg)",
+            // border
+            "layer1.texture": "Theme - One/assets/border.png",
+            "layer1.opacity": 1.0,
+            "layer1.inner_margin": 3,
             "layer1.tint": "var(border-color)",
             "layer1.draw_center": false,
         },
@@ -479,12 +486,15 @@
         {
             "class": "panel_control",
             "content_margin": [0, 1, 0, 0],
+            // background
             "layer0.tint": "var(app-background-color)",
+            "layer0.opacity": 1.0,
+            // border
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 0, 0],
             "layer1.draw_center": false,
-            "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
+            // output area border
             "layer2.texture": "Theme - One/assets/console_panel_output_area_border.png",
             "layer2.opacity": 0.0,
             "layer2.inner_margin": [11, 12, 11, 51],
@@ -1312,14 +1322,16 @@
         },
         {
             "class": "progress_bar_control",
+            // background
             "layer0.texture": "Theme - One/assets/bg_3px.png",
-            "layer1.texture": "Theme - One/assets/border.png",
             "layer0.inner_margin": 1,
-            "layer1.inner_margin": 3,
             "layer0.tint": "var(input-bg)",
+            "layer0.opacity": 1.0,
+            // border
+            "layer1.texture": "Theme - One/assets/border.png",
+            "layer1.inner_margin": 3,
             "layer1.tint": "var(border-color)",
             "layer1.draw_center": false,
-            "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
         },
         {
@@ -1423,11 +1435,13 @@
             "class": "scroll_bar_control",
             "parents": [{"class": "overlay_control"}],
             "content_margin": [3, 4, 4, 3],
+            // background
             "layer0.tint": "var(app-background-color)",
+            "layer0.opacity": 1.0,
+            // border
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
-            "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
         },
         {
@@ -1441,18 +1455,18 @@
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
-            "layer1.tint": "var(border-color-dark)",
             "layer0.tint": "var(app-background-color-dark)",
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window"}],
             "content_margin": [3, 4, 4, 3],
             "layer0.tint": "var(app-background-color)",
+            "layer0.opacity": 1.0,
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
-            "layer0.opacity": 1.0,
             "layer1.opacity": 1.0,
         },
         {
@@ -1574,9 +1588,11 @@
         {
             "class": "status_bar",
             "content_margin": [0, 1, 0, 0],
+            // background
             "layer0.tint": "var(app-background-color)",
-            "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
+            // border
+            "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
             "layer1.inner_margin": [0, 1, 0, 0],
             "layer1.draw_center": false,
@@ -1699,9 +1715,11 @@
 
         {
             "class": "tabset_control",
+            // background
             "layer0.tint": "var(app-background-color)",
-            "layer1.tint": "var(border-color)",
             "layer0.opacity": 1.0,
+            // border
+            "layer1.tint": "var(border-color)",
             "layer1.opacity": 1.0,
             "layer1.inner_margin": [0, 0, 0, 1],
             "layer1.draw_center": false,
@@ -1729,17 +1747,20 @@
         {
             "class": "tab_control",
             "content_margin": [33, 0, 7, 0],
-            "tint_index": 0,
-            "layer1.tint": "var(border-color)",
-            "accent_tint_index": 2,
-            "layer1.inner_margin": [0, 0, 1, 1],
-            "layer2.inner_margin": [2, 0, 0, 0],
-            "layer1.draw_center": false,
-            "layer2.draw_center": false,
-            "layer0.opacity": 0.0,
-            "layer1.opacity": 1.0,
-            "layer2.opacity": 0.0,
             "max_margin_trim": 6,
+            // background
+            "tint_index": 0,
+            "layer0.opacity": 0.0,
+            // border
+            "layer1.tint": "var(border-color)",
+            "layer1.inner_margin": [0, 0, 1, 1],
+            "layer1.draw_center": false,
+            "layer1.opacity": 1.0,
+            // border highlight
+            "accent_tint_index": 2,
+            "layer2.inner_margin": [2, 0, 0, 0],
+            "layer2.draw_center": false,
+            "layer2.opacity": 0.0,
         },
         {
             "class": "tab_control",
@@ -1792,11 +1813,13 @@
         {
             "class": "tab_close_button",
             "content_margin": 9,
+            // background
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.inner_margin": 3,
+            "layer0.opacity": 0.0,
+            // x icon
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
             "layer1.tint": "var(fg-subtle)",
-            "layer0.opacity": 0.0,
             "layer1.opacity": {"target": 0.0, "speed": 10.0, "interpolation": "smoothstep"},
         },
         {
@@ -1828,8 +1851,8 @@
             "class": "tab_close_button",
             "settings": ["highlight_modified_tabs"],
             "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-            "layer1.tint": null,
             "accent_tint_index": 1,
+            "layer1.tint": null,
             "layer1.opacity": 1.0,
         },
         {
@@ -2076,6 +2099,7 @@
         },
         {
             "class": "tree_row",
+            // background
             "layer0.tint": "var(bg-selected)",
             "layer0.opacity": 0.0,
         },
