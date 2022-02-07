@@ -193,13 +193,13 @@
             // shadow
             "layer0.texture": "Theme - One/assets/overlay_shadow.png",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": 28,
+            "layer0.inner_margin": 23,
             "layer0.draw_center": false,
             // background
             "layer1.texture": "Theme - One/assets/overlay_bg.png",
             "layer1.tint": "var(overlay-bg)",
             "layer1.opacity": 1.0,
-            "layer1.inner_margin": [28, 22, 28, 34],
+            "layer1.inner_margin": [23, 17, 23, 29],
             // border
             "layer2.texture": "Theme - One/assets/overlay_list_bottom_border.png",
             "layer2.tint": "var(border-color)",
