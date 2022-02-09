@@ -3087,5 +3087,65 @@
                         {"class": "file_system_entry", "attributes": ["unmerged"]}],
             "color": "var(color-removed-light)",
         },
+
+        //////////////////////////// Check Boxes ///////////////////////////////
+
+        {
+            "class": "checkbox_box_control",
+            "content_margin": 8,
+            "layer0.texture": "Theme - One/assets/wh7--br3.png",
+            "layer0.tint": "color(var(fg) blend(var(base-background-color) 20%))",
+            "layer0.inner_margin": 3,
+            "layer0.opacity": 1.0,
+
+            "layer1.texture": "Theme - One/assets/wh7--br3.png",
+            "layer1.tint": "var(accent)",
+            "layer1.inner_margin": 3,
+            "layer1.opacity": {"target": 0.0, "speed": 11.0, "interpolation": "smoothstep"},
+
+            "layer2.texture": "Theme - One/assets/checkbox_check.png",
+            "layer2.tint": "var(accent-fg)",
+            "layer2.opacity": {"target": 0.0, "speed": 5.0, "interpolation": "smoothstep"},
+        },
+        {
+            "class": "checkbox_box_control",
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
+            "layer0.tint": "color(var(fg-light) blend(var(base-background-color-light) 20%))",
+            "layer1.tint": "var(accent-light)",
+            "layer2.tint": "var(accent-fg-light)",
+        },
+        {
+            "class": "checkbox_box_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "color(var(fg-dark) blend(var(base-background-color-dark) 20%))",
+        },
+        {
+            "class": "checkbox_box_control",
+            "parents": [{"class": "checkbox_control", "attributes": ["checked"]}],
+            "layer1.opacity": {"target": 1.0, "speed": 11.0, "interpolation": "smoothstep"},
+            "layer2.opacity": {"target": 1.0, "speed": 5.0, "interpolation": "smoothstep"},
+        },
+        {
+            "class": "checkbox_box_control",
+            "parents": [{"class": "checkbox_control", "attributes": ["disabled"]}],
+            "layer0.opacity": 0.5,
+        },
+
+        /////////////////////////////// Radio Buttons //////////////////////////
+
+        {
+            "class": "radio_button_list_control",
+            "spacing": 4,
+        },
+        {
+            "class": "checkbox_box_control",
+            "parents": [{"class": "radio_button_list_control"},
+                        {"class": "checkbox_control"}],
+            "layer0.texture": "Theme - One/assets/radio_button_bg.png",
+            "layer0.inner_margin": 0,
+            "layer1.texture": "Theme - One/assets/radio_button_bg.png",
+            "layer0.inner_margin": 0,
+            "layer2.texture": "Theme - One/assets/radio_button_on.png",
+        },
     ]
 }
