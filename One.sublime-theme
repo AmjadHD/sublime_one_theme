@@ -64,6 +64,8 @@
 
         "accent": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
         "accent-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
+        "accent-fg": "color(black a(85%))",
+        "accent-fg-light": "color(white a(95%))",
         "accent-large": "color(var(--accent) s(* 55%) l(* 83%))", // hsl(220, 55%, 55%)
         "accent-large-light": "color(var(--accent) s(* 83%) l(* 97%))", // hsl(230, 83%, 64%)
 
@@ -2305,13 +2307,13 @@
             "attributes": ["hover"],
             "accent_tint_index": 0,
             "layer0.opacity": 1.0,
-            "layer1.tint": "black",
+            "layer1.tint": "var(accent-fg)",
         },
         {
             "class": "tab_close_button",
             "attributes": ["hover"],
             "parents": [{"class": "tab_control", "attributes": ["file_light"]}],
-            "layer1.tint": "white",
+            "layer1.tint": "var(accent-fg-light)",
         },
         {
             "class": "tab_close_button",
