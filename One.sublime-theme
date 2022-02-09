@@ -55,17 +55,17 @@
         "button-bg-pressed": "color(var(button-bg) l(- 4%))",
         "button-bg-pressed-dark": "color(var(button-bg-dark) l(- 4%))",
         "button-bg-pressed-light": "color(var(button-bg-light) l(- 4%))",
-        "button-bg-selected": "var(accent-bg)",
-        "button-bg-selected-light": "var(accent-bg-light)",
+        "button-bg-selected": "var(accent-large)",
+        "button-bg-selected-light": "var(accent-large-light)",
 
         "button-fg-selected": "color(var(fg) min-contrast(var(button-bg-selected) 4.5))",
         "button-fg-selected-light": "color(var(fg-light) min-contrast(var(button-bg-selected-light) 4.5))",
         "button-fg-selected-dark": "color(var(fg-dark) min-contrast(var(button-bg-selected) 4.5))",
 
-        "accent-fg": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
-        "accent-fg-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
-        "accent-bg": "color(var(--accent) s(* 55%) l(* 83%))", // hsl(220, 55%, 55%)
-        "accent-bg-light": "color(var(--accent) s(* 83%) l(* 97%))", // hsl(230, 83%, 64%)
+        "accent": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
+        "accent-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
+        "accent-large": "color(var(--accent) s(* 55%) l(* 83%))", // hsl(220, 55%, 55%)
+        "accent-large-light": "color(var(--accent) s(* 83%) l(* 97%))", // hsl(230, 83%, 64%)
 
         "text-match-fg": "color(var(--accent) s(* 83%) l(* 106%))", // hsl(220, 83%, 70%)
         "text-match-fg-light": "color(var(--accent) s(* 75%) l(* 82%))", // hsl(230, 75%, 54%)
@@ -354,7 +354,7 @@
         {
             "class": "auto_complete_kind_name_label",
             "font.size": "0.9rem",
-            "border_color": "color(var(accent-fg) a(80%))",
+            "border_color": "color(var(accent) a(80%))",
             "font.italic": false,
         },
         {
@@ -637,14 +637,14 @@
             "class": "tool_tip_control",
             "content_margin": [10, 8],
             "layer0.texture": "Theme - One/assets/tooltip.png",
-            "layer0.tint": "var(accent-bg)",
+            "layer0.tint": "var(accent-large)",
             "layer0.inner_margin": 3,
             "layer0.opacity": 0.0,
         },
         {
             "class": "tool_tip_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(accent-bg-light)",
+            "layer0.tint": "var(accent-large-light)",
         },
         {
             "class": "tool_tip_control",
@@ -937,14 +937,14 @@
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.texture": "Theme - One/assets/border_pressed.png",
             "layer1.inner_margin": 4,
-            "layer1.tint": "var(accent-fg)",
+            "layer1.tint": "var(accent)",
         },
         {
             "class": "button_control",
             "attributes": ["pressed", "!disabled"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
-            "layer1.tint": "var(accent-fg-light)",
+            "layer1.tint": "var(accent-light)",
         },
         {
             "class": "button_control",
@@ -1031,14 +1031,14 @@
             "attributes": ["pressed"],
             "layer0.tint": "var(button-bg-pressed)",
             "layer1.inner_margin": 2,
-            "layer1.tint": "var(accent-fg)",
+            "layer1.tint": "var(accent)",
         },
         {
             "class": "icon_button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(button-bg-pressed-light)",
-            "layer1.tint": "var(accent-fg-light)",
+            "layer1.tint": "var(accent-light)",
         },
         {
             "class": "icon_button_control",
@@ -1738,13 +1738,13 @@
             "content_margin": [0, 4],
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.inner_margin": 3,
-            "layer0.tint": "var(accent-fg)",
+            "layer0.tint": "var(accent)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "progress_gauge_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(accent-fg-light)",
+            "layer0.tint": "var(accent-light)",
         },
 
         ///////////////////////////////// Scroll Bars //////////////////////////
@@ -2155,13 +2155,13 @@
         },
         {
             "class": "tab_connector",
-            "layer0.tint": "var(accent-fg)",
+            "layer0.tint": "var(accent)",
             "layer0.opacity": 0.0,
         },
         {
             "class": "tab_connector",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(accent-fg-light)",
+            "layer0.tint": "var(accent-light)",
         },
         {
             "class": "tab_connector",
@@ -2582,7 +2582,7 @@
             "layer0.tint": "var(bg-selected)",
             "layer0.opacity": 0.0,
             // border highlight
-            "layer1.tint": "var(accent-fg)",
+            "layer1.tint": "var(accent)",
             "layer1.inner_margin": [2, 0, 0, 0],
             "layer1.draw_center": false,
             "layer1.opacity": 0.0,
@@ -2591,7 +2591,7 @@
             "class": "tree_row",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(bg-selected-light)",
-            "layer1.tint": "var(accent-fg-light)",
+            "layer1.tint": "var(accent-light)",
         },
         {
             "class": "tree_row",
@@ -2662,13 +2662,13 @@
         {
             "class": "close_button",
             "attributes": ["dirty"],
-            "layer0.tint": "var(accent-fg)",
+            "layer0.tint": "var(accent)",
         },
         {
             "class": "close_button",
             "attributes": ["dirty"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(accent-fg-light)",
+            "layer0.tint": "var(accent-light)",
         },
         {
             "class": "close_button",
