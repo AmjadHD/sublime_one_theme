@@ -4,24 +4,24 @@
         "font-size-sm": 11.0,
         "font-size-lg": 13.0,
 
-        "base-background-color": "var(--background)",
-        "base-background-color-dark": "color(var(--background) l(+ 8%))",
-        "fg": "color(var(base-background-color) l(66%))",
-        "fg-dark": "color(var(base-background-color-dark) l(66%))",
-        "fg-light": "color(var(base-background-color) l(- 72%))",
+        "base-bg": "var(--background)",
+        "base-bg-dark": "color(var(--background) l(+ 8%))",
+        "fg": "color(var(base-bg) l(66%))",
+        "fg-dark": "color(var(base-bg-dark) l(66%))",
+        "fg-light": "color(var(base-bg) l(- 72%))",
 
         // @level-3-color
-        "app-background-color": "color(var(base-background-color) l(- 3%))",
-        "app-background-color-dark": "color(var(base-background-color-dark) l(- 3%))",
-        "app-background-color-light": "color(var(base-background-color) l(- 6%))",
+        "app-bg": "color(var(base-bg) l(- 3%))",
+        "app-bg-dark": "color(var(base-bg-dark) l(- 3%))",
+        "app-bg-light": "color(var(base-bg) l(- 6%))",
         // @level-3-color-hover
-        "app-background-color-hover": "color(var(app-background-color) l(+ 6%))",
-        "app-background-color-hover-dark": "color(var(app-background-color-dark) l(+ 6%))",
-        "app-background-color-hover-light": "color(var(app-background-color-light) l(- 6%))",
+        "app-bg-hover": "color(var(app-bg) l(+ 6%))",
+        "app-bg-hover-dark": "color(var(app-bg-dark) l(+ 6%))",
+        "app-bg-hover-light": "color(var(app-bg-light) l(- 6%))",
         // @level-3-color-active
-        "app-background-color-active": "color(var(app-background-color) l(+ 3%))",
-        "app-background-color-active-dark": "color(var(app-background-color-dark) l(+ 3%))",
-        "app-background-color-active-light": "color(var(app-background-color-light) l(- 3%))",
+        "app-bg-active": "color(var(app-bg) l(+ 3%))",
+        "app-bg-active-dark": "color(var(app-bg-dark) l(+ 3%))",
+        "app-bg-active-light": "color(var(app-bg-light) l(- 3%))",
 
         "tab-fg-selected":  "color(white a(80%))",
         "tab-fg-selected-light": "color(black a(95%))",
@@ -35,20 +35,20 @@
         "fg-selected":  "white",
         "fg-selected-light":  "color(var(fg-highlight-light) l(- 12%))",
 
-        "bg-highlight": "color(var(base-background-color) l(+ 4%))",
-        "bg-highlight-dark": "color(var(base-background-color-dark) l(+ 4%))",
-        "bg-highlight-light": "color(var(app-background-color-light) l(- 2%))",
-        "bg-selected":  "color(var(base-background-color) l(+ 8%))",
-        "bg-selected-dark":  "color(var(base-background-color-dark) l(+ 8%))",
-        "bg-selected-light":  "color(var(app-background-color-light) l(- 6%))",
+        "bg-highlight": "color(var(base-bg) l(+ 4%))",
+        "bg-highlight-dark": "color(var(base-bg-dark) l(+ 4%))",
+        "bg-highlight-light": "color(var(app-bg-light) l(- 2%))",
+        "bg-selected":  "color(var(base-bg) l(+ 8%))",
+        "bg-selected-dark":  "color(var(base-bg-dark) l(+ 8%))",
+        "bg-selected-light":  "color(var(app-bg-light) l(- 6%))",
 
-        "input-bg": "color(var(base-background-color) l(- 6%))",
-        "input-bg-dark": "color(var(base-background-color-dark) l(- 6%))",
+        "input-bg": "color(var(base-bg) l(- 6%))",
+        "input-bg-dark": "color(var(base-bg-dark) l(- 6%))",
         "input-bg-light": "var(button-bg-light)",
 
-        "button-bg": "color(var(base-background-color) l(+ 6%))",
-        "button-bg-dark": "color(var(base-background-color-dark) l(+ 6%))",
-        "button-bg-light": "color(var(base-background-color) l(+ 4%))",
+        "button-bg": "color(var(base-bg) l(+ 6%))",
+        "button-bg-dark": "color(var(base-bg-dark) l(+ 6%))",
+        "button-bg-light": "color(var(base-bg) l(+ 4%))",
         "button-bg-hover":    "color(var(button-bg) l(+ 2%))",
         "button-bg-hover-dark":    "color(var(button-bg-dark) l(+ 2%))",
         "button-bg-hover-light":    "color(var(button-bg-light) l(- 4%))",
@@ -72,19 +72,19 @@
         "text-match-fg": "color(var(--accent) s(* 83%) l(* 106%))", // hsl(220, 83%, 70%)
         "text-match-fg-light": "color(var(--accent) s(* 75%) l(* 82%))", // hsl(230, 75%, 54%)
 
-        "overlay-bg": "color(var(base-background-color) blend(var(app-background-color) 50%))",
-        "overlay-bg-dark": "color(var(base-background-color-dark) blend(var(app-background-color-dark) 50%))",
-        "overlay-bg-light": "color(var(base-background-color) blend(var(app-background-color-light) 50%))",
+        "overlay-bg": "color(var(base-bg) blend(var(app-bg) 50%))",
+        "overlay-bg-dark": "color(var(base-bg-dark) blend(var(app-bg-dark) 50%))",
+        "overlay-bg-light": "color(var(base-bg) blend(var(app-bg-light) 50%))",
         "overlay-row-bg": "color(var(overlay-bg) l(+ 2%))",
         "overlay-row-bg-dark": "color(var(overlay-bg-dark) l(+ 2%))",
         "overlay-row-bg-light": "color(var(overlay-bg-light) l(+ 2%))",
 
-        "border-color": "color(var(base-background-color) l(* 60%))",
-        "border-color-light": "color(var(app-background-color-light) l(- 6%))",
-        "border-color-dark": "color(var(base-background-color-dark) l(* 30%))",
+        "border-color": "color(var(base-bg) l(* 60%))",
+        "border-color-light": "color(var(app-bg-light) l(- 6%))",
+        "border-color-dark": "color(var(base-bg-dark) l(* 30%))",
 
         "scrollbar-color": "color(var(--background) l(+ 16%))",
-        "scrollbar-color-light": "color(var(app-background-color-light) l(- 14%))",
+        "scrollbar-color-light": "color(var(app-bg-light) l(- 14%))",
 
         "color-removed":        "hsl(  9, 100%,  64%)",
         "color-removed-light":  "hsl(  0,  90%,  56%)",
@@ -106,19 +106,19 @@
             "class": "title_bar",
             "attributes": ["file_dark"],
             "fg": "var(fg-dark)",
-            "bg": "color(var(app-background-color-dark) l(+ 4%))",
+            "bg": "color(var(app-bg-dark) l(+ 4%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_medium"],
             "fg": "var(fg)",
-            "bg": "color(var(app-background-color-light) l(- 3%))",
+            "bg": "color(var(app-bg-light) l(- 3%))",
         },
         {
             "class": "title_bar",
             "attributes": ["file_light"],
             "fg": "var(fg-light)",
-            "bg": "color(var(app-background-color-light) l(- 6%))",
+            "bg": "color(var(app-bg-light) l(- 6%))",
         },
 
         /////////////////////// Autocomplete /////////////////////
@@ -489,7 +489,7 @@
             "class": "panel_control",
             "content_margin": [0, 1, 0, 0],
             // background
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             // border
             "layer1.tint": "var(border-color)",
@@ -506,14 +506,14 @@
         {
             "class": "panel_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "layer1.tint": "var(border-color-light)",
             "layer2.tint": "var(border-color-light)",
         },
         {
             "class": "panel_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
             "layer2.tint": "var(border-color-dark)",
         },
@@ -1314,13 +1314,13 @@
 
         {
             "class": "dialog window",
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "dialog window",
             "attributes": ["file_light"],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
         },
         {
             "class": "progress_bar_control",
@@ -1396,19 +1396,19 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
         },
         {
             "class": "scroll_bar_control",
@@ -1419,26 +1419,26 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "dialog"}],
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "dialog"}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "overlay_control"}],
             "content_margin": [3, 4, 4, 3],
             // background
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             // border
             "layer1.tint": "var(border-color)",
@@ -1450,21 +1450,21 @@
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control"}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "overlay_control"}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window"}],
             "content_margin": [3, 4, 4, 3],
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             "layer1.tint": "var(border-color)",
             "layer1.inner_margin": [0, 1, 1, 0],
@@ -1474,13 +1474,13 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1491,36 +1491,36 @@
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "sidebar_container"}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "dialog"}],
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "dialog"}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
         },
         {
             "class": "scroll_corner_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "dialog"}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
         },
         {
             "class": "puck_control",
@@ -1591,7 +1591,7 @@
             "class": "status_bar",
             "content_margin": [0, 1, 0, 0],
             // background
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             // border
             "layer1.tint": "var(border-color)",
@@ -1602,13 +1602,13 @@
         {
             "class": "status_bar",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "status_bar",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -1646,32 +1646,32 @@
         {
             "class": "status_button",
             "attributes": ["hover"],
-            "layer0.tint": "var(app-background-color-hover)",
+            "layer0.tint": "var(app-bg-hover)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
-            "layer0.tint": "var(app-background-color-hover-light)",
+            "layer0.tint": "var(app-bg-hover-light)",
         },
         {
             "class": "status_button",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-hover-dark)",
+            "layer0.tint": "var(app-bg-hover-dark)",
         },
         {
             "class": "status_button",
             "attributes": ["pressed"],
-            "layer0.tint": "var(app-background-color-active)",
+            "layer0.tint": "var(app-bg-active)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "status_button",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"],}],
-            "layer0.tint": "var(app-background-color-active-light)",
+            "layer0.tint": "var(app-bg-active-light)",
         },
         {
             "class": "panel_button_control",
@@ -1685,32 +1685,32 @@
         {
             "class": "panel_button_control",
             "attributes": ["hover"],
-            "layer0.tint": "var(app-background-color-hover)",
+            "layer0.tint": "var(app-bg-hover)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "panel_button_control",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-hover-light)",
+            "layer0.tint": "var(app-bg-hover-light)",
         },
         {
             "class": "panel_button_control",
             "attributes": ["pressed"],
-            "layer0.tint": "var(app-background-color-active)",
+            "layer0.tint": "var(app-bg-active)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "panel_button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-active-light)",
+            "layer0.tint": "var(app-bg-active-light)",
         },
         {
             "class": "sidebar_button_control",
             "attributes": ["pressed"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-active-dark)",
+            "layer0.tint": "var(app-bg-active-dark)",
         },
 
         //////////////////////////// Tabs //////////////////////////////////////
@@ -1718,7 +1718,7 @@
         {
             "class": "tabset_control",
             // background
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             // border
             "layer1.tint": "var(border-color)",
@@ -1732,13 +1732,13 @@
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "layer1.tint": "var(border-color-light)",
         },
         {
             "class": "tabset_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
             "layer1.tint": "var(border-color-dark)",
         },
         {
@@ -2013,20 +2013,20 @@
             "indent": 15,
             "indent_offset": 14,
             "indent_top_level": false,
-            "layer0.tint": "var(app-background-color)",
+            "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             "dark_content": true,
         },
         {
             "class": "sidebar_tree",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(app-background-color-light)",
+            "layer0.tint": "var(app-bg-light)",
             "dark_content": false,
         },
         {
             "class": "sidebar_tree",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(app-background-color-dark)",
+            "layer0.tint": "var(app-bg-dark)",
         },
         {
             "class": "sidebar_container",
