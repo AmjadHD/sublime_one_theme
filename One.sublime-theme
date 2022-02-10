@@ -141,7 +141,7 @@
             "settings": ["popup_shadows"],
             "content_margin": [9, 7, 9, 11],
             "layer0.texture": "Theme - One/assets/popup_shadow.png",
-            "layer0.inner_margin": [11, 7, 11, 14],
+            "layer0.inner_margin": [27, 27, 27, 27],
             "layer0.draw_center": false,
         },
         {
