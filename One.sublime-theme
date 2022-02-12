@@ -23,8 +23,8 @@
         "app-background-color-active-dark": "color(var(app-background-color-dark) l(+ 3%))",
         "app-background-color-active-light": "color(var(app-background-color-light) l(- 3%))",
 
-        "tab-fg-selected":  "color(white a(0.8))",
-        "tab-fg-selected-light": "color(black a(0.95))",
+        "tab-fg-selected":  "color(white a(80%))",
+        "tab-fg-selected-light": "color(black a(95%))",
 
         "fg-subtle":    "color(var(fg) a(- 40%))",
         "fg-subtle-dark":    "color(var(fg-dark) a(- 40%))",
@@ -90,7 +90,7 @@
         "color-modified":       "hsl( 36,  60%,  72%)",
         "color-modified-light": "hsl( 37,  90%,  44%)",
         "color-added":          "hsl(140,  44%,  62%)",
-        "color-added-light":    "hsl(132,  60%,  44%)"
+        "color-added-light":    "hsl(132,  60%,  44%)",
     },
     "rules": [
 
@@ -141,54 +141,52 @@
             "settings": ["popup_shadows"],
             "content_margin": [9, 7, 9, 11],
             "layer0.texture": "Theme - One/assets/popup_shadow.png",
-            "layer0.inner_margin": [27, 27, 27, 27],
+            "layer0.inner_margin": 27,
             "layer0.draw_center": false,
         },
         {
             "class": "popup_control",
             "settings": ["!popup_shadows"],
-            "content_margin": [1, 1],
+            "content_margin": 1,
             "layer0.tint": "black",
-            "layer0.inner_margin": [1, 1],
+            "layer0.inner_margin": 1,
             "layer0.draw_center": false,
             "layer0.opacity": 0.3,
         },
         {
             "class": "auto_complete",
             "tint_index": 0,
-            "tint_modifier": [0, 0, 0, 0.08],
+            "tint_modifier": "color(black a(8%))",
             "layer0.opacity": 1.0,
             "row_padding": [0, 0],
-            "dark_content": true
+            "dark_content": true,
         },
         {
             "class": "auto_complete",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.03],
+            "tint_modifier": "color(black a(3%))",
             "dark_content": false,
         },
         {
             "class": "auto_complete",
             "attributes": ["file_dark"],
-            "tint_modifier": "color(white a(0.07))",
+            "tint_modifier": "color(white a(7%))",
         },
         {
             "class": "auto_complete_label",
-            "fg": [0, 0, 0, 0.0],
-            "match_fg": [255, 255, 255, 0.9],
-            "selected_fg": [0, 0, 0, 0.0],
-            "selected_match_fg": [255, 255, 255, 0.9],
+            "fg": "transparent",
+            "match_fg": "color(white a(90%))",
+            "selected_fg": "transparent",
+            "selected_match_fg": "color(white a(90%))",
             "fg_blend": true,
             "font.size": "1rem",
         },
         {
             "class": "auto_complete_label",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "fg": [0, 0, 0, 0.0],
-            "match_fg": [0, 0, 0, 0.9],
-            "selected_fg": [0, 0, 0, 0.0],
-            "selected_match_fg": [0, 0, 0, 0.9],
-            "fg_blend": true
+            "match_fg": "color(black a(90%))",
+            "selected_match_fg": "color(black a(90%))",
+            "fg_blend": true,
         },
         {
             "class": "auto_complete_label auto_complete_hint",
@@ -199,7 +197,7 @@
         {
             "class": "table_row",
             "layer0.tint": "white",
-            "layer0.opacity": 0.0
+            "layer0.opacity": 0.0,
         },
         {
             "class": "table_row",
@@ -209,29 +207,29 @@
         {
             "class": "table_row",
             "attributes": ["selected"],
-            "layer0.opacity": 0.1
+            "layer0.opacity": 0.1,
         },
         {
             "class": "table_row",
-            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
             "attributes": ["selected"],
-            "layer0.opacity": 0.09
+            "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
+            "layer0.opacity": 0.09,
         },
         {
             "class": "kind_container",
             "content_margin": [6, 0],
-            "layer0.tint": "color(white a(0.51))",
+            "layer0.tint": "color(white a(51%))",
             "layer0.opacity": 0.2,
         },
         {
             "class": "kind_container",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "layer0.tint": "color(black a(0.7))",
+            "layer0.tint": "color(black a(70%))",
         },
         {
             "class": "kind_container",
             "parents": [{"class": "auto_complete", "attributes": ["file_dark"]}],
-            "layer0.tint": "color(white a(0.6))",
+            "layer0.tint": "color(white a(60%))",
         },
         {
             "class": "kind_label",
@@ -261,7 +259,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_function"}],
-            "color": "var(--bluish)"
+            "color": "var(--bluish)",
         },
         {
             "class": "kind_container kind_keyword",
@@ -270,7 +268,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_keyword"}],
-            "color": "var(--purplish)"
+            "color": "var(--purplish)",
         },
         {
             "class": "kind_container kind_markup",
@@ -279,7 +277,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_markup"}],
-            "color": "var(--redish)"
+            "color": "var(--redish)",
         },
         {
             "class": "kind_container kind_namespace",
@@ -288,7 +286,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_namespace"}],
-            "color": "var(--purplish)"
+            "color": "var(--purplish)",
         },
         {
             "class": "kind_container kind_navigation",
@@ -297,7 +295,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_navigation"}],
-            "color": "var(--yellowish)"
+            "color": "var(--yellowish)",
         },
         {
             "class": "kind_container kind_snippet",
@@ -306,7 +304,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_snippet"}],
-            "color": "var(--greenish)"
+            "color": "var(--greenish)",
         },
         {
             "class": "kind_container kind_type",
@@ -315,7 +313,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_type"}],
-            "color": "var(--yellowish)"
+            "color": "var(--yellowish)",
         },
         {
             "class": "kind_container kind_variable",
@@ -324,30 +322,30 @@
         {
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_variable"}],
-            "color": "var(--redish)"
+            "color": "var(--redish)",
         },
         {
             "class": "trigger_container",
-            "content_margin": [12, 4]
+            "content_margin": [12, 4],
         },
         {
             "class": "auto_complete_detail_pane",
+            "content_margin": [9, 5],
             "tint_index": 0,
             "layer0.texture": "Theme - One/assets/auto_complete_detail_pane.png",
             "layer0.inner_margin": [3, 0, 3, 3],
             "layer0.opacity": 1.0,
-            "tint_modifier": [0, 0, 0, 0.3],
-            "content_margin": [9, 5]
+            "tint_modifier": "color(black a(30%))",
         },
         {
             "class": "auto_complete_detail_pane",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.07],
+            "tint_modifier": "color(black a(7%))",
         },
         {
             "class": "auto_complete_detail_pane",
             "attributes": ["file_dark"],
-            "tint_modifier": "color(white a(0.02))",
+            "tint_modifier": "color(white a(2%))",
         },
         {
             "class": "auto_complete_info",
@@ -356,27 +354,27 @@
         {
             "class": "auto_complete_kind_name_label",
             "font.size": "0.9rem",
-            "border_color": "color(var(accent-fg) a(0.8))",
+            "border_color": "color(var(accent-fg) a(80%))",
             "font.italic": false,
         },
         {
             "class": "auto_complete_details",
-            "monospace_background_color": [255, 255, 255, 0.12]
+            "monospace_background_color": "color(white a(12%))",
         },
         {
             "class": "auto_complete_details",
             "parents": [{"class": "auto_complete_detail_pane", "attributes": ["file_light"]}],
-            "monospace_background_color": [0, 0, 0, 0.08],
+            "monospace_background_color": "color(black a(8%))",
         },
         //////////////////////////// Quick Panels ////////////////////////////
-        
+
         {
             "class": "overlay_control",
             "content_margin": [19, 13, 19, 26],
             // shadow
             "layer0.texture": "Theme - One/assets/overlay_shadow.png",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": [28, 28, 28, 28],
+            "layer0.inner_margin": 28,
             "layer0.draw_center": false,
             // background
             "layer1.texture": "Theme - One/assets/overlay_bg.png",
@@ -455,13 +453,13 @@
         {
             "class": "quick_panel",
             "parents": [{"class": "overlay_control kind_info"}],
-            "row_padding": [0, 0]
+            "row_padding": [0, 0],
         },
         {
             "class": "quick_panel",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(overlay-bg-light)",
-            "dark_content": false
+            "dark_content": false,
         },
         {
             "class": "quick_panel",
@@ -516,7 +514,7 @@
             "fg": "var(fg)",
             "match_fg": "var(text-match-fg)",
             "selected_fg": "var(fg-highlight)",
-            "selected_match_fg": "var(text-match-fg)"
+            "selected_match_fg": "var(text-match-fg)",
         },
         {
             "class": "quick_panel_label",
@@ -563,7 +561,7 @@
             "fg": "var(fg-subtle)",
             "match_fg": "var(text-match-fg)",
             "selected_fg": "color(var(fg-highlight) a(50%))",
-            "selected_match_fg": "var(text-match-fg)"
+            "selected_match_fg": "var(text-match-fg)",
         },
         {
             "class": "quick_panel_path_label",
@@ -571,7 +569,7 @@
             "fg": "var(fg-subtle-light)",
             "match_fg": "var(text-match-fg-light)",
             "selected_fg": "color(var(fg-highlight-light) a(50%))",
-            "selected_match_fg": "var(text-match-fg-light)"
+            "selected_match_fg": "var(text-match-fg-light)",
         },
         {
             "class": "quick_panel_path_label",
@@ -585,7 +583,7 @@
         },
         {
             "class": "symbol_container",
-            "content_margin": [12, 9]
+            "content_margin": [12, 9],
         },
         {
             "class": "kind_container",
@@ -614,7 +612,7 @@
         {
             "class": "kind_label",
             "parents": [{"class": "overlay_control kind_info"}],
-            "font.size": 15.0
+            "font.size": 15.0,
         },
         {
             "class": "kind_label",
@@ -636,8 +634,8 @@
             "content_margin": [10, 8],
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.tint": "var(accent-bg)",
-            "layer0.inner_margin": [3, 3],
-            "layer0.opacity": 0.0
+            "layer0.inner_margin": 3,
+            "layer0.opacity": 0.0,
         },
         {
             "class": "tool_tip_control",
@@ -657,12 +655,12 @@
         },
         {
             "class": "tool_tip_label_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
             "color": "var(button-fg-selected-light)",
         },
         {
             "class": "tool_tip_label_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "color": "var(button-fg-selected-dark)",
         },
         {
@@ -672,7 +670,7 @@
         },
 
         //////////////////////////// Inputs ////////////////////////////////////
-        
+
         {
             "class": "text_line_control",
             "content_margin": [8, 1, 7, 1],
@@ -696,12 +694,12 @@
             "class": "text_line_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(input-bg-dark)",
-            "layer1.tint": "var(border-color-dark)"
+            "layer1.tint": "var(border-color-dark)",
         },
         {
             "class": "text_line_control",
             "parents": [{"class": "overlay_control"}],
-            "layer0.draw_center": false
+            "layer0.draw_center": false,
         },
         {
             "class": "text_area_control",
@@ -710,8 +708,8 @@
         },
         {
             "class": "text_area_control",
-            "parents": [{"class": "text_line_control"}],
             "attributes": ["file_light"],
+            "parents": [{"class": "text_line_control"}],
             "background_modifier": "l(+ 4%)",
         },
         {
@@ -722,10 +720,10 @@
         },
         {
             "class": "dropdown_button_control",
-            "content_margin": [8, 8],
+            "content_margin": 8,
             "layer0.texture": "Theme - One/icons/history.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "dropdown_button_control",
@@ -840,24 +838,24 @@
         {
             "class": "panel_close_button",
             "attributes": ["hover"],
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "text_area_control",
-            "parents": [{"class": "text_output_control"},],
+            "parents": [{"class": "text_output_control"}],
             "background_modifier": "l(- 6%)",
         },
         {
             "class": "text_area_control",
             "attributes": ["file_light"],
-            "parents": [{"class": "text_output_control"},],
+            "parents": [{"class": "text_output_control"}],
             "background_modifier": "l(+ 4%)",
         },
         {
             "class": "text_area_control",
             "attributes": ["file_dark"],
-            "parents": [{"class": "text_output_control"},],
+            "parents": [{"class": "text_output_control"}],
             "background_modifier": "l(+ 2%)",
         },
 
@@ -870,12 +868,12 @@
         },
         {
             "class": "label_control",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
             "color": "var(fg-light)",
         },
         {
             "class": "label_control",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},],
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "color": "var(fg-dark)",
         },
 
@@ -954,24 +952,24 @@
         {
             "class": "label_control",
             "parents": [{"class": "button_control"}],
-            "font.size": "var(font-size-lg)"
+            "font.size": "var(font-size-lg)",
         },
         {
             "class": "label_control",
             "parents": [{"class": "button_control", "attributes": ["hover", "!disabled"]}],
-            "color": "var(fg-highlight)"
+            "color": "var(fg-highlight)",
         },
         {
             "class": "label_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "button_control", "attributes": ["hover", "!disabled"]}],
-            "color": "var(fg-highlight-light)"
+            "color": "var(fg-highlight-light)",
         },
         {
             "class": "label_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "button_control", "attributes": ["hover", "!disabled"]}],
-            "color": "var(fg-highlight-dark)"
+            "color": "var(fg-highlight-dark)",
         },
         {
             "class": "label_control",
@@ -1107,7 +1105,7 @@
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_regex.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_regex",
@@ -1122,43 +1120,43 @@
         {
             "class": "icon_regex",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_regex",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_regex",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_regex",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_regex",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_regex",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_case",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_case.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_case",
@@ -1173,43 +1171,43 @@
         {
             "class": "icon_case",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_case",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_case",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_case",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_case",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_case",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_highlight",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/eye_closed.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_highlight",
@@ -1224,44 +1222,44 @@
         {
             "class": "icon_highlight",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_highlight",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_highlight",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_highlight",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
             "layer0.texture": "Theme - One/icons/eye.png",
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_highlight",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_highlight",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_in_selection",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_in_selection.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_in_selection",
@@ -1282,37 +1280,37 @@
             "class": "icon_in_selection",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_in_selection",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_in_selection",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_in_selection",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_in_selection",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_whole_word",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_whole_word.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_whole_word",
@@ -1327,43 +1325,43 @@
         {
             "class": "icon_whole_word",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_whole_word",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_whole_word",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_whole_word",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_whole_word",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_whole_word",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_wrap",
             "content_margin": [17, 14],
             "layer0.texture": "Theme - One/icons/icon_wrap.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_wrap",
@@ -1378,43 +1376,43 @@
         {
             "class": "icon_wrap",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_wrap",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_wrap",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_wrap",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_wrap",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_wrap",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_preserve_case",
             "content_margin": [17, 14],
             "layer0.opacity": 1.0,
             "layer0.texture": "Theme - One/icons/icon_preserve_case.png",
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_preserve_case",
@@ -1429,19 +1427,19 @@
         {
             "class": "icon_preserve_case",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_preserve_case",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_preserve_case",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_preserve_case",
@@ -1481,36 +1479,36 @@
         {
             "class": "icon_context",
             "attributes": ["hover"],
-            "layer0.tint": "var(fg-highlight)"
+            "layer0.tint": "var(fg-highlight)",
         },
         {
             "class": "icon_context",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "layer0.tint": "var(fg-highlight-light)"
+            "layer0.tint": "var(fg-highlight-light)",
         },
         {
             "class": "icon_context",
             "attributes": ["hover"],
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "layer0.tint": "var(fg-highlight-dark)"
+            "layer0.tint": "var(fg-highlight-dark)",
         },
         {
             "class": "icon_context",
             "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected)"
+            "layer0.tint": "var(button-fg-selected)",
         },
         {
             "class": "icon_context",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-light)"
+            "layer0.tint": "var(button-fg-selected-light)",
         },
         {
             "class": "icon_context",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
                         {"class": "icon_button_control", "attributes": ["selected"]}],
-            "layer0.tint": "var(button-fg-selected-dark)"
+            "layer0.tint": "var(button-fg-selected-dark)",
         },
         {
             "class": "icon_use_buffer",
@@ -1620,39 +1618,39 @@
         {
             "class": "grid_layout_control",
             "border_size": 1,
-            "border_color": "var(border-color)"
+            "border_color": "var(border-color)",
         },
         {
             "class": "grid_layout_control",
             "parents": [{"class": "window", "attributes": ["file_light"]}],
-            "border_color": "var(border-color-light)"
+            "border_color": "var(border-color-light)",
         },
         {
             "class": "grid_layout_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
-            "border_color": "var(border-color-dark)"
+            "border_color": "var(border-color-dark)",
         },
         {
             "class": "minimap_control",
             "viewport_color": "rgb(127, 127, 127)",
-            "viewport_opacity": 0.2
+            "viewport_opacity": 0.2,
         },
         {
             "class": "minimap_control",
             "settings": ["!always_show_minimap_viewport"],
-            "viewport_opacity": 0.0
+            "viewport_opacity": 0.0,
         },
         {
             "class": "fold_button_control",
-            "content_margin": [8, 8],
+            "content_margin": 8,
             "layer0.texture": "Theme - One/assets/fold_button.png",
             "layer0.tint": "white",
-            "layer0.opacity": 0.2
+            "layer0.opacity": 0.2,
         },
         {
             "class": "fold_button_control",
             "attributes": ["hover"],
-            "layer0.opacity": 0.4
+            "layer0.opacity": 0.4,
         },
         {
             "class": "fold_button_control",
@@ -1670,30 +1668,30 @@
         {
             "class": "text_area_control sheet_contents",
             "attributes": ["!highlighted"],
-            "background_modifier": "l(- 2%)"
+            "background_modifier": "l(- 2%)",
         },
         {
             "class": "text_area_control sheet_contents",
             "attributes": ["file_light", "!highlighted"],
-            "background_modifier": "l(- 4%)"
+            "background_modifier": "l(- 4%)",
         },
         {
             "class": "text_area_control sheet_contents",
             "attributes": ["file_dark", "!highlighted"],
-            "background_modifier": "l(+ 2%)"
+            "background_modifier": "l(+ 2%)",
         },
         {
             "class": "text_area_control sheet_contents",
             "settings": ["!inactive_sheet_dimming"],
-            "background_modifier": ""
+            "background_modifier": "",
         },
 
         /////////////////////////////// Dialogs ////////////////////////////////
-        
+
         {
             "class": "dialog window",
             "layer0.tint": "var(app-background-color)",
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "dialog window",
@@ -1746,28 +1744,28 @@
             "left_shadow_size": 1,
             "right_shadow_size": 1,
             "top_shadow_size": 1,
-            "bottom_shadow_size": 1
+            "bottom_shadow_size": 1,
         },
         {
             "class": "scroll_area_control",
             "settings": ["overlay_scroll_bars"],
-            "overlay": true
+            "overlay": true,
         },
         {
             "class": "scroll_area_control",
             "parents": [{"class": "overlay_control"}],
-            "overlay": false
+            "overlay": false,
         },
         {
             "class": "scroll_bar_control",
             "content_margin": [3, 4],
             "layer0.opacity": 1.0,
-            "tint_index": 0
+            "tint_index": 0,
         },
         {
             "class": "scroll_bar_control",
             "settings": ["overlay_scroll_bars"],
-            "layer0.opacity": 0.0
+            "layer0.opacity": 0.0,
         },
         {
             "class": "scroll_bar_control",
@@ -1790,7 +1788,7 @@
             "class": "scroll_bar_control",
             "attributes": ["file_dark"],
             "parents": [{"class": "popup_control auto_complete_popup"}],
-            "tint_modifier": "color(white a(0.04))",
+            "tint_modifier": "color(white a(4%))",
         },
         {
             "class": "scroll_bar_control",
@@ -1800,13 +1798,13 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "dialog"},],
+                        {"class": "dialog"}],
             "layer0.tint": "var(app-background-color-light)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "dialog"},],
+                        {"class": "dialog"}],
             "layer0.tint": "var(app-background-color-dark)",
         },
         {
@@ -1818,7 +1816,7 @@
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
             "layer0.opacity": 1.0,
-            "layer1.opacity": 1.0
+            "layer1.opacity": 1.0,
         },
         {
             "class": "scroll_bar_control",
@@ -1843,7 +1841,7 @@
             "layer1.inner_margin": [0, 1, 1, 0],
             "layer1.draw_center": false,
             "layer0.opacity": 1.0,
-            "layer1.opacity": 1.0
+            "layer1.opacity": 1.0,
         },
         {
             "class": "scroll_bar_control",
@@ -1860,11 +1858,11 @@
         {
             "class": "scroll_corner_control",
             "tint_index": 0,
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "scroll_corner_control",
-            "parents": [{"class": "sidebar_container"},],
+            "parents": [{"class": "sidebar_container"}],
             "layer0.tint": "var(app-background-color)",
         },
         {
@@ -1881,7 +1879,7 @@
         },
         {
             "class": "scroll_corner_control",
-            "parents": [{"class": "dialog"},],
+            "parents": [{"class": "dialog"}],
             "layer0.tint": "var(app-background-color)",
         },
         {
@@ -1903,14 +1901,14 @@
             "tint_index": 0,
             "tint_modifier": "rgba(111, 124, 146, 0.5)",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": [0, 2]
+            "layer0.inner_margin": [0, 2],
         },
         {
             "class": "puck_control",
             "attributes": ["horizontal"],
             "content_margin": [5, 2],
             "layer0.texture": "Theme - One/assets/scrollbar_thumb_horizontal.png",
-            "layer0.inner_margin": [2, 0]
+            "layer0.inner_margin": [2, 0],
         },
         {
             "class": "puck_control",
@@ -1924,38 +1922,38 @@
         },
         {
             "class": "puck_control",
-            "parents": [{"class": "sidebar_container"},],
+            "parents": [{"class": "sidebar_container"}],
             "tint_index": -1,
             "layer0.tint": "var(scrollbar-color)",
         },
         {
             "class": "puck_control",
             "attributes": ["!dark"],
-            "parents": [{"class": "sidebar_container"},],
+            "parents": [{"class": "sidebar_container"}],
             "layer0.tint": "var(scrollbar-color-light)",
         },
         {
             "class": "puck_control",
-            "parents": [{"class": "overlay_control"},],
+            "parents": [{"class": "overlay_control"}],
             "tint_index": -1,
             "layer0.tint": "var(scrollbar-color)",
         },
         {
             "class": "puck_control",
             "attributes": ["!dark"],
-            "parents": [{"class": "overlay_control"},],
+            "parents": [{"class": "overlay_control"}],
             "layer0.tint": "var(scrollbar-color-light)",
         },
         {
             "class": "puck_control",
-            "parents": [{"class": "switch_project_window"},],
+            "parents": [{"class": "switch_project_window"}],
             "tint_index": -1,
             "layer0.tint": "var(scrollbar-color)",
         },
         {
             "class": "puck_control",
             "attributes": ["!dark"],
-            "parents": [{"class": "switch_project_window"},],
+            "parents": [{"class": "switch_project_window"}],
             "layer0.tint": "var(scrollbar-color-light)",
         },
 
@@ -1985,7 +1983,7 @@
         },
         {
             "class": "status_container",
-            "content_margin": [4, 0, 0, 0]
+            "content_margin": [4, 0, 0, 0],
         },
         {
             "class": "status_container",
@@ -1994,9 +1992,9 @@
         },
         {
             "class": "vcs_branch_icon",
+            "content_margin": 8,
             "layer0.texture": "Theme - One/icons/branch.png",
             "layer0.tint": "var(fg)",
-            "content_margin": [8, 8],
         },
         {
             "class": "vcs_branch_icon",
@@ -2012,7 +2010,7 @@
             "class": "status_button",
             "content_margin": [9, 4],
             "layer0.opacity": 0.0,
-            "min_size": [10, 22]
+            "min_size": [10, 22],
         },
         {
             "class": "status_button",
@@ -2119,7 +2117,7 @@
             "tab_overlap": 0,
             "tab_min_width": 83,
             "tab_height": 30,
-            "connector_height": 2
+            "connector_height": 2,
         },
         {
             "class": "tabset_control",
@@ -2136,7 +2134,7 @@
         {
             "class": "tabset_control",
             "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
-            "mouse_wheel_switch": true
+            "mouse_wheel_switch": true,
         },
         {
             "class": "tab_connector",
@@ -2145,7 +2143,7 @@
         },
         {
             "class": "tab_connector",
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(accent-fg-light)",
         },
         {
@@ -2186,8 +2184,8 @@
         {
             "class": "tab_control",
             "settings": ["show_tab_close_buttons_on_left"],
-            "close_button_side": "left",
             "content_margin": [7, 0, 33, 0],
+            "close_button_side": "left",
         },
         {
             "class": "tab_control",
@@ -2204,7 +2202,7 @@
             "class": "tab_label",
             "color": "var(fg-subtle)",
             "font.size": "var(font-size)",
-            "font.italic": false
+            "font.italic": false,
         },
         {
             "class": "tab_label",
@@ -2224,22 +2222,22 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
-            "color": "var(tab-fg-selected-light)"
+            "color": "var(tab-fg-selected-light)",
         },
         {
             "class": "tab_label",
             "attributes": ["transient"],
-            "font.italic": true
+            "font.italic": true,
         },
         {
             "class": "tab_close_button",
-            "content_margin": [9, 9],
+            "content_margin": 9,
             "layer0.texture": "Theme - One/assets/tooltip.png",
             "layer0.inner_margin": 3,
             "layer1.texture": "Theme - One/assets/tab_close_button_x.png",
             "layer1.tint": "var(fg-subtle)",
             "layer0.opacity": 0.0,
-            "layer1.opacity": {"target": 0.0, "speed": 5.0, "interpolation": "smoothstep"},
+            "layer1.opacity": {"target": 0.0, "speed": 10.0, "interpolation": "smoothstep"},
         },
         {
             "class": "tab_close_button",
@@ -2272,12 +2270,11 @@
             "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
             "layer1.tint": null,
             "accent_tint_index": 1,
-            "layer1.opacity": {"target": 1.0, "speed": 5.0, "interpolation": "smoothstep"},
+            "layer1.opacity": 1.0,
         },
         {
             "class": "tab_close_button",
             "settings": ["highlight_modified_tabs"],
-
             "parents": [{"class": "tab_control", "attributes": ["dirty", "!hover"]}],
             "layer1.texture": "Theme - One/assets/dirty.png",
         },
@@ -2312,11 +2309,11 @@
         },
         {
             "class": "new_tab_button",
+            "content_margin": 12,
             "layer0.texture": "Theme - Default/common/new_tab.png",
             "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": [21, 0, 1, 0],
-            "content_margin": [12, 12],
         },
         {
             "class": "new_tab_button",
@@ -2355,7 +2352,7 @@
             "content_margin": [10, 3],
             "layer0.texture": "Theme - One/assets/tab_dropdown.png",
             "layer0.tint": "var(fg)",
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "show_tabs_dropdown_button",
@@ -2473,7 +2470,7 @@
             "indent_top_level": false,
             "layer0.tint": "var(app-background-color)",
             "layer0.opacity": 1.0,
-            "dark_content": true
+            "dark_content": true,
         },
         {
             "class": "sidebar_tree",
@@ -2491,7 +2488,7 @@
             "content_margin": [0, 0, 1, 0],
             "layer0.tint": "var(border-color)",
             "layer0.opacity": 1.0,
-            "layer0.draw_center": false
+            "layer0.draw_center": false,
         },
         {
             "class": "sidebar_container",
@@ -2506,7 +2503,7 @@
         {
             "class": "sidebar_heading",
             "color": "var(fg)",
-            "font.size": "var(font-size)"
+            "font.size": "var(font-size)",
         },
         {
             "class": "sidebar_heading",
@@ -2520,7 +2517,7 @@
         },
         {
             "class": "disclosure_button_control",
-            "content_margin": [8, 8],
+            "content_margin": 8,
             "layer0.texture": "Theme - One/assets/disclosure_button.png",
             "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
@@ -2580,7 +2577,7 @@
         {
             "class": "tree_row",
             "attributes": ["selected"],
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "tree_row",
@@ -2589,7 +2586,7 @@
         },
         {
             "class": "close_button",
-            "content_margin": [8, 8],
+            "content_margin": 8,
             "layer0.texture": "Theme - One/assets/open_files_close.png",
             "layer0.tint": "var(fg)",
             "layer0.opacity": 1.0,
@@ -2646,13 +2643,13 @@
         {
             "class": "close_button",
             "attributes": ["dirty"],
-            "parents": [{"class": "window", "attributes": ["file_light"]},],
+            "parents": [{"class": "window", "attributes": ["file_light"]}],
             "layer0.tint": "var(accent-fg-light)",
         },
         {
             "class": "close_button",
             "attributes": ["dirty"],
-            "parents": [{"class": "tree_row", "attributes": ["!hover"]},],
+            "parents": [{"class": "tree_row", "attributes": ["!hover"]}],
             "layer0.texture": "Theme - One/assets/open_files_dirty.png",
         },
         {
@@ -2662,7 +2659,7 @@
         },
         {
             "class": "icon_file_type",
-            "content_margin": [8, 8],
+            "content_margin": 8,
             "layer0.tint": "var(fg)",
         },
         {
@@ -2679,7 +2676,7 @@
             "class": "icon_folder",
             "content_margin": [7, 8],
             "layer0.texture": "Theme - One/icons/folder.png",
-            "layer0.tint": "var(fg)"
+            "layer0.tint": "var(fg)",
         },
         {
             "class": "icon_folder",
@@ -2711,7 +2708,7 @@
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "layer0.tint": "var(fg-subtle)"
+            "layer0.tint": "var(fg-subtle)",
         },
         {
             "class": "icon_folder",
@@ -2728,57 +2725,57 @@
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
-            "layer0.tint": "var(color-removed)"
+            "layer0.tint": "var(color-removed)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["missing"]}],
-            "layer0.tint": "var(color-removed-light)"
+            "layer0.tint": "var(color-removed-light)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
-            "layer0.tint": "var(color-removed)"
+            "layer0.tint": "var(color-removed)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["deleted"]}],
-            "layer0.tint": "var(color-removed-light)"
+            "layer0.tint": "var(color-removed-light)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
-            "layer0.tint": "var(color-added)"
+            "layer0.tint": "var(color-added)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["untracked"]}],
-            "layer0.tint": "var(color-added-light)"
+            "layer0.tint": "var(color-added-light)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
-            "layer0.tint": "var(color-added)"
+            "layer0.tint": "var(color-added)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["added"]}],
-            "layer0.tint": "var(color-added-light)"
+            "layer0.tint": "var(color-added-light)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
-            "layer0.tint": "var(color-modified)"
+            "layer0.tint": "var(color-modified)",
         },
         {
             "class": "icon_folder",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["modified"]}],
-            "layer0.tint": "var(color-modified-light)"
+            "layer0.tint": "var(color-modified-light)",
         },
         {
             "class": "icon_folder",
@@ -2930,7 +2927,7 @@
             "color": "var(fg)",
             "font.size": "var(font-size)",
             "font.bold": false,
-            "font.italic": false
+            "font.italic": false,
         },
         {
             "class": "sidebar_label",
@@ -2946,12 +2943,12 @@
             "class": "sidebar_label",
             "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
             "settings": ["bold_folder_labels"],
-            "font.bold": true
+            "font.bold": true,
         },
         {
             "class": "sidebar_label",
             "attributes": ["transient"],
-            "font.italic": true
+            "font.italic": true,
         },
         {
             "class": "sidebar_label",
@@ -2973,7 +2970,7 @@
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
-            "color": "var(fg-subtle)"
+            "color": "var(fg-subtle)",
         },
         {
             "class": "sidebar_label",
@@ -2990,79 +2987,79 @@
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
-            "color": "var(color-removed)"
+            "color": "var(color-removed)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["missing"]}],
-            "color": "var(color-removed-light)"
+            "color": "var(color-removed-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
-            "color": "var(color-removed)"
+            "color": "var(color-removed)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["deleted"]}],
-            "color": "var(color-removed-light)"
+            "color": "var(color-removed-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
-            "color": "var(color-added)"
+            "color": "var(color-added)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["untracked"]}],
-            "color": "var(color-added-light)"
+            "color": "var(color-added-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
-            "color": "var(color-added)"
+            "color": "var(color-added)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["added"]}],
-            "color": "var(color-added-light)"
+            "color": "var(color-added-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
-            "color": "var(color-modified)"
+            "color": "var(color-modified)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["modified"]}],
-            "color": "var(color-modified-light)"
+            "color": "var(color-modified-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
-            "color": "var(color-modified)"
+            "color": "var(color-modified)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["staged"]}],
-            "color": "var(color-modified-light)"
+            "color": "var(color-modified-light)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "file_system_entry", "attributes": ["unmerged"]}],
-            "color": "var(color-removed)"
+            "color": "var(color-removed)",
         },
         {
             "class": "sidebar_label",
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "file_system_entry", "attributes": ["unmerged"]}],
-            "color": "var(color-removed-light)"
+            "color": "var(color-removed-light)",
         },
     ]
 }
