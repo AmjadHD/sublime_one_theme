@@ -401,10 +401,9 @@
         {
             "class": "text_line_control",
             "content_margin": [8, 1, 7, 1],
-            // background
-            "layer0.texture": "Theme - One/assets/bg_3px.png",
-            "layer1.texture": "Theme - One/assets/border.png",
             "color_scheme_tint": "var(input-bg)",
+            // background
+            "layer0.texture": "Theme - One/assets/wh14,1--m1.png",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": [8, 1, 7, 1],
             "layer0.tint": "var(input-bg)",
@@ -1325,7 +1324,7 @@
         {
             "class": "progress_bar_control",
             // background
-            "layer0.texture": "Theme - One/assets/bg_3px.png",
+            "layer0.texture": "Theme - One/assets/wh14,1--m1.png",
             "layer0.inner_margin": 1,
             "layer0.tint": "var(input-bg)",
             "layer0.opacity": 1.0,
