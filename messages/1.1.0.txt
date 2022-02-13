@@ -1,0 +1,25 @@
+* Improved theme for very dark color schemes
+* Added support for radio buttons and check boxes
+* Add tooltip and tab close button animations
+* Added styles for disabled buttons
+* Added borders to output areas in panels
+* Crisp buttons, more accurate gradients
+* Crisp corners of inputs and progress bar
+* Improved many elements colors
+* Improved accent colors (buttons, tooltip, ...)
+* Added support for scrollbar thumb's `pressed` attribute
+* Quick panel and Popup shadows now match atom
+* The title bar now follows the color scheme
+* Round autocomplete detail pane bottom corners
+* Improved autocomplete colors
+* Autocomplete kind font size now equals the trigger's
+* Removed autocomplete hover styles
+* Fixed `inactive_selection_border` color mismatch with `inactive_selection`
+* Corrected `gutter_foreground_highlight`'s color
+* Disabled inputs shadows
+* Show popup borders only when shadows are disabled
+* Fix quick panel selected text color
+* Dimmed view's background hue is now preserved
+* Fixed close button's colors
+* Fixed tab close icon's position
+* Cleanups of assets and code
