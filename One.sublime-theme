@@ -58,9 +58,9 @@
         "button-bg-selected": "var(accent-bg)",
         "button-bg-selected-light": "var(accent-bg-light)",
 
-        "button-fg-selected": "color(var(fg) min-contrast(var(button-bg-selected) 4.5))",
-        "button-fg-selected-light": "color(var(fg-light) min-contrast(var(button-bg-selected-light) 4.5))",
-        "button-fg-selected-dark": "color(var(fg-dark) min-contrast(var(button-bg-selected) 4.5))",
+        "button-fg-selected": "color(var(fg) l(+ 50%))",
+        "button-fg-selected-light": "color(var(fg-light) l(+ 70%))",
+        "button-fg-selected-dark": "color(var(fg-dark) l(+ 40%))",
 
         "accent-fg": "color(var(--accent) s(* 86%) l(* 97%))", // hsl(220, 86%, 64%)
         "accent-fg-light": "color(var(--accent) s(* 76%) l(* 94%))", // hsl(230, 76%, 62%)
