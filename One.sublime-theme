@@ -1383,7 +1383,6 @@
         },
         {
             "class": "scroll_bar_control",
-            "content_margin": [3, 4],
             "layer0.opacity": 1.0,
             "tint_index": 0,
         },
@@ -1435,7 +1434,7 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "overlay_control"}],
-            "content_margin": [3, 4, 4, 3],
+            "content_margin": [0, 1, 1, 0],
             // background
             "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
@@ -1462,7 +1461,7 @@
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "switch_project_window"}],
-            "content_margin": [3, 4, 4, 3],
+            "content_margin": [0, 1, 1, 0],
             "layer0.tint": "var(app-bg)",
             "layer0.opacity": 1.0,
             "layer1.tint": "var(border-color)",
@@ -1523,19 +1522,19 @@
         },
         {
             "class": "puck_control",
-            "content_margin": [2, 5],
+            "content_margin": [5, 10],
             "layer0.texture": "Theme - One/assets/scrollbar_thumb_vertical.png",
             "tint_index": 0,
             "tint_modifier": "rgba(111, 124, 146, 0.5)",
             "layer0.opacity": 1.0,
-            "layer0.inner_margin": [0, 2],
+            "layer0.inner_margin": [3, 5],
         },
         {
             "class": "puck_control",
             "attributes": ["horizontal"],
-            "content_margin": [5, 2],
+            "content_margin": [10, 5],
             "layer0.texture": "Theme - One/assets/scrollbar_thumb_horizontal.png",
-            "layer0.inner_margin": [2, 0],
+            "layer0.inner_margin": [5, 3],
         },
         {
             "class": "puck_control",
