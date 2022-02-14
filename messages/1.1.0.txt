@@ -1,3 +1,5 @@
+Version 1.1.0:
+
 * Improved theme for very dark color schemes
 * Added support for radio buttons and check boxes
 * Add tooltip and tab close button animations
