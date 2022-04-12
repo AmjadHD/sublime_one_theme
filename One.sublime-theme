@@ -1709,6 +1709,11 @@
             "layer0.tint": "var(app-bg-light)",
         },
         {
+            "class": "dialog window",
+            "attributes": ["file_dark"],
+            "layer0.tint": "var(app-bg-dark)",
+        },
+        {
             "class": "progress_bar_control",
             // background
             "layer0.texture": "Theme - One/assets/wh14,1--m1.png",
