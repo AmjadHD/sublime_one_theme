@@ -247,7 +247,7 @@
             "parents": [{"class": "window", "attributes": ["file_light"]},
                         {"class": "overlay_control kind_info"}],
             "layer0.tint": "var(fg-light)",
-            "layer1.tint": "var(border-color-light)",
+            "layer1.tint": "color(var(border-color-light) l(- 10%))",
         },
         {
             "class": "kind_container",
