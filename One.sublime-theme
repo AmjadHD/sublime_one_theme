@@ -233,6 +233,30 @@
             "layer0.tint": "color(white a(60%))",
         },
         {
+            "class": "kind_container",
+            "parents": [{"class": "overlay_control kind_info"}],
+            "content_margin": [12, 0],
+            "layer0.tint": "var(fg)",
+            "layer1.tint": "var(border-color)",
+            "layer1.opacity": 1.0,
+            "layer1.inner_margin": [1, 1, 1, 0],
+            "layer1.draw_center": false,
+        },
+        {
+            "class": "kind_container",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "overlay_control kind_info"}],
+            "layer0.tint": "var(fg-light)",
+            "layer1.tint": "var(border-color-light)",
+        },
+        {
+            "class": "kind_container",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "overlay_control kind_info"}],
+            "layer0.tint": "var(fg-dark)",
+            "layer1.tint": "var(border-color-dark)",
+        },
+        {
             "class": "kind_label",
             "color": "var(fg)",
             "font.size": "1rem",
@@ -247,6 +271,23 @@
         {
             "class": "kind_label",
             "parents": [{"class": "auto_complete", "attributes": ["file_dark"]}],
+            "color": "var(fg-dark)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "overlay_control kind_info"}],
+            "font.size": 15.0,
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "window", "attributes": ["file_light"]},
+                        {"class": "overlay_control kind_info"}],
+            "color": "var(fg-light)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "window", "attributes": ["file_dark"]},
+                        {"class": "overlay_control kind_info"}],
             "color": "var(fg-dark)",
         },
         {
@@ -324,6 +365,10 @@
             "class": "kind_label",
             "parents": [{"class": "kind_container kind_variable"}],
             "color": "var(--redish)",
+        },
+        {
+            "class": "symbol_container",
+            "content_margin": [12, 9],
         },
         {
             "class": "trigger_container",
@@ -585,51 +630,6 @@
         {
             "class": "quick_panel_detail_label",
             "link_color": "var(--bluish)",
-        },
-        {
-            "class": "symbol_container",
-            "content_margin": [12, 9],
-        },
-        {
-            "class": "kind_container",
-            "parents": [{"class": "overlay_control kind_info"}],
-            "content_margin": [12, 0],
-            "layer0.tint": "var(fg)",
-            "layer1.tint": "var(border-color)",
-            "layer1.opacity": 1.0,
-            "layer1.inner_margin": [1, 1, 1, 0],
-            "layer1.draw_center": false,
-        },
-        {
-            "class": "kind_container",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "overlay_control kind_info"}],
-            "layer0.tint": "var(fg-light)",
-            "layer1.tint": "var(border-color-light)",
-        },
-        {
-            "class": "kind_container",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "overlay_control kind_info"}],
-            "layer0.tint": "var(fg-dark)",
-            "layer1.tint": "var(border-color-dark)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "overlay_control kind_info"}],
-            "font.size": 15.0,
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "window", "attributes": ["file_light"]},
-                        {"class": "overlay_control kind_info"}],
-            "color": "var(fg-light)",
-        },
-        {
-            "class": "kind_label",
-            "parents": [{"class": "window", "attributes": ["file_dark"]},
-                        {"class": "overlay_control kind_info"}],
-            "color": "var(fg-dark)",
         },
 
         ///////////////////////////// Tooltips /////////////////////////////////
