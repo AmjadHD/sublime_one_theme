@@ -367,6 +367,98 @@
             "color": "var(--redish)",
         },
         {
+            "class": "kind_container kind_color_redish",
+            "layer0.tint": "var(--redish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_redish"}],
+            "color": "var(--redish)",
+        },
+        {
+            "class": "kind_container kind_color_orangish",
+            "layer0.tint": "var(--orangish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_orangish"}],
+            "color": "var(--orangish)",
+        },
+        {
+            "class": "kind_container kind_color_yellowish",
+            "layer0.tint": "var(--yellowish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_yellowish"}],
+            "color": "var(--yellowish)",
+        },
+        {
+            "class": "kind_container kind_color_greenish",
+            "layer0.tint": "var(--greenish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_greenish"}],
+            "color": "var(--greenish)",
+        },
+        {
+            "class": "kind_container kind_color_cyanish",
+            "layer0.tint": "var(--cyanish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_cyanish"}],
+            "color": "var(--cyanish)",
+        },
+        {
+            "class": "kind_container kind_color_bluish",
+            "layer0.tint": "var(--bluish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_bluish"}],
+            "color": "var(--bluish)",
+        },
+        {
+            "class": "kind_container kind_color_purplish",
+            "layer0.tint": "var(--purplish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_purplish"}],
+            "color": "var(--purplish)",
+        },
+        {
+            "class": "kind_container kind_color_pinkish",
+            "layer0.tint": "var(--pinkish)",
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_pinkish"}],
+            "color": "var(--pinkish)",
+        },
+        {
+            "class": "kind_container kind_color_dark",
+            "layer0.tint": "black",
+            "layer0.opacity": 0.4,
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_dark"}],
+            "color": "white",
+        },
+        {
+            "class": "kind_container kind_color_light",
+            "layer0.tint": "white",
+            "layer0.opacity": 0.4,
+        },
+        {
+            "class": "kind_label",
+            "parents": [{"class": "kind_container kind_color_light"}],
+            "color": "black",
+        },
+        {
             "class": "symbol_container",
             "content_margin": [12, 9],
         },
