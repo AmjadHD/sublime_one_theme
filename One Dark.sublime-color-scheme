@@ -173,6 +173,10 @@
 			"foreground": "var(orange2)",
 		},
 		{
+			"scope": "entity.name.constant",
+			"foreground": "var(orange1)",
+		},
+		{
 			"scope": "entity.other.inherited-class",
 			"foreground": "var(orange2)",
 		},
