@@ -108,6 +108,10 @@
 			"foreground": "var(cyan)",
 		},
 		{
+			"scope": "constant.numeric.suffix",
+			"foreground": "var(purple)",
+		},
+		{
 			"scope": "constant.other.color",
 			"foreground": "var(cyan)",
 		},
