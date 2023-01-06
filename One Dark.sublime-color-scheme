@@ -65,7 +65,7 @@
 		"gutter_foreground": "color(var(--foreground) a(0.6) l(- 26%))",
 
 		"find_highlight_foreground": "var(--foreground)",
-		"find_highlight": "color(var(--accent) a(0.24))",
+		"find_highlight": "color(var(--accent) a(24%))",
 		"highlight": "var(--accent)",
 
 		"line_diff_width": "3",

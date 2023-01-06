@@ -20,6 +20,7 @@
 		"color-modified": "hsla( 40,  90%,  50%, 0.6)",
 		"color-removed":  "hsla(  0, 100%,  54%, 0.6)",
 
+
 		"--foreground": "hsl(230,  8%,  24%)",
 		"--background": "hsl(230,  1%,  98%)",
 		"--accent":     "hsl(230, 100%,  66%)",
