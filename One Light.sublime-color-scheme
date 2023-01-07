@@ -88,14 +88,6 @@
 			"foreground": "var(pink)",
 		},
 		{
-			"scope": "keyword.operator.variadic",
-			"foreground": "var(--foreground)",
-		},
-		{
-			"scope": "keyword.other.unit",
-			"foreground": "var(orange1)",
-		},
-		{
 			"scope": "storage",
 			"foreground": "var(purple)",
 		},
@@ -325,29 +317,9 @@
 			"foreground": "var(red1)",
 		},
 
-		// Java
-		{
-			"scope": "source.java & (storage.type.primitive, storage.type.void)",
-			"foreground": "var(orange2)",
-		},
-		{
-			"scope": "source.java-props entity.name.key.java-props",
-			"foreground": "var(orange1)",
-		},
-		{
-			"scope": "source.java-props punctuation",
-			"foreground": "var(--foreground)",
-		},
-
-		// TypeScript
-		{
-			"scope": "source.ts punctuation.definition.template-expression",
-			"foreground": "var(red2)",
-		},
-
 		// JSON
 		{
-			"scope": "source.json meta.mapping.key string.quoted.double.json",
+			"scope": "source.json meta.mapping.key.json string.quoted.double.json",
 			"foreground": "var(red1)",
 		}
 	],
