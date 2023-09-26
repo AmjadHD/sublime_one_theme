@@ -1,0 +1,5 @@
+Version 1.1.4
+
+* Add missing assets.
+* Remove highlighting of properties (namely in JS and TS).
+* Highlight YAML keys.
