@@ -209,15 +209,7 @@
 			"foreground": "var(--foreground)",
 		},
 		{
-			"scope": "meta.field",
-			"foreground": "var(red1)",
-		},
-		{
 			"scope": "meta.mapping.key",
-			"foreground": "var(red1)",
-		},
-		{
-			"scope": "meta.property.object",
 			"foreground": "var(red1)",
 		},
 		{
