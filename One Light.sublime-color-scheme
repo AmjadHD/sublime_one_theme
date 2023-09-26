@@ -209,7 +209,7 @@
 			"foreground": "var(--foreground)",
 		},
 		{
-			"scope": "meta.mapping.key",
+			"scope": "meta.mapping.key string",
 			"foreground": "var(red1)",
 		},
 		{
