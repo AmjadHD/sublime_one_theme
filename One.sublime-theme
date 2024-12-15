@@ -3271,7 +3271,7 @@
             "layer0.texture": "Theme - One/assets/radio_button_bg.png",
             "layer0.inner_margin": 0,
             "layer1.texture": "Theme - One/assets/radio_button_bg.png",
-            "layer0.inner_margin": 0,
+            "layer1.inner_margin": 0,
             "layer2.texture": "Theme - One/assets/radio_button_on.png",
         },
     ]
