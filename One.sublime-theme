@@ -947,23 +947,6 @@
             "parents": [{"class": "window", "attributes": ["file_dark"]}],
             "layer0.tint": "var(fg-highlight-dark)",
         },
-        {
-            "class": "text_area_control",
-            "parents": [{"class": "text_output_control"}],
-            "background_modifier": "l(- 6%)",
-        },
-        {
-            "class": "text_area_control",
-            "attributes": ["file_light"],
-            "parents": [{"class": "text_output_control"}],
-            "background_modifier": "l(+ 4%)",
-        },
-        {
-            "class": "text_area_control",
-            "attributes": ["file_dark"],
-            "parents": [{"class": "text_output_control"}],
-            "background_modifier": "l(+ 2%)",
-        },
 
         /////////////////////////// Default label //////////////////////////////
 
