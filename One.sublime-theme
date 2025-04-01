@@ -2106,6 +2106,7 @@
            "border_radius": 8,
            "border_width": 0,
            "background_color": "var(badge-bg)",
+           "font.size": "var(font-size)",
         },
         {
            "class": "vcs_changes_annotation",
