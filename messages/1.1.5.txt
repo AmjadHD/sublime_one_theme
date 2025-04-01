@@ -1,0 +1,5 @@
+Version 1.1.5
+
+* Change output panel background to match atom
+* Improve tabs
+* Remove folder VCS status icons
