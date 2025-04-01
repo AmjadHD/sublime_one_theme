@@ -1,0 +1,6 @@
+Version 1.1.7
+
+* Highlight VCS changes annotation
+* Change output panel background to match atom
+* Improve tabs
+* Remove folder VCS status icons
