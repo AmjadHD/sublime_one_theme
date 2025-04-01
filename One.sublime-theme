@@ -2444,6 +2444,11 @@
             "layer0.opacity": 0.0,
         },
         {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "tree_row", "attributes": ["expandable"]},],
+            "layer0.opacity": 0.0,
+        },
+        {
             "class": "sidebar_label",
             "color": "var(fg)",
             "font.size": "var(font-size)",
