@@ -1732,14 +1732,14 @@
         },
         {
             "class": "tab_control",
-            "content_margin": [33, 0, 7, 0],
+            "content_margin": [30, 0, 7, 1],
             "max_margin_trim": 6,
             // background
             "tint_index": 0,
             "layer0.opacity": 0.0,
             // border
             "layer1.tint": "var(border-color)",
-            "layer1.inner_margin": [0, 0, 1, 1],
+            "layer1.inner_margin": [0, 0, 1, 0],
             "layer1.draw_center": false,
             "layer1.opacity": 1.0,
             // border highlight
