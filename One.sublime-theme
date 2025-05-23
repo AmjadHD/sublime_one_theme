@@ -901,6 +901,11 @@
             "layer2.opacity": 1.0,
         },
         {
+            "class": "panel_control output_panel io_panel",
+            "layer2.texture": "Theme - One/assets/console_panel_output_area_border.png",
+            "layer2.inner_margin": [11, 12, 11, 51],
+        },
+        {
             "class": "panel_control find_panel",
             "content_margin": [0, 1, -10, 0],
         },
@@ -913,6 +918,16 @@
             "inside_spacing": 9,
             "outside_hspacing": 9,
             "outside_vspacing": 9,
+        },
+        {
+            "class": "panel_grid_control",
+            "parents": [{"class": "output_panel"},],
+            "inside_vspacing": 0,
+        },
+        {
+            "class": "panel_grid_control",
+            "parents": [{"class": "io_panel"},],
+            "inside_vspacing": 9,
         },
         {
             "class": "panel_close_button",
