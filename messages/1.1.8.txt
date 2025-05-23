@@ -1,0 +1,4 @@
+Version 1.1.8
+
+* Add border to sidebar on right.
+* Fix IO panel's borders.
