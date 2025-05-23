@@ -2636,6 +2636,11 @@
             "layer0.tint": "var(border-color-dark)",
         },
         {
+            "class": "sidebar_container",
+            "settings": ["sidebar_on_right"],
+            "content_margin": [1, 0, 0, 0],
+        },
+        {
             "class": "sidebar_heading",
             "color": "var(fg)",
             "font.size": "var(font-size)",
