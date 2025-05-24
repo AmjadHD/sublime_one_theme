@@ -2212,6 +2212,11 @@
         },
         {
             "class": "sidebar_button_control",
+            "settings": ["sidebar_on_right"],
+            "layer1.texture": "Theme - One/assets/sidebar_button_right.png",
+        },
+        {
+            "class": "sidebar_button_control",
             "attributes": ["hover"],
             "layer0.tint": "var(app-bg-hover)",
             "layer0.opacity": 1.0,
