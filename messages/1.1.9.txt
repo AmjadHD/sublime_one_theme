@@ -1,0 +1,3 @@
+Version 1.1.9
+
+* Sidebar toggle button matches octicon and represents the sidebar's side.
